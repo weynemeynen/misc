@@ -1,316 +1,557 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-	<meta charset="utf-8"/>
-	<title>Технологии для общества</title>
-	<link rel="stylesheet" href="css/style.css"/>
-	<link rel="stylesheet" href="css/jquery.fullPage.css"/>
-	<link rel="shortcut icon" href="/favicon.ico"/>
-	<link href='http://fonts.googleapis.com/css?family=Roboto:300,400,700&subset=cyrillic' rel='stylesheet' type='text/css'>
-	<!-- Стиль слайдлера от Mozilla -->
-	<link rel="stylesheet" media="screen,projection,tv" href="css/home-min.css">
-	<!--[if lt IE 9]>
-	<link rel="stylesheet" href="css/style.ie.css">
-	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>  <![endif]-->  <!--<script src="//api-maps.yandex.ru/2.0/?load=package.standard,package.geoObjects&lang=ru-RU" type="text/javascript"></script>
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="utf-8" />
+    <title>Технологии для общества</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/jquery.fullPage.css" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&subset=cyrillic"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!-- Стиль слайдлера от Mozilla -->
+    <link
+      rel="stylesheet"
+      media="screen,projection,tv"
+      href="css/home-min.css"
+    />
+    <!--[if lt IE 9]>
+      <link rel="stylesheet" href="css/style.ie.css" />
+      <script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!--<script src="//api-maps.yandex.ru/2.0/?load=package.standard,package.geoObjects&lang=ru-RU" type="text/javascript"></script>
 	<script src="js/ymap.js"></script>-->
-</head>
-<body class="page">
-<div id="fullpage" class="index">
-	<section class="section primus bg_pattern_paper">
-		<div class="row_width_950 header">
-			<div class="logo">
-				<a class="link logo__link" href="/">
-					<img class="icon logo__icon" src="images/logo.png" width="195" height="85" alt=""> </a>
-			</div>
-			<nav class="menu text_align_right">
-				<ul class="menu-list menu-list_display_inline">
-					<li class="menu-item menu-item_state_current">
-						<a href="#" class="link">Проекты</a>
-					</li>
-					<li class="menu-item">
-						<a href="#" class="link">О компании</a>
-					</li>
-					<li class="menu-item">
-						<a href="#" class="link">Контакты</a>
-					</li>
-				</ul>
-			</nav>
-			<header class="tit text_align_center">
-				<h1><q class="quotes">Интелектуальные социалные системы</q></h1>
-				<div>создаёт онлайн-проекты для взаимодействия<br> граждан с бизнесом и органами власти</div>
-			</header>
-			<section class="pillars">
-				<ul class="accordion">
-					<li id="panel-lightbeam" class="panel" tabindex="0">
-						<h2 class="panel-title icon-angry-citizen">Сердитый гражданин</h2>
-						<div class="panel-inner">
-							<div class="panel-content">
-								<h3>Независимый портал для решения проблем</h3>
-								<div class="panel-content__desc">
-									<span class="panel-content__data icon-book">20000</span>
-									<div>Зарегистрированных пользователей</div>
-								</div>
-								<div class="panel-content__desc">
-									<span class="panel-content__data icon-book">14000</span>
-									<div>Решенных проблем</div>
-								</div>
-								<div class="panel-content__desc">
-									<span class="panel-content__data icon-book">300</span>
-									<div>Инструкций в базе знаний</div>
-								</div>
-								<button class="button corners-3">подробнее</button>
-							</div>
-						</div>
-					</li>
-					<li id="panel-fxos" class="panel" tabindex="0">
-						<h2 class="panel-title icon-contented-citizen">Довольный гражданин</h2>
-						<div class="panel-inner">
-							<div class="panel-content">
-								<a href="#">
-									<h3>Система обратной связи для крупных компаний и госучреждений</h3>
-									<p>Мы приводим в Интернет больше людей, чем когда-либо прежде, всё более разными путями и из самых разных мест.</p>
-									<p class="go">Узнайте больше о Firefox OS</p>
-								</a>
-							</div>
-						</div>
-					</li>
-					<li id="panel-webmaker" class="panel" tabindex="0">
-						<h2 class="panel-title icon-league-quality">Лига качества</h2>
-						<div class="panel-inner">
-							<div class="panel-content">
-								<a href="#">
-									<h3>Узнайте, чем недовольны ваши клиенты и помогите им найти решения</h3>
-									<p>Давайте исследовать, пробовать и творить вместе, чтобы построить открытый и общий Интернет.</p>
-									<p class="go">Станьте Вебмейкером</p>
-								</a>
-							</div>
-						</div>
-					</li>
-				</ul>
-			</section>
-		</div>
-		<div class="scroll-down font-icon-arrow-down text_color_red" onclick="scrollToElement('.infographics', 500)">прокрутить вниз</div>
-	</section>
-	<section class="section infographics text_align_center">
-		<div class="display_inline_block">
-			<header class="tit text_align_center">
-				<h1>Intelligent Social Systems</h1>
-				<div><q class="quotes">Взгляните на схему управления наших проектов</q></div>
-			</header>
-			<ul class="infographics__list idTabs icon-infographics text_align_left" style="padding-top: 50px; overflow: hidden;">
-				<li class="item icon-angry logotype"><a href="#tab_1">Сердитый<br>гражданин</a></li>
-				<li class="item icon-glad logotype"><a href="#tab_2">Довольный<br>гражданин</a></li>
-				<li class="item icon-league logotype" style="margin-top: -19px;"><a href="#tab_3">Лига<br>качества</a></li>
-			</ul>
-			<ul class="infographics__list">
-				<li id="tab_1" class="infographics-item infographics_item_angry" style="margin-left: -57px;">
-					<span id="info-registered-users">20 000</span> <span id="info-solved-problems">14 000</span>
-					<span id="info-complaints">500</span> <span id="info-organizations">70</span>
-					<span id="info-instructions">300</span>
-				</li>
-				<li id="tab_2" class="infographics-item infographics_item_glad"></li>
-				<li id="tab_3" class="infographics-item infographics_item_league"></li>
-			</ul>
-		</div>
-	</section>
-	<section class="section projects-platform">
-		<header class="tit bg_color_gray bg_gradient_translucent-100 text_align_center text_color_white">
-			<div class="row_width_950">
-				<h1 class="icon-book">Проекты на платформе
-					<q class="quotes" cite="http://www.angrycitizen.ru/">довольный гражданин</q></h1>
-			</div>
-		</header>
-		<div id="tab-1" class="projects-platform__unit" style="background-image: url(images/online-inspection.png)">
-			<div class="row_width_950 text_color_white text_shadow_black">
-				<div class="icon-glad logotype">Довольный<br>гражданин</div>
-				<p class="projects-platform__text">
-					Проект для Федеральной службы по труду и занятости для соблюдения трудового права в России </p>
-				<ul class="projects-platform__list">
-					<li>Снизить количество нарушений трудового законодательства</li>
-					<li>Повысить уровень правовой грамотности населения</li>
-					<li>Увеличить эффективность взаимодействия между гражданами и органами власти</li>
-					<li>Онлайнинспекция.рф стал главным инструментом бращения граждан в Роструд по всей России</li>
-					<li>За 5 месяцев работы проекта получено более 5,5 тысяч обращений граждан, более 2 тысяч ответов дано предстаителями ведомства</li>
-				</ul>
-				<button class="button bg_color_orange text_color_white corners-3">Подробнее</button>
-			</div>
-			<div class="layer bg_color_253e83 bg_gradient_translucent-25">
-				<!--<img src="images/online-inspection.png" width="1385" height="723" alt="">-->
-			</div>
-		</div>
-		<div id="tab-2" class="projects-platform__unit" style="background-image: url(images/roads-suburbs.png)">
-			<div class="row_width_950">
-				<div class="icon-glad logotype">Довольный<br>гражданин</div>
-				<p class="projects-platform__text text_color_red">ДорогиПодмосковья.рф</p>
-				<ul class="projects-platform__list">
-					<li>Сервис
-						<q class="quotes text_color_red">Довольный гражданин: Дороги Подмосковья</q> запущенный в августе 2013 года при поддержке Главного управления дорожного хозяйства Московской области и Общественного совета при ГУДХ, направлен на решение проблем качества и безопасности дорог Московской области.
-					</li>
-				</ul>
-				<button class="button bg_color_orange text_color_white corners-3">Подробнее</button>
-			</div>
-			<div class="layer text_align_center bg_gradient_translucent-10">
-				<!--<img src="images/roads-suburbs.png" width="1174" height="725" style="vertical-align: -600%;" alt="">-->
-			</div>
-		</div>
-		<div id="tab-3" class="projects-platform__unit" style="background-image: url(images/ministry-education.png)">
-			<div class="row_width_950 text_color_gray">
-				<div class="icon-glad logotype">Довольный<br>гражданин</div>
-				<p class="projects-platform__text">
-					<b>Проект для Федеральной службы по труду и занятости для соблюдения трудового права в России</b></p>
-				<ul class="projects-platform__list">
-					<li>Снизить количество нарушений трудового законодательства</li>
-					<li>Повысить уровень правовой грамотности населения</li>
-					<li>Увеличить эффективность взаимодействия между гражданами и органами власти</li>
-					<li>Онлайнинспекция.рф стал главным инструментом бращения граждан в Роструд по всей России</li>
-					<li>За 5 месяцев работы проекта получено более 5,5 тысяч обращений граждан, более 2 тысяч ответов дано предстаителями ведомства</li>
-				</ul>
-				<button class="button bg_color_orange text_color_white corners-3">Подробнее</button>
-			</div>
-			<div class="layer text_align_center bg_gradient_translucent-10">
-				<!--<img src="images/ministry-education.png" width="1385" height="723" style="vertical-align: -600%;" alt="">-->
-			</div>
-		</div>
-		<nav class="projects-platform__menu">
-			<div class="table">
-				<div class="table__row idTabs">
-					<div class="table__td">
-						<a href="#tab-1" class="bg_color_253e83 text_color_253e83 selected"> <i class="icon-online-inspection"></i>
-						</a>
-					</div>
-					<div class="table__td">
-						<a href="#tab-2" class="text_color_white bg_color_white"> <i class="icon-roads-suburbs"></i> </a>
-					</div>
-					<div class="table__td">
-						<a href="#tab-3" class="text_color_white bg_color_white"> <i class="icon-ministry-education"></i> </a>
-					</div>
-				</div>
-			</div>
-		</nav>
-	</section>
-	<section class="section media">
-		<div class="row_width_950">
-			<div class="news">
-				<div class="pane clearfix">
-					<span>Новости</span>
-					<div style="float: right">
-						<i class="font-icon-switch-left"></i> <i class="font-icon-switch-right"></i>
-					</div>
-				</div>
-				<ul class="list list-horiz justify articles">
-					<li class="item">
-						<a href="#">
-							<h3 class="h3">Дмитрий Кох и Андрей Спиридонов Дмитрий Кох и Андрей Спиридонов</h3>
-							<i class="font-icon-switch-right"></i> </a>
-						<p class="date">
-							<small>24 февраля 2014</small>
-						</p>
-						<p class="text">Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн. Его популяризации в новое время послужили публикация листов Letraset</p>
-					</li>
-					<li class="item">
-						<a href="#">
-							<h3 class="h3">Дмитрий Кох и Андрей Спиридонов Дмитрий Кох и Андрей Спиридонов</h3>
-							<i class="font-icon-switch-right"></i> </a>
-						<p class="date">
-							<small>24 февраля 2014</small>
-						</p>
-						<p class="text">Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн. Его популяризации в новое время послужили публикация листов Letraset</p>
-					</li>
-					<li class="item">
-						<a href="#">
-							<h3 class="h3">Дмитрий Кох и Андрей Спиридонов Дмитрий Кох и Андрей Спиридонов</h3>
-							<i class="font-icon-switch-right"></i> </a>
-						<p class="date">
-							<small>24 февраля 2014</small>
-						</p>
-						<p class="text">Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн. Его популяризации в новое время послужили публикация листов Letraset</p>
-					</li>
-				</ul>
-			</div>
-			<div class="smi">
-				<div class="pane clearfix">
-					<span>Сми о нас</span>
-					<div style="float: right">
-						<i class="font-icon-switch-left"></i> <i class="font-icon-switch-right"></i>
-					</div>
-				</div>
-				<ul class="list list-horiz justify">
-					<li class="item">
-						<a href="#">
-							<div class="figure"><img src="images/smi-1.jpg" width="203" height="203" alt=" ">
-								<img src="images/smi-1-logo.png" width="126" height="43" class="_logotype" alt=" ">
-							</div>
-						</a>
-					</li>
-					<li class="item">
-						<a href="#">
-							<div class="figure"><img src="images/smi-2.jpg" width="203" height="203" alt="">
-								<img src="images/smi-2-logo.png" width="177" height="32" class="_logotype" alt="">
-							</div>
-						</a>
-					</li>
-					<li class="item">
-						<a href="#">
-							<div class="figure"><img src="images/smi-3.jpg" width="203" height="203" alt="">
-								<img src="images/smi-3-logo.png" width="122" height="82" class="_logotype" alt="">
-							</div>
-						</a>
-					</li>
-					<li class="item">
-						<a href="#">
-							<div class="figure"><img src="images/smi-4.jpg" width="203" height="203" alt=" ">
-								<img src="images/smi-4-logo.png" width="67" height="86" class="_logotype" alt=" ">
-							</div>
-						</a>
-					</li>
-				</ul>
-			</div>
-		</div>
-		<footer class="footer">
-			<div class="tit bg_color_red text_color_white text_align_center">
-				<h2>Контактная информация</h2>
-			</div>
-			<div class="map">
-				<div class="layer bg_gradient_translucent-0"></div>
-				<div class="row_width_950">
-					<div itemscope itemtype="http://schema.org/Organization" class="contact text_color_white">
-						<div class="contact__inner bg_color_2c2c2c">
-							<div itemprop="name" class="hidden">Интелектуальные социалные системы</div>
-							<div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
-								<div itemprop="addressLocality">Москва</div>
-								<div itemprop="streetAddress">ул.Зоологическая 22</div>
-							</div>
-							<div itemprop="telephone" class="icon-telephone">+7 (915) 123–45–67</div>
-							<div itemprop="email" class="icon-email">info@socialsys.ru</div>
-						</div>
-						<div class="contact__inner bg_color_2c2c2c text_align_justify justify">
-							<small>Мы в соцсетях</small>
-							<a href="#" class="font-icon-f text_color_white"></a>
-							<a href="#" class="font-icon-t text_color_white"></a>
-							<a href="#" class="font-icon-w text_color_white"></a>
-						</div>
-						<div class="partners">
-							<div class="text_align_center">ПАРТНЁРЫ ПРОЕКТА</div>
-							<hr>
-							<div class="contact__inner text_align_justify justify"><a href="#" class="icon-h50"></a>
-								<span class="text_color_white">|</span> <a href="#" class="icon-h50_1"></a></div>
-						</div>
-					</div>
-					<a href="#"><img class="footer-tit" src="images/footer-tit.png" width="397" height="136" alt=""></a>
-				</div>
-				<div id="map"></div>
-			</div>
-		</footer>
-	</section>
-</div>
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-<!--<script src="design/modulargrid.js"></script>--><!--<script src="http://code.jquery.com/jquery-latest.js"></script>-->
-<script src="js/jquery.idTabs.min.js"></script>
-<script src="js/scripts.js"></script>
-<!-- Скрипт слайдера от Mozilla -->
-<script src="js/home-min.js"></script>
-<!--fullPage--><!--<script src="js/jquery.slimscroll.min.js"></script>
+  </head>
+  <body class="page">
+    <div id="fullpage" class="index">
+      <section class="section primus bg_pattern_paper">
+        <div class="row_width_950 header">
+          <div class="logo">
+            <a class="link logo__link" href="/">
+              <img
+                class="icon logo__icon"
+                src="images/logo.png"
+                width="195"
+                height="85"
+                alt=""
+              />
+            </a>
+          </div>
+          <nav class="menu text_align_right">
+            <ul class="menu-list menu-list_display_inline">
+              <li class="menu-item menu-item_state_current">
+                <a href="#" class="link">Проекты</a>
+              </li>
+              <li class="menu-item">
+                <a href="#" class="link">О компании</a>
+              </li>
+              <li class="menu-item">
+                <a href="#" class="link">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <header class="tit text_align_center">
+            <h1><q class="quotes">Интелектуальные социалные системы</q></h1>
+            <div>
+              создаёт онлайн-проекты для взаимодействия<br />
+              граждан с бизнесом и органами власти
+            </div>
+          </header>
+          <section class="pillars">
+            <ul class="accordion">
+              <li id="panel-lightbeam" class="panel" tabindex="0">
+                <h2 class="panel-title icon-angry-citizen">
+                  Сердитый гражданин
+                </h2>
+                <div class="panel-inner">
+                  <div class="panel-content">
+                    <h3>Независимый портал для решения проблем</h3>
+                    <div class="panel-content__desc">
+                      <span class="panel-content__data icon-book">20000</span>
+                      <div>Зарегистрированных пользователей</div>
+                    </div>
+                    <div class="panel-content__desc">
+                      <span class="panel-content__data icon-book">14000</span>
+                      <div>Решенных проблем</div>
+                    </div>
+                    <div class="panel-content__desc">
+                      <span class="panel-content__data icon-book">300</span>
+                      <div>Инструкций в базе знаний</div>
+                    </div>
+                    <button class="button corners-3">подробнее</button>
+                  </div>
+                </div>
+              </li>
+              <li id="panel-fxos" class="panel" tabindex="0">
+                <h2 class="panel-title icon-contented-citizen">
+                  Довольный гражданин
+                </h2>
+                <div class="panel-inner">
+                  <div class="panel-content">
+                    <a href="#">
+                      <h3>
+                        Система обратной связи для крупных компаний и
+                        госучреждений
+                      </h3>
+                      <p>
+                        Мы приводим в Интернет больше людей, чем когда-либо
+                        прежде, всё более разными путями и из самых разных мест.
+                      </p>
+                      <p class="go">Узнайте больше о Firefox OS</p>
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li id="panel-webmaker" class="panel" tabindex="0">
+                <h2 class="panel-title icon-league-quality">Лига качества</h2>
+                <div class="panel-inner">
+                  <div class="panel-content">
+                    <a href="#">
+                      <h3>
+                        Узнайте, чем недовольны ваши клиенты и помогите им найти
+                        решения
+                      </h3>
+                      <p>
+                        Давайте исследовать, пробовать и творить вместе, чтобы
+                        построить открытый и общий Интернет.
+                      </p>
+                      <p class="go">Станьте Вебмейкером</p>
+                    </a>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </section>
+        </div>
+        <div
+          class="scroll-down font-icon-arrow-down text_color_red"
+          onclick="scrollToElement('.infographics', 500)"
+        >
+          прокрутить вниз
+        </div>
+      </section>
+      <section class="section infographics text_align_center">
+        <div class="display_inline_block">
+          <header class="tit text_align_center">
+            <h1>Intelligent Social Systems</h1>
+            <div>
+              <q class="quotes">Взгляните на схему управления наших проектов</q>
+            </div>
+          </header>
+          <ul
+            class="infographics__list idTabs icon-infographics text_align_left"
+            style="padding-top: 50px; overflow: hidden"
+          >
+            <li class="item icon-angry logotype">
+              <a href="#tab_1">Сердитый<br />гражданин</a>
+            </li>
+            <li class="item icon-glad logotype">
+              <a href="#tab_2">Довольный<br />гражданин</a>
+            </li>
+            <li class="item icon-league logotype" style="margin-top: -19px">
+              <a href="#tab_3">Лига<br />качества</a>
+            </li>
+          </ul>
+          <ul class="infographics__list">
+            <li
+              id="tab_1"
+              class="infographics-item infographics_item_angry"
+              style="margin-left: -57px"
+            >
+              <span id="info-registered-users">20 000</span>
+              <span id="info-solved-problems">14 000</span>
+              <span id="info-complaints">500</span>
+              <span id="info-organizations">70</span>
+              <span id="info-instructions">300</span>
+            </li>
+            <li
+              id="tab_2"
+              class="infographics-item infographics_item_glad"
+            ></li>
+            <li
+              id="tab_3"
+              class="infographics-item infographics_item_league"
+            ></li>
+          </ul>
+        </div>
+      </section>
+      <section class="section projects-platform">
+        <header
+          class="tit bg_color_gray bg_gradient_translucent-100 text_align_center text_color_white"
+        >
+          <div class="row_width_950">
+            <h1 class="icon-book">
+              Проекты на платформе
+              <q class="quotes" cite="https://www.angrycitizen.ru/"
+                >довольный гражданин</q
+              >
+            </h1>
+          </div>
+        </header>
+        <div
+          id="tab-1"
+          class="projects-platform__unit"
+          style="background-image: url(images/online-inspection.png)"
+        >
+          <div class="row_width_950 text_color_white text_shadow_black">
+            <div class="icon-glad logotype">Довольный<br />гражданин</div>
+            <p class="projects-platform__text">
+              Проект для Федеральной службы по труду и занятости для соблюдения
+              трудового права в России
+            </p>
+            <ul class="projects-platform__list">
+              <li>Снизить количество нарушений трудового законодательства</li>
+              <li>Повысить уровень правовой грамотности населения</li>
+              <li>
+                Увеличить эффективность взаимодействия между гражданами и
+                органами власти
+              </li>
+              <li>
+                Онлайнинспекция.рф стал главным инструментом бращения граждан в
+                Роструд по всей России
+              </li>
+              <li>
+                За 5 месяцев работы проекта получено более 5,5 тысяч обращений
+                граждан, более 2 тысяч ответов дано предстаителями ведомства
+              </li>
+            </ul>
+            <button class="button bg_color_orange text_color_white corners-3">
+              Подробнее
+            </button>
+          </div>
+          <div class="layer bg_color_253e83 bg_gradient_translucent-25">
+            <!--<img src="images/online-inspection.png" width="1385" height="723" alt="">-->
+          </div>
+        </div>
+        <div
+          id="tab-2"
+          class="projects-platform__unit"
+          style="background-image: url(images/roads-suburbs.png)"
+        >
+          <div class="row_width_950">
+            <div class="icon-glad logotype">Довольный<br />гражданин</div>
+            <p class="projects-platform__text text_color_red">
+              ДорогиПодмосковья.рф
+            </p>
+            <ul class="projects-platform__list">
+              <li>
+                Сервис
+                <q class="quotes text_color_red"
+                  >Довольный гражданин: Дороги Подмосковья</q
+                >
+                запущенный в августе 2013 года при поддержке Главного управления
+                дорожного хозяйства Московской области и Общественного совета
+                при ГУДХ, направлен на решение проблем качества и безопасности
+                дорог Московской области.
+              </li>
+            </ul>
+            <button class="button bg_color_orange text_color_white corners-3">
+              Подробнее
+            </button>
+          </div>
+          <div class="layer text_align_center bg_gradient_translucent-10">
+            <!--<img src="images/roads-suburbs.png" width="1174" height="725" style="vertical-align: -600%;" alt="">-->
+          </div>
+        </div>
+        <div
+          id="tab-3"
+          class="projects-platform__unit"
+          style="background-image: url(images/ministry-education.png)"
+        >
+          <div class="row_width_950 text_color_gray">
+            <div class="icon-glad logotype">Довольный<br />гражданин</div>
+            <p class="projects-platform__text">
+              <b
+                >Проект для Федеральной службы по труду и занятости для
+                соблюдения трудового права в России</b
+              >
+            </p>
+            <ul class="projects-platform__list">
+              <li>Снизить количество нарушений трудового законодательства</li>
+              <li>Повысить уровень правовой грамотности населения</li>
+              <li>
+                Увеличить эффективность взаимодействия между гражданами и
+                органами власти
+              </li>
+              <li>
+                Онлайнинспекция.рф стал главным инструментом бращения граждан в
+                Роструд по всей России
+              </li>
+              <li>
+                За 5 месяцев работы проекта получено более 5,5 тысяч обращений
+                граждан, более 2 тысяч ответов дано предстаителями ведомства
+              </li>
+            </ul>
+            <button class="button bg_color_orange text_color_white corners-3">
+              Подробнее
+            </button>
+          </div>
+          <div class="layer text_align_center bg_gradient_translucent-10">
+            <!--<img src="images/ministry-education.png" width="1385" height="723" style="vertical-align: -600%;" alt="">-->
+          </div>
+        </div>
+        <nav class="projects-platform__menu">
+          <div class="table">
+            <div class="table__row idTabs">
+              <div class="table__td">
+                <a
+                  href="#tab-1"
+                  class="bg_color_253e83 text_color_253e83 selected"
+                >
+                  <i class="icon-online-inspection"></i>
+                </a>
+              </div>
+              <div class="table__td">
+                <a href="#tab-2" class="text_color_white bg_color_white">
+                  <i class="icon-roads-suburbs"></i>
+                </a>
+              </div>
+              <div class="table__td">
+                <a href="#tab-3" class="text_color_white bg_color_white">
+                  <i class="icon-ministry-education"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </section>
+      <section class="section media">
+        <div class="row_width_950">
+          <div class="news">
+            <div class="pane clearfix">
+              <span>Новости</span>
+              <div style="float: right">
+                <i class="font-icon-switch-left"></i>
+                <i class="font-icon-switch-right"></i>
+              </div>
+            </div>
+            <ul class="list list-horiz justify articles">
+              <li class="item">
+                <a href="#">
+                  <h3 class="h3">
+                    Дмитрий Кох и Андрей Спиридонов Дмитрий Кох и Андрей
+                    Спиридонов
+                  </h3>
+                  <i class="font-icon-switch-right"></i>
+                </a>
+                <p class="date">
+                  <small>24 февраля 2014</small>
+                </p>
+                <p class="text">
+                  Lorem Ipsum является стандартной "рыбой" для текстов на
+                  латинице с начала XVI века. В то время некий безымянный
+                  печатник создал большую коллекцию размеров и форм шрифтов,
+                  используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не
+                  только успешно пережил без заметных изменений пять веков, но и
+                  перешагнул в электронный дизайн. Его популяризации в новое
+                  время послужили публикация листов Letraset
+                </p>
+              </li>
+              <li class="item">
+                <a href="#">
+                  <h3 class="h3">
+                    Дмитрий Кох и Андрей Спиридонов Дмитрий Кох и Андрей
+                    Спиридонов
+                  </h3>
+                  <i class="font-icon-switch-right"></i>
+                </a>
+                <p class="date">
+                  <small>24 февраля 2014</small>
+                </p>
+                <p class="text">
+                  Lorem Ipsum является стандартной "рыбой" для текстов на
+                  латинице с начала XVI века. В то время некий безымянный
+                  печатник создал большую коллекцию размеров и форм шрифтов,
+                  используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не
+                  только успешно пережил без заметных изменений пять веков, но и
+                  перешагнул в электронный дизайн. Его популяризации в новое
+                  время послужили публикация листов Letraset
+                </p>
+              </li>
+              <li class="item">
+                <a href="#">
+                  <h3 class="h3">
+                    Дмитрий Кох и Андрей Спиридонов Дмитрий Кох и Андрей
+                    Спиридонов
+                  </h3>
+                  <i class="font-icon-switch-right"></i>
+                </a>
+                <p class="date">
+                  <small>24 февраля 2014</small>
+                </p>
+                <p class="text">
+                  Lorem Ipsum является стандартной "рыбой" для текстов на
+                  латинице с начала XVI века. В то время некий безымянный
+                  печатник создал большую коллекцию размеров и форм шрифтов,
+                  используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не
+                  только успешно пережил без заметных изменений пять веков, но и
+                  перешагнул в электронный дизайн. Его популяризации в новое
+                  время послужили публикация листов Letraset
+                </p>
+              </li>
+            </ul>
+          </div>
+          <div class="smi">
+            <div class="pane clearfix">
+              <span>Сми о нас</span>
+              <div style="float: right">
+                <i class="font-icon-switch-left"></i>
+                <i class="font-icon-switch-right"></i>
+              </div>
+            </div>
+            <ul class="list list-horiz justify">
+              <li class="item">
+                <a href="#">
+                  <div class="figure">
+                    <img
+                      src="images/smi-1.jpg"
+                      width="203"
+                      height="203"
+                      alt=" "
+                    />
+                    <img
+                      src="images/smi-1-logo.png"
+                      width="126"
+                      height="43"
+                      class="_logotype"
+                      alt=" "
+                    />
+                  </div>
+                </a>
+              </li>
+              <li class="item">
+                <a href="#">
+                  <div class="figure">
+                    <img
+                      src="images/smi-2.jpg"
+                      width="203"
+                      height="203"
+                      alt=""
+                    />
+                    <img
+                      src="images/smi-2-logo.png"
+                      width="177"
+                      height="32"
+                      class="_logotype"
+                      alt=""
+                    />
+                  </div>
+                </a>
+              </li>
+              <li class="item">
+                <a href="#">
+                  <div class="figure">
+                    <img
+                      src="images/smi-3.jpg"
+                      width="203"
+                      height="203"
+                      alt=""
+                    />
+                    <img
+                      src="images/smi-3-logo.png"
+                      width="122"
+                      height="82"
+                      class="_logotype"
+                      alt=""
+                    />
+                  </div>
+                </a>
+              </li>
+              <li class="item">
+                <a href="#">
+                  <div class="figure">
+                    <img
+                      src="images/smi-4.jpg"
+                      width="203"
+                      height="203"
+                      alt=" "
+                    />
+                    <img
+                      src="images/smi-4-logo.png"
+                      width="67"
+                      height="86"
+                      class="_logotype"
+                      alt=" "
+                    />
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <footer class="footer">
+          <div class="tit bg_color_red text_color_white text_align_center">
+            <h2>Контактная информация</h2>
+          </div>
+          <div class="map">
+            <div class="layer bg_gradient_translucent-0"></div>
+            <div class="row_width_950">
+              <div
+                itemscope
+                itemtype="https://schema.org/Organization"
+                class="contact text_color_white"
+              >
+                <div class="contact__inner bg_color_2c2c2c">
+                  <div itemprop="name" class="hidden">
+                    Интелектуальные социалные системы
+                  </div>
+                  <div
+                    itemprop="address"
+                    itemscope
+                    itemtype="https://schema.org/PostalAddress"
+                  >
+                    <div itemprop="addressLocality">Москва</div>
+                    <div itemprop="streetAddress">ул.Зоологическая 22</div>
+                  </div>
+                  <div itemprop="telephone" class="icon-telephone">
+                    +7 (915) 123–45–67
+                  </div>
+                  <div itemprop="email" class="icon-email">
+                    info@socialsys.ru
+                  </div>
+                </div>
+                <div
+                  class="contact__inner bg_color_2c2c2c text_align_justify justify"
+                >
+                  <small>Мы в соцсетях</small>
+                  <a href="#" class="font-icon-f text_color_white"></a>
+                  <a href="#" class="font-icon-t text_color_white"></a>
+                  <a href="#" class="font-icon-w text_color_white"></a>
+                </div>
+                <div class="partners">
+                  <div class="text_align_center">ПАРТНЁРЫ ПРОЕКТА</div>
+                  <hr />
+                  <div class="contact__inner text_align_justify justify">
+                    <a href="#" class="icon-h50"></a>
+                    <span class="text_color_white">|</span>
+                    <a href="#" class="icon-h50_1"></a>
+                  </div>
+                </div>
+              </div>
+              <a href="#"
+                ><img
+                  class="footer-tit"
+                  src="images/footer-tit.png"
+                  width="397"
+                  height="136"
+                  alt=""
+              /></a>
+            </div>
+            <div id="map"></div>
+          </div>
+        </footer>
+      </section>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <!--<script src="design/modulargrid.js"></script>--><!--<script src="https://code.jquery.com/jquery-latest.js"></script>-->
+    <script src="js/jquery.idTabs.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <!-- Скрипт слайдера от Mozilla -->
+    <script src="js/home-min.js"></script>
+    <!--fullPage--><!--<script src="js/jquery.slimscroll.min.js"></script>
 <script src="js/jquery.fullPage.min.js"></script>
 <script>
 	$(document).ready(function() {
@@ -326,5 +567,5 @@
 		});
 	});
 </script>-->
-</body>
+  </body>
 </html>
