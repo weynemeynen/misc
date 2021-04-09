@@ -1,0 +1,118 @@
+.certificates:before {
+	content: '';
+	display: table;
+	height: 5rem;
+}
+.certificates .header > .table-div__cell {
+	height: 25rem;
+}
+.certificates .header .row, .certificates .header [class|="col"] {
+	height: 100%;
+}
+/*spa-classic*/
+.certificates .spa-classic {
+	background-image: none;
+	background-color: #231000;
+}
+.certificates .spa-classic .container {
+	background: url("../Images/spa-classic-bg-1.png") no-repeat left bottom / auto 60%,
+	url("../Images/spa-classic-bg-2.png") no-repeat right bottom /  auto 60%,
+	url("../Images/spa-classic-bg.jpg") no-repeat center;
+}
+/*extreme-classic*/
+.certificates .extreme-classic {
+	background-image: none;
+	background-color: #33a8f5;
+}
+.certificates .extreme-classic .ps-box__slogan {
+	color: #fff;
+}
+.certificates .extreme-classic .container {
+	color: #fff;
+	background: url("../Images/extreme-classic-bg-1.png") no-repeat 15% bottom / auto 50%,
+	url("../Images/extreme-classic-bg-2.png") no-repeat 90% top / auto 50%;
+}
+/*hobby-classic*/
+.certificates .hobby-classic {
+	color: #200001;
+	background-image: none;
+	background-color: #7a7b76;
+}
+.certificates .hobby-classic .container {
+	background: url("../Images/hobby-classic.png") no-repeat right center;
+}
+
+/*original*/
+.certificates .original {
+	color: #200001;
+	background-image: none;
+	background-color: #d06513;
+}
+.certificates .original .container {
+	background: url("../Images/original-bg.jpg") no-repeat -41% bottom / auto 100%;
+}
+
+.certificates .ps-box {
+	position: absolute;
+	top: 7%;
+	left: 10%;
+	width: 8%;
+	height: auto;
+	z-index: 1;
+	text-align: center;
+	text-decoration: none;
+}
+.certificates .ps-box:hover { text-decoration: none; }
+.certificates .ps-box img {
+	padding: 0 15%;
+}
+.certificates .ps-box__slogan {
+	font-size: 88%;
+	line-height: 1;
+	color: #fff;
+}
+.certificates .logo {
+	height: auto !important;
+}
+.certificates .logo__img {
+	padding: 30% 10%;
+}
+.certificates h1 {
+	font-size: 350%;
+	margin: 0.34em;
+}
+.certificates h1 .small {
+	font-size: 50%;
+}
+.body > .table-div__cell { height: auto; }
+.certificates .body .table-div__cell {
+	font-family: peugeot;
+	text-align: left;
+	vertical-align: top;
+}
+
+.certificates .content {
+	margin-bottom: 5rem;
+}
+.certificates h2 {
+	font-size: 150%;
+	padding: 1.5rem 15%;
+	text-align: center;
+	text-transform: uppercase;
+}
+.fio {
+	font-weight: bold;
+	padding: 2rem 0;
+	background-color: #fff;
+}
+.fio label {
+	text-align: right;
+}
+.certificates ol {
+	font-size: 85%;
+	padding-left: 4rem;
+}
+.note {
+	padding: 0 4rem;
+}
+

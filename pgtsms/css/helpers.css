@@ -1,0 +1,168 @@
+.vertical-align_bottom:before,
+.vertical-align_middle:before,
+.vertical-align_top:before {
+	content: '';
+	display: inline-block;
+	height: 100%;
+}
+.vertical-align_top:before {
+	vertical-align: top
+}
+.vertical-align_middle:before {
+	vertical-align: middle
+}
+.vertical-align_bottom:before {
+	vertical-align: bottom
+}
+.inline-block {
+	display: inline-block;
+	vertical-align: middle;
+	padding: .5rem 0;
+}
+/* horizontal align */
+.text-align_justify:after {
+	content: '';
+	display: inline-block;
+	width: 100%;
+}
+.mat:before, .mat:after {
+	content: '';
+	display: block;
+}
+/*
+ * tables-div
+ */
+/* @media (min-width: 480px) { */
+.table-div {
+	display: table;
+	width: 100%;
+	height: 100%;
+	table-layout: fixed;
+	vertical-align: middle;
+}
+.table-div .table-column-group {
+	background-color: #fafad2
+}
+.border-separate {
+	border-collapse: separate
+}
+.border-collapse {
+	border-collapse: collapse
+}
+.border-collapse [class|="col"] {
+	border-radius: 0 !important
+}
+.table-div > .table-caption,
+.table-div__caption {
+	display: table-caption;
+	caption-side: top
+}
+.table-div > .table-column-group,
+.table-div__colgroup {
+	display: table-column-group
+}
+.table-div .table-column,
+.table-div__col {
+	display: table-column
+}
+.table-div > .table-header,
+.table-div__header {
+	display: table-header-group
+}
+.table-div > .table-footer,
+.table-div__footer {
+	display: table-footer-group
+}
+.table-div > .table-body,
+.table-div__body {
+	display: table-row-group
+}
+/*.table-div [class~=row],*/
+.table-div > .table-row,
+.table-div__row {
+	display: table-row;
+}
+.table-div .table-cell,
+	/*.table-div [class|=col],*/
+.table-div__cell {
+	display: table-cell;
+	float: none;
+	vertical-align: middle;
+}
+.table-div .vertical-align_top {
+	vertical-align: top
+}
+/*.table-div .vertical-align_middle {*/
+/*vertical-align: middle*/
+/*}*/
+.table-div .vertical-align_bottom {
+	vertical-align: bottom
+}
+/*.table-div .row:after,
+.table-div .row:before,
+.table-div__cell.vertical-align_bottom:before,
+.table-div__cell.vertical-align_middle:before,
+.table-div__cell.vertical-align_top:before {
+	content: normal
+}*/
+.table-column:first-child {
+	width: 100%
+}
+.table-column:last-child {
+	width: 100%
+}
+/*}*/
+/**/
+[class*="bg-"] { position: relative; }
+.bg-gradient_radial_white:after {
+	content: '';
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: -moz-radial-gradient(center, ellipse cover, rgba(255, 255, 255, 0.65) 0%, rgba(255, 255, 255, 0) 70%, rgba(255, 255, 255, 0) 100%);
+	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(255, 255, 255, 0.65)), color-stop(70%, rgba(255, 255, 255, 0)), color-stop(100%, rgba(255, 255, 255, 0)));
+	background: -webkit-radial-gradient(center, ellipse cover, rgba(255, 255, 255, 0.65) 0%, rgba(255, 255, 255, 0) 70%, rgba(255, 255, 255, 0) 100%);
+	background: -o-radial-gradient(center, ellipse cover, rgba(255, 255, 255, 0.65) 0%, rgba(255, 255, 255, 0) 70%, rgba(255, 255, 255, 0) 100%);
+	background: -ms-radial-gradient(center, ellipse cover, rgba(255, 255, 255, 0.65) 0%, rgba(255, 255, 255, 0) 70%, rgba(255, 255, 255, 0) 100%);
+	background: radial-gradient(ellipse at center, rgba(255, 255, 255, 0.65) 0%, rgba(255, 255, 255, 0) 70%, rgba(255, 255, 255, 0) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#a6ffffff', endColorstr='#00ffffff', GradientType=1);
+}
+
+/**/
+
+html {
+	font-size: 62.5%;
+	height: 100%;
+}
+body {
+	height: 100%;
+	font-size: 1.876rem;
+	font-family: peugeot, Tahoma, sans-serif;
+	color: #030303;
+}
+/* font-size */
+@media (max-width: 359px) and (min-width: 320px) {
+	html {
+		font-size: 30%;
+	}
+}
+@media (max-width: 414px) and (min-width: 360px) {
+	html {
+		/*font-size 10px*/
+		font-size: 40%;
+	}
+}
+@media (max-width: 479px) and (min-width: 414px) {
+	html {
+		/*font-size 10px*/
+		font-size: 44.64%;
+	}
+}
+@media (max-width: 1024px) and (min-width: 480px) {
+	html {
+		/*font-size 12px*/
+		font-size: 53.57%;
+	}
+}

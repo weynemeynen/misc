@@ -1,0 +1,129 @@
+.modal-content {
+  background-color: rgba(255, 255, 255, 0);
+  outline: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.modal-content, .modal-header {
+  border: none;
+}
+.modal-content > .modal-header > h2 {
+  display: none;
+}
+.modal-header .close {
+  top: 1em;
+  right: 2em;
+  font-size: 3em;
+  position: relative;
+  font-family: initial;
+  color: #fff;
+  z-index: 1;
+}
+/* модальное окно */
+.modal-body__inner {
+  max-width: 494px;
+  min-width: 270px;
+  margin: auto;
+  padding: 1em 4em;
+  color: #fe0;
+  position: relative;
+  overflow: hidden;
+}
+.modal-body__inner:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 1700px;
+  background-image: url(../images/modal-login-bg.png);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  z-index: 0;
+}
+.modal-body__inner .modal-header {
+  padding: 0;
+  margin-bottom: .5em;
+  position: relative;
+}
+.modal-body__inner .btn-link span {
+  border-bottom: 1px solid;
+  line-height: 1.3;
+  display: inline-block;
+  color: #fff;
+}
+.social-group {
+  margin: 0
+}
+.social-group li {
+  display: inline-block;
+  margin: 0 .4em;
+}
+.social-group [class^='icon-']:before {
+  content: '';
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+  background-image: url(../images/icons-social.png);
+}
+.icon-vk:before {
+  background-position: 0 0;
+}
+.icon-fb:before {
+  background-position: -40px 0;
+}
+.icon-ok:before {
+  background-position: -77px 0;
+}
+.modal-body__inner .btn {
+  border: 0;
+  padding: 0;
+}
+.modal-body__inner .btn-default {
+  height: 42px;
+  line-height: 42px;
+  min-width: 160px;
+  font-size: 1.2em;
+  color: #e82f1a;
+  background-image: url("http://localhost:63342/desire/images/btn-bg-left.png");
+  background-repeat: repeat-y;
+  background-color: #ffe000;
+  background-position: left center;
+  border-radius: 6px;
+  text-transform: uppercase;
+  box-shadow: 0 0 3em rgba(0, 0, 0, .6);
+}
+.modal-body__inner .btn-default span {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/btn-bg-right.png");
+  background-position: right center;
+  background-repeat: repeat-y;
+  padding: 0 .5em;
+  font-weight: bold;
+}
+@media (max-width: 480px) {
+  .modal-body__inner {
+    padding: 1em 2em;
+  }
+  .modal-body__inner:before {
+    background-size: contain;
+  }
+}
+@media (min-width: 376px) and (max-width: 667px) {
+  .modal-header .close {
+    right: 2em;
+  }
+}
+@media (min-width: 321px) and (max-width: 375px) {
+  .modal-header .close {
+    right: 1em;
+  }
+}
+@media (max-width: 320px) {
+  .modal-header .close {
+    right: .5em;
+  }
+}

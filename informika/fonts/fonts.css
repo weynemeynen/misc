@@ -1,0 +1,52 @@
+/* font-family: "MyriadProRegular"; */
+@font-face {
+    font-family: "MyriadProRegular";
+    src: url("MyriadProRegular/MyriadProRegular.eot");
+    src: url("MyriadProRegular/MyriadProRegular.eot?#iefix")format("embedded-opentype"),
+    url("MyriadProRegular/MyriadProRegular.woff") format("woff"),
+    url("MyriadProRegular/MyriadProRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+/* font-family: "MyriadProBold"; */
+@font-face {
+    font-family: "MyriadProBold";
+    src: url("MyriadProBold/MyriadProBold.eot");
+    src: url("MyriadProBold/MyriadProBold.eot?#iefix")format("embedded-opentype"),
+    url("MyriadProBold/MyriadProBold.woff") format("woff"),
+    url("MyriadProBold/MyriadProBold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+/* font-family: "MyriadProSemiBold"; */
+@font-face {
+    font-family: "MyriadProSemiBold";
+    src: url("MyriadProSemiBold/MyriadProSemiBold.eot");
+    src: url("MyriadProSemiBold/MyriadProSemiBold.eot?#iefix")format("embedded-opentype"),
+    url("MyriadProSemiBold/MyriadProSemiBold.woff") format("woff"),
+    url("MyriadProSemiBold/MyriadProSemiBold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+/* GothamProBold */
+/* font-family: "GothamProBold"; */
+@font-face {
+    font-family: "GothamProBold";
+    src: url("GothamProBold/GothamProBold.eot");
+    src: url("GothamProBold/GothamProBold.eot?#iefix")format("embedded-opentype"),
+    url("GothamProBold/GothamProBold.woff") format("woff"),
+    url("GothamProBold/GothamProBold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+/* font-family: "GothamProBlack"; */
+@font-face {
+    font-family: "GothamProBlack";
+    src: url("GothamProBlack/GothamProBlack.eot");
+    src: url("GothamProBlack/GothamProBlack.eot?#iefix")format("embedded-opentype"),
+    url("GothamProBlack/GothamProBlack.woff") format("woff"),
+    url("GothamProBlack/GothamProBlack.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}

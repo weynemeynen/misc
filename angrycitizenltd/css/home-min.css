@@ -1,0 +1,1422 @@
+.form-field-error {
+	border-color: #af3232;
+	-webkit-box-shadow: 0 0 0 2px rgba(175, 50, 50, 0.4);
+	-moz-box-shadow: 0 0 0 2px rgba(175, 50, 50, 0.4);
+	box-shadow: 0 0 0 2px rgba(175, 50, 50, 0.4)
+}
+
+.image-replaced {
+	text-indent: 120%;
+	white-space: nowrap;
+	overflow: hidden
+}
+
+.multi-column-clear {
+	-webkit-column-width: auto;
+	-moz-column-width: auto;
+	-o-column-width: auto;
+	column-width: auto;
+	-webkit-column-count: auto;
+	-moz-column-count: auto;
+	-o-column-count: auto;
+	column-count: auto;
+	-webkit-column-gap: normal;
+	-moz-column-gap: normal;
+	-o-column-gap: normal;
+	column-gap: normal
+}
+
+.multi-column-avoid-break {
+	page-break-inside: avoid;
+	-webkit-column-break-inside: avoid;
+	-moz-column-break-inside: avoid;
+	-o-column-break-inside: avoid;
+	column-break-inside: avoid
+}
+
+#tabzilla:after {
+	animation-name: bounce;
+	animation-delay: 1s;
+	animation-duration: .5s;
+	animation-iteration-count: 3;
+	animation-timing-function: ease-in-out
+}
+
+@keyframes bounce {
+	50% {
+		top: 14px
+	}
+}
+
+.go:after {
+	content: ' »';
+	white-space: nowrap
+}
+
+.no-js img.js, .no-js .panel-title {
+	display: none
+}
+
+#wrapper, #main-content, .billboard {
+	width: 100%;
+	padding: 0
+}
+
+#masthead, .container, .newsletter-form {
+	width: 960px;
+	zoom: 1;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 0
+}
+
+#masthead:after, .container:after, .newsletter-form:after {
+	display: block;
+	visibility: hidden;
+	height: 0;
+	clear: both;
+	content: "."
+}
+
+#colophon {
+	margin-top: 0
+}
+
+.mission {
+	font-family: 'Open Sans Light', 'Droid Arabic Naskh', 'Mplus Fulah Light', sans-serif;
+	font-weight: normal;
+	line-height: 1.1;
+	margin: 0 auto 40px;
+	position: relative;
+	text-align: center
+}
+
+.mission h1 {
+	color: #c13832;
+	font-size: 84px;
+	font-weight: bold;
+	letter-spacing: -0.05em;
+	margin: 0 0 .05em
+}
+
+.mission h1 img {
+	margin-bottom: -4px
+}
+
+.mission .tagline {
+	font-size: 55px;
+	letter-spacing: -0.025em;
+	margin: 0
+}
+
+.lang-bg .mission .tagline, .lang-de .mission .tagline, .lang-el .mission .tagline, .lang-es-ES .mission .tagline, .lang-fr .mission .tagline, .lang-it .mission .tagline, .lang-mk .mission .tagline {
+	font-size: 42px
+}
+
+.engage {
+	display: none;
+	margin: 0
+}
+
+.engage .button {
+	border-radius: 6px;
+	font-size: 16px;
+	padding: 10px 20px;
+	text-transform: uppercase
+}
+
+.pillars {
+	background: url(http://mozorg.cdn.mozilla.net/media/img/home/box-shadow-960.png) center bottom no-repeat;
+	padding: 0 0 40px;
+	position: relative;
+	/*max-width: 950px;*/
+	margin: auto;
+}
+
+.wide .pillars {
+	height: 507px /*380px*/;
+}
+
+.accordion {
+	list-style: none;
+	position: relative;
+	top: 0;
+	padding: 0;
+	margin: auto;
+}
+
+.js .accordion {
+	overflow: hidden
+}
+
+.panel {
+	background-color: #777;
+	display: block;
+	margin: 0;
+	position: relative;
+	-webkit-transition: background-position .5s ease-in-out;
+	-moz-transition: background-position .5s ease-in-out;
+	-o-transition: background-position .5s ease-in-out;
+	-ms-transition: background-position .5s ease-in-out;
+	transition: background-position .5s ease-in-out
+}
+
+.panel:focus {
+	outline: 0
+}
+
+.panel.expanded, .panel.compressed {
+	-webkit-transition: background-position .5s ease-in-out;
+	-moz-transition: background-position .5s ease-in-out;
+	-o-transition: background-position .5s ease-in-out;
+	-ms-transition: background-position .5s ease-in-out;
+	transition: background-position .5s ease-in-out
+}
+
+.wide .panel {
+	margin: 0 0 0 -1px;
+	padding: 0;
+	float: left;
+	width: 33.3%;
+	height: 507px /*380px*/;
+	min-height: 0;
+	overflow: hidden;
+	box-shadow: -6px 0 10px -4px rgba(0, 0, 0, 0.5)
+}
+
+.wide .panel:first-child {
+	box-shadow: none
+}
+
+.no-js .panel {
+	min-height: 16em
+}
+
+.panel-title {
+	color: #fff;
+	font-size: 1em;
+	text-align: center;
+	padding: 15px 0;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	margin: 0;
+	font-weight: normal;
+	background-color: #eb3438;
+}
+
+.panel-title:after {
+	content: '|';
+	position: absolute;
+	top: 50%;
+	right: 0;
+	color: white;
+}
+.panel:last-child h2:after {
+	content: normal;
+}
+
+.panel-inner {
+	background-color: rgba(0, 0, 0, 0.1);
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+	-webkit-transition: background-color .5s ease-in-out;
+	-moz-transition: background-color .5s ease-in-out;
+	-o-transition: background-color .5s ease-in-out;
+	-ms-transition: background-color .5s ease-in-out;
+	transition: background-color .5s ease-in-out
+}
+
+.expanded .panel-inner {
+	background-color: transparent;
+	-webkit-transition: background-color .5s ease-in-out;
+	-moz-transition: background-color .5s ease-in-out;
+	-o-transition: background-color .5s ease-in-out;
+	-ms-transition: background-color .5s ease-in-out;
+	transition: background-color .5s ease-in-out
+}
+
+.compressed .panel-inner {
+	background-color: rgba(0, 0, 0, 0.25)
+}
+
+.panel-content {
+	font-family: "Roboto", serif;
+	font-weight: 300;
+	color: #fff;
+	position: relative;
+	text-shadow: 0 1px 0 rgba(0, 0, 0, 0.15)
+}
+
+/* ADD */
+.panel-content__data {
+	font-size: 2.5em;
+	font-weight: bold;
+}
+
+.panel-content__desc {
+	margin-bottom: 1em;
+}
+
+.panel-content .button {
+	position: absolute;
+	bottom: 15%;
+	right: 30%;
+	border: .2em solid #fff;
+	color: #fff;
+	background-color: inherit;
+}
+
+.panel-content h3 {
+	font-weight: bold;
+	font-size: 100%;
+	color: inherit;
+	letter-spacing: -0.03em;
+	margin: 0 0 .25em;
+	text-shadow: 0 1px 0 rgba(0, 0, 0, 0.15);
+	text-transform: uppercase
+}
+
+.panel-content > a {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	padding: 20px 20px 20px 300px
+}
+
+.panel-content a:link, .panel-content a:visited {
+	color: inherit
+}
+
+.panel-content a:hover, .panel-content a:focus, .panel-content a:active {
+	color: inherit;
+	text-decoration: none;
+	outline: 0
+}
+
+.panel-content a:focus .go, .panel-content a:active .go, .panel-content .go:hover {
+	text-decoration: underline
+}
+
+.wide .panel-content {
+	height: 100%;
+	min-height: 0;
+	width: 290px;
+	padding: 40px 40px 40px 316px;
+	position: absolute;
+	top: 0;
+	left: 0
+}
+
+.wide .panel-content > a {
+	padding: 40px 40px 40px 316px;
+}
+
+.js .panel-content {
+	display: none
+}
+
+.no-js .panel-content {
+	min-height: 9.5em;
+	padding: 1em 40px 1em 300px
+}
+
+.extra {
+	background: #c1423d;
+	padding: 40px 0;
+	margin-bottom: 0;
+	color: #fff;
+	text-shadow: 0 1px 0 rgba(0, 0, 0, 0.1)
+}
+
+.extra h2 {
+	font-size: 34px;
+	margin: 0 0 .75em;
+	color: #fff;
+	text-shadow: 0 1px 0 rgba(0, 0, 0, 0.1)
+}
+
+.newsletter-form {
+	float: left;
+	width: 300px;
+	margin: 0 10px;
+	float: right;
+	background: transparent;
+	padding: 0;
+	border: 0;
+	box-shadow: none
+}
+
+#footer-email-form h3 {
+	font-size: 34px;
+	margin: 0 0 .75em;
+	color: #fff;
+	text-shadow: 0 1px 0 rgba(0, 0, 0, 0.1)
+}
+
+#footer-email-form .form-contents, #footer-email-form .form-submit {
+	width: auto;
+	float: none;
+	margin: 0 0 20px
+}
+
+#footer-email-form .field-email input {
+	width: 80%;
+	padding: 10px 5%;
+	border-radius: .5em
+}
+
+#footer-email-form a:link, #footer-email-form a:visited {
+	color: #fff
+}
+
+#footer-email-form .button {
+	width: 90%;
+	padding: 10px 5%
+}
+
+.html-rtl .newsletter-form {
+	float: left
+}
+
+.html-rtl #footer-email-form .form-contents, .html-rtl #footer-email-form .form-submit {
+	float: none
+}
+
+#firefox-promo {
+	margin: 0;
+	border: 0;
+	padding: 20px 0;
+	position: relative
+}
+
+#firefox-promo .container {
+	display: table
+}
+
+#firefox-promo header {
+	display: table-cell;
+	padding: 0 20px 0 0;
+	width: auto;
+	vertical-align: middle
+}
+
+#firefox-promo header a {
+	display: table;
+	width: 100%
+}
+
+#firefox-promo header a:hover, #firefox-promo header a:focus, #firefox-promo header a:active {
+	text-decoration: none
+}
+
+#firefox-promo header h3, #firefox-promo header h4 {
+	display: table-cell;
+	vertical-align: middle
+}
+
+#firefox-promo header h3 {
+	width: 250px
+}
+
+#firefox-promo header h3 img {
+	vertical-align: top
+}
+
+#firefox-promo header h4 {
+	width: auto
+}
+
+#firefox-promo header h4 strong {
+	display: block;
+	margin: 5px 0 0 20px;
+	border: dotted #d6d6d6;
+	border-width: 0 0 0 1px;
+	padding: 5px 0 5px 20px;
+	font-size: 40px;
+	line-height: 1.1;
+	font-weight: normal;
+	letter-spacing: -0.05em;
+	color: #999
+}
+
+#firefox-promo .download-button {
+	display: table-cell;
+	vertical-align: bottom;
+	width: 280px
+}
+
+#firefox-promo .download-link {
+	width: 280px
+}
+
+#firefox-promo .download-content {
+	padding: 15px 20px 15px 65px;
+	background-position: 20px 24px
+}
+
+#firefox-promo .download-title {
+	display: none
+}
+
+#firefox-promo .download-subtitle {
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: bold;
+	display: block;
+	font-size: 18px;
+	line-height: 1.1;
+	letter-spacing: -0.05em;
+	position: static;
+	width: auto;
+	text-align: left
+}
+
+#firefox-promo .download-lang, #firefox-promo .download-platform {
+	font-family: 'Open Sans Light', 'Droid Arabic Naskh', 'Mplus Fulah Light', sans-serif;
+	font-weight: normal;
+	color: #360;
+	display: inline;
+	font-size: 11px;
+	font-weight: bold;
+	text-shadow: 0 1px #9c6
+}
+
+#firefox-promo .download-lang {
+	position: static;
+	text-align: left;
+	width: auto
+}
+
+#firefox-promo .download-platform:before {
+	content: '• '
+}
+
+.html-rtl #firefox-promo header {
+	padding: 0 0 0 20px
+}
+
+.html-rtl #firefox-promo header h4 strong {
+	margin: 5px 20px 0 0;
+	border-width: 0 1px 0 0;
+	padding: 5px 20px 5px 0
+}
+
+.extra-news {
+	float: left;
+	width: 540px;
+	margin: 0 10px
+}
+
+.extra-news .hfeed {
+	list-style: none;
+	margin: 0 0 .5em
+}
+
+.extra-news .hentry {
+	margin: 0 0 1em
+}
+
+.extra-news .entry-title {
+	margin: 0;
+	height: 3.8em;
+	font-size: 20px;
+	line-height: 1.2;
+	font-family: 'Open Sans', 'Droid Arabic Naskh', 'Mplus Fulah', sans-serif
+}
+
+.news-buttons {
+	border-right: 1px solid #ccc;
+	margin-right: 10px
+}
+
+.news-buttons button {
+	background: transparent url(http://mozorg.cdn.mozilla.net/media/img/home/control-arrows.png) no-repeat;
+	border: 0;
+	cursor: pointer;
+	display: inline-block;
+	height: 25px;
+	margin: 0 10px 0 0;
+	overflow: hidden;
+	padding: 0;
+	text-indent: -99em;
+	width: 25px
+}
+
+.news-buttons .btn-next {
+	background-position: -30px 0
+}
+
+.news-buttons .btn-prev {
+	background-position: 0 0
+}
+
+.news-buttons .disabled {
+	opacity: .5
+}
+
+.news-buttons .disabled:hover, .news-buttons .disabled:focus {
+	opacity: .8
+}
+
+.extra-contribute {
+	float: left;
+	width: 540px;
+	margin: 0 10px
+}
+
+.extra-contribute p {
+	font-family: 'Open Sans Light', 'Droid Arabic Naskh', 'Mplus Fulah Light', sans-serif;
+	font-weight: normal;
+	font-size: 20px
+}
+
+.html-rtl .extra-contribute {
+	float: right
+}
+
+.extra-news a:link, .extra-news a:visited, .extra-contribute a:link, .extra-contribute a:visited {
+	color: #fff;
+	text-shadow: 0 1px 0 rgba(0, 0, 0, 0.1)
+}
+
+.extra-contribute a {
+	font-weight: bold
+}
+
+.news-buttons button {
+	background-image: url(http://mozorg.cdn.mozilla.net/media/img/home/control-arrows-lt.png)
+}
+
+/*
+@media only screen and (min-width: 760px) and (max-width: 1000px) {
+	#masthead, .container, .newsletter-form, .mission, .pillars {
+		width: 720px
+	}
+
+	.mission .tagline {
+		font-size: 42px
+	}
+
+	.pillars {
+		background-image: url(http://mozorg.cdn.mozilla.net/media/img/home/box-shadow-760.png);
+		padding-bottom: 32px
+	}
+
+	.panel-title {
+		font-size: 16px;
+		width: 155px
+	}
+
+	.wide .panel-content {
+		font-size: 16px;
+		height: 280px;
+		width: 250px;
+		padding: 80px 20px 20px 200px
+	}
+
+	.wide .panel-content .panel-logo {
+		left: 200px;
+		top: 30px
+	}
+
+	.wide .panel-content .go {
+		font-size: 16px
+	}
+
+	.wide .panel-content > a {
+		padding: 80px 20px 20px 200px
+	}
+
+	.extra-news, .extra-contribute {
+		float: left;
+		width: 400px;
+		margin: 0 10px
+	}
+
+	.extra-download {
+		float: left;
+		width: 280px;
+		margin: 0 10px;
+		float: right
+	}
+
+	.extra-download .download-button {
+		margin: 0 auto
+	}
+
+	.extra .newsletter-form {
+		float: left;
+		width: 280px;
+		margin: 0 10px;
+		float: right
+	}
+
+	.html-rtl .extra .newsletter-form {
+		float: left
+	}
+
+	#firefox-promo .container {
+		width: 720px
+	}
+
+	#firefox-promo header h3 {
+		width: 200px
+	}
+
+	#firefox-promo header h3 img {
+		width: 200px;
+		height: 80px
+	}
+
+	#firefox-promo header h4 strong {
+		font-size: 30px
+	}
+
+	#firefox-promo .download-button, #firefox-promo .download-link {
+		width: 250px
+	}
+}
+*/
+
+/*
+@media only screen and (max-width: 760px) {
+	#masthead, .container, .newsletter-form, .pillars {
+		width: 300px
+	}
+
+	.mission {
+		width: 260px;
+		margin: 20px auto
+	}
+
+	.mission {
+		width: 260px;
+		margin: 20px auto
+	}
+
+	.mission h1 {
+		font-weight: normal;
+		font-size: 36px;
+		text-align: left
+	}
+
+	.mission h1 img {
+		display: block;
+		margin: -0.025em auto 0
+	}
+
+	.mission .tagline {
+		font-size: 30px
+	}
+
+	.lang-bg .mission .tagline, .lang-it .mission .tagline, .lang-fr .mission .tagline, .lang-de .mission .tagline, .lang-el .mission .tagline, .lang-es-ES .mission .tagline, .lang-es-MX .mission .tagline, .lang-es-CL .mission .tagline, .lang-es-AR .mission .tagline {
+		font-size: 24px
+	}
+
+	.pillars {
+		padding-bottom: 13px;
+		background-image: url(http://mozorg.cdn.mozilla.net/media/img/home/box-shadow-320.png)
+	}
+
+	.accordion {
+		width: auto;
+		padding: 0;
+		position: relative;
+		left: 0;
+		overflow: visible;
+		margin: 0
+	}
+
+	.panel {
+		float: none;
+		width: 100%;
+		height: 5.5em;
+		margin: 0;
+		overflow: hidden;
+		position: relative;
+		box-shadow: inset 0 4px 10px -5px rgba(0, 0, 0, 0.75)
+	}
+
+	.panel:first-child {
+		box-shadow: none
+	}
+
+	.panel-inner {
+		background: transparent
+	}
+
+	.panel-title {
+		position: static;
+		width: auto;
+		height: auto;
+		padding: .75em 35px .75em 40%;
+		min-height: 3em;
+		text-align: left;
+		font-size: 16px
+	}
+
+	.panel-title:after {
+		content: '\25bc';
+		position: absolute;
+		right: 18px;
+		top: 35%
+	}
+
+	.panel-content {
+		font-size: 16px;
+		line-height: 1.2;
+		width: 100%;
+		height: 100%
+	}
+
+	.panel-content > a {
+		padding: 20px 20px 20px 40%
+	}
+
+	.panel-content .panel-logo {
+		position: static;
+		display: block;
+		margin-bottom: 10px
+	}
+
+	.no-js .panel {
+		height: auto;
+		min-height: 20em;
+		padding: 0
+	}
+
+	.no-js .panel .panel-content {
+		padding: 0
+	}
+
+	.extra-news, .extra-contribute {
+		width: auto;
+		float: none;
+		margin: 0 10px 20px
+	}
+
+	.extra .newsletter-form {
+		width: auto;
+		float: none;
+		margin: 0 10px 20px
+	}
+
+	#firefox-promo .container {
+		display: block
+	}
+
+	#firefox-promo header {
+		display: block;
+		padding: 0;
+		width: 100%;
+		text-align: center
+	}
+
+	#firefox-promo header a, #firefox-promo header h3, #firefox-promo header h4 {
+		display: block
+	}
+
+	#firefox-promo header h3 {
+		margin: 0;
+		width: 100%
+	}
+
+	#firefox-promo header h3 img {
+		width: auto
+	}
+
+	#firefox-promo header h4 {
+		margin: 5px 0 20px
+	}
+
+	#firefox-promo header h4 strong {
+		margin: 0;
+		border-width: 0;
+		padding: 0;
+		font-size: 30px
+	}
+
+	#firefox-promo .download-button {
+		width: auto;
+		display: block;
+		text-align: center
+	}
+
+	#firefox-promo .download-button .download-link {
+		margin: 0 auto
+	}
+
+	.html-rtl #firefox-promo header {
+		padding: 0
+	}
+
+	.html-rtl #firefox-promo header h4 strong {
+		margin: 0;
+		border-width: 0;
+		padding: 0
+	}
+}
+*/
+
+/*
+@media only screen and (min-width: 480px) and (max-width: 760px) {
+	.pillars {
+		background-image: url(http://mozorg.cdn.mozilla.net/media/img/home/box-shadow-440.png);
+		padding-bottom: 18px
+	}
+
+	#masthead, .container, .pillars {
+		width: 420px
+	}
+}
+*/
+
+.form-field-error {
+	border-color: #af3232;
+	-webkit-box-shadow: 0 0 0 2px rgba(175, 50, 50, 0.4);
+	-moz-box-shadow: 0 0 0 2px rgba(175, 50, 50, 0.4);
+	box-shadow: 0 0 0 2px rgba(175, 50, 50, 0.4)
+}
+
+.image-replaced {
+	text-indent: 120%;
+	white-space: nowrap;
+	overflow: hidden
+}
+
+.multi-column-clear {
+	-webkit-column-width: auto;
+	-moz-column-width: auto;
+	-o-column-width: auto;
+	column-width: auto;
+	-webkit-column-count: auto;
+	-moz-column-count: auto;
+	-o-column-count: auto;
+	column-count: auto;
+	-webkit-column-gap: normal;
+	-moz-column-gap: normal;
+	-o-column-gap: normal;
+	column-gap: normal
+}
+
+.multi-column-avoid-break {
+	page-break-inside: avoid;
+	-webkit-column-break-inside: avoid;
+	-moz-column-break-inside: avoid;
+	-o-column-break-inside: avoid;
+	column-break-inside: avoid
+}
+
+#panel-mission {
+	background: #b30406 url(http://mozorg.cdn.mozilla.net/media/img/home/panel/mission/bg-mission-mosaic.png) -50px -80px no-repeat;
+	background: url(http://mozorg.cdn.mozilla.net/media/img/home/panel/mission/bg-mission-mosaic.png) -50px -80px no-repeat, #b30406 url(http://mozorg.cdn.mozilla.net/media/img/home/panel/mission/bg-mission-cubes.png) repeat
+}
+
+#panel-mission .panel-title i {
+	display: block
+}
+
+.wide #panel-mission .panel-title {
+	background: #821117;
+	background: rgba(185, 24, 26, 0.8);
+	background: -webkit-linear-gradient(bottom, rgba(185, 24, 26, 0.8) 65%, rgba(185, 24, 26, 0) 100%);
+	background: linear-gradient(to top, rgba(185, 24, 26, 0.8) 65%, rgba(185, 24, 26, 0) 100%)
+}
+
+#panel-lightbeam {
+	background: #fe5d63 url("../images/1.png") /*-80px 20px*/ center bottom no-repeat;
+}
+
+#panel-lightbeam .panel-title i {
+	display: block
+}
+
+#panel-lightbeam.expanded {
+	/*	background-position: -50px 20px;
+		background-position: -50px 20px, 0 0;*/
+	background-position: 30px bottom;
+}
+
+#panel-lightbeam.compressed {
+	/*	background-position: -120px 20px;
+		background-position: -120px 20px, 0 0*/
+	background-position: center bottom;
+}
+
+#panel-lightbeam .go {
+	color: #0096dd
+}
+
+/*.wide #panel-lightbeam .panel-title {
+	background: #424f5a;
+	background: rgba(66, 79, 90, 0.8);
+	background: -webkit-linear-gradient(bottom, rgba(66, 79, 90, 0.95) 50%, rgba(66, 79, 90, 0.8) 65%, rgba(66, 79, 90, 0) 100%);
+	background: linear-gradient(to top, rgba(66, 79, 90, 0.95) 50%, rgba(66, 79, 90, 0.8) 65%, rgba(66, 79, 90, 0) 100%)
+}*/
+
+#panel-fxos {
+	/*background: #3ad5be url("../images/2.png") center bottom no-repeat;*/
+	background: #3ad5be url("../images/glad-citizen.png") -130px 30px no-repeat;
+	background-size: cover;
+}
+#panel-fxos.expanded {
+/*	background-position: 30px bottom;*/
+	background-position: -260px 30px;
+	background-size: cover;
+}
+#panel-fxos.compressed {
+	background-position: -165px 30px;
+	background-size: cover;
+}
+
+/*.wide #panel-fxos .panel-title {
+	background: #0095dd;
+	background: rgba(0, 84, 160, 0.8);
+	background: -webkit-linear-gradient(bottom, rgba(0, 84, 160, 0.8) 65%, rgba(0, 84, 160, 0) 100%);
+	background: linear-gradient(to top, rgba(0, 84, 160, 0.8) 65%, rgba(0, 84, 160, 0) 100%)
+}*/
+
+#panel-mdn {
+	background: #0062a9 url(http://mozorg.cdn.mozilla.net/media/img/home/panel/mdn/logo-mdn.png) -25px 40px no-repeat;
+	background: url(http://mozorg.cdn.mozilla.net/media/img/home/panel/mdn/logo-mdn.svg) -25px 40px no-repeat, #0062a9 url(http://mozorg.cdn.mozilla.net/media/img/home/panel/mdn/bg-grid.png?01-09-14)
+}
+
+#panel-mdn .panel-content {
+	color: #fff
+}
+
+#panel-mdn .panel-content .go {
+	color: #fff
+}
+
+#panel-mdn.expanded {
+	background-position: 25px 40px;
+	background-position: 25px 40px, 0 0
+}
+
+#panel-mdn.compressed {
+	background-position: -110px 40px;
+	background-position: -110px 40px, 0 0
+}
+
+.wide #panel-mdn .panel-title {
+	color: #444;
+	background: #fff;
+	background: rgba(255, 255, 255, 0.8);
+	background: -webkit-linear-gradient(bottom, #fff 50%, rgba(255, 255, 255, 0.8) 65%, rgba(255, 255, 255, 0) 100%);
+	background: linear-gradient(to top, #fff 50%, rgba(255, 255, 255, 0.8) 65%, rgba(255, 255, 255, 0) 100%)
+}
+
+#panel-mozfest {
+	background: #ced3d3 url(http://mozorg.cdn.mozilla.net/media/img/home/panel/mozfest/logo-mozfest-big.png) -110px -15px no-repeat;
+	background: url(http://mozorg.cdn.mozilla.net/media/img/home/panel/mozfest/logo-mozfest-big.png) -110px -15px no-repeat, #04364b url(http://mozorg.cdn.mozilla.net/media/img/home/panel/mozfest/bg-mosaic.jpg)
+}
+
+#panel-mozfest .panel-title {
+	color: #04364b;
+	text-shadow: 0 1px 0 #fff
+}
+
+#panel-mozfest .panel-title i {
+	display: block;
+	color: #cb1b1d
+}
+
+#panel-mozfest .panel-content {
+	color: #fff;
+	background: transparent url(http://mozorg.cdn.mozilla.net/media/img/home/panel/mozfest/bg-content.png?04-11-13) 230px 0 no-repeat
+}
+
+#panel-mozfest .panel-content h3 {
+	color: #ff3946
+}
+
+#panel-mozfest .panel-content .go {
+	color: #21aed9
+}
+
+#panel-mozfest.expanded {
+	background-position: -80px -15px;
+	background-position: -80px -15px, 0 0
+}
+
+#panel-mozfest.compressed {
+	background-position: -170px -15px;
+	background-position: -170px -15px, 0 0
+}
+
+.wide #panel-mozfest .panel-title {
+	background: #ced3d3;
+	background: rgba(206, 211, 211, 0.8);
+	background: -webkit-linear-gradient(bottom, rgba(206, 211, 211, 0.95) 50%, rgba(206, 211, 211, 0.85) 65%, rgba(206, 211, 211, 0) 100%);
+	background: linear-gradient(to top, rgba(206, 211, 211, 0.95) 50%, rgba(206, 211, 211, 0.85) 65%, rgba(206, 211, 211, 0) 100%)
+}
+
+#panel-webmaker {
+	background: #2dcbe8 url("../images/3.png") /*-95px 15px*/ center bottom no-repeat;
+}
+/*#panel-webmaker .panel-title {
+	color: #c93833
+}*/
+
+#panel-webmaker .panel-content {
+	color: #12ab86
+}
+
+#panel-webmaker .panel-content h3 {
+	color: #c93833
+}
+
+#panel-webmaker .panel-content .go {
+	color: #0090bc
+}
+
+#panel-webmaker.expanded {
+	background-position: 30px bottom /*-40px 15px*/;
+}
+
+#panel-webmaker.compressed {
+	background-position: center bottom /*-150px 15px*/;
+}
+
+/*.wide #panel-webmaker .panel-title {
+	background: #e1ebed;
+	background: rgba(225, 235, 237, 0.8);
+	background: -webkit-linear-gradient(bottom, rgba(225, 235, 237, 0.8) 65%, rgba(225, 235, 237, 0) 100%);
+	background: linear-gradient(to top, rgba(225, 235, 237, 0.8) 65%, rgba(225, 235, 237, 0) 100%)
+}*/
+/*
+
+@media (-webkit-min-device-pixel-ratio: 1.5),(min-resolution: 1.5dppx),(min-resolution: 144dpi) {
+	#panel-lightbeam {
+		background-image: url(http://mozorg.cdn.mozilla.net/media/img/home/panel/lightbeam/logo-lightbeam-hires.png);
+		background-image: url(http://mozorg.cdn.mozilla.net/media/img/home/panel/lightbeam/logo-lightbeam-hires.png), url(http://mozorg.cdn.mozilla.net/media/img/home/panel/lightbeam/bg-lightbeam.jpg);
+		background-size: 340px 340px;
+		background-size: 340px 340px, auto auto
+	}
+
+	#panel-fxos {
+		background-image: url(http://mozorg.cdn.mozilla.net/media/img/home/panel/firefoxos/firefoxos-fox-hires.png);
+		background-size: 335px 468px
+	}
+
+	#panel-mozfest {
+		background-image: url(http://mozorg.cdn.mozilla.net/media/img/home/panel/mozfest/logo-mozfest-big-hires.png);
+		background-image: url(http://mozorg.cdn.mozilla.net/media/img/home/panel/mozfest/logo-mozfest-big-hires.png), url(http://mozorg.cdn.mozilla.net/media/img/home/panel/mozfest/bg-mosaic.jpg);
+		background-size: 360px 360px;
+		background-size: 360px 360px, auto auto
+	}
+}
+
+@media only screen and (min-width: 760px) and (max-width: 1000px) {
+	#panel-mission {
+		background-position: -80px -50px;
+		background-position: -80px -50px, 0 0
+	}
+
+	#panel-mission.expanded, #panel-mission.compressed {
+		background-position: -120px -50px;
+		background-position: -120px -50px, 0 0
+	}
+
+	#panel-lightbeam {
+		background-image: url(http://mozorg.cdn.mozilla.net/media/img/home/panel/lightbeam/logo-lightbeam-md.png);
+		background-image: url(http://mozorg.cdn.mozilla.net/media/img/home/panel/lightbeam/logo-lightbeam-md.png), url(http://mozorg.cdn.mozilla.net/media/img/home/panel/lightbeam/bg-lightbeam.jpg);
+		background-position: -50px 20px;
+		background-position: -50px 20px, 0 0
+	}
+
+	#panel-lightbeam.expanded {
+		background-position: -90px 20px;
+		background-position: -90px 20px, 0 0
+	}
+
+	#panel-lightbeam.compressed {
+		background-position: -120px 20px;
+		background-position: -120px 20px, 0 0
+	}
+
+	#panel-fxos {
+		background-image: url(http://mozorg.cdn.mozilla.net/media/img/home/panel/firefoxos/firefoxos-fox-md.png?04-11-13);
+		background-position: -115px -70px
+	}
+
+	#panel-fxos.expanded {
+		background-position: -95px -70px
+	}
+
+	#panel-fxos.compressed {
+		background-position: -135px -70px
+	}
+
+	#panel-mdn {
+		background-position: -90px 40px;
+		background-position: -90px 40px, 0 0
+	}
+
+	#panel-mdn.expanded {
+		background-position: -60px 40px;
+		background-position: -60px 40px, 0 0
+	}
+
+	#panel-mdn.compressed {
+		background-position: -130px 40px;
+		background-position: -130px 40px, 0 0
+	}
+
+	#panel-mozfest .panel-content {
+		background-position: 140px 0
+	}
+
+	#panel-webmaker {
+		background-image: url(http://mozorg.cdn.mozilla.net/media/img/home/panel/webmaker/logo-webmaker-md.png);
+		background-position: -80px 25px
+	}
+
+	#panel-webmaker.expanded {
+		background-position: -100px 25px
+	}
+
+	#panel-webmaker.compressed {
+		background-position: -130px 25px
+	}
+}
+
+@media only screen and (min-width: 760px) and (max-width: 1000px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-width: 760px) and (max-width: 1000px) and (min-resolution: 1.5dppx), only screen and (min-width: 760px) and (max-width: 1000px) and (min-resolution: 144dpi) {
+	#panel-fxos {
+		background-image: url(http://mozorg.cdn.mozilla.net/media/img/home/panel/firefoxos/firefoxos-fox-md-hires.png);
+		background-size: 290px 390px
+	}
+
+	#panel-lightbeam {
+		background-image: url(http://mozorg.cdn.mozilla.net/media/img/home/panel/lightbeam/logo-lightbeam-md-hires.png);
+		background-image: url(http://mozorg.cdn.mozilla.net/media/img/home/panel/lightbeam/logo-lightbeam-md-hires.png), url(http://mozorg.cdn.mozilla.net/media/img/home/panel/lightbeam/bg-lightbeam.jpg);
+		background-size: 275px 275px;
+		background-size: 275px 275px, auto auto
+	}
+}
+
+@media only screen and (max-width: 760px) {
+	#panel-mission {
+		background-image: url(http://mozorg.cdn.mozilla.net/media/img/home/panel/mission/bg-mission-mosaic-sm.png);
+		background-image: url(http://mozorg.cdn.mozilla.net/media/img/home/panel/mission/bg-mission-mosaic-sm.png), url(http://mozorg.cdn.mozilla.net/media/img/home/panel/mission/bg-mission-cubes.png);
+		background-position: -122px -45px;
+		background-position: -122px -45px, 0 0
+	}
+
+	#panel-mission.expanded {
+		background-position: -122px -20px;
+		background-position: -122px -20px, 0 0
+	}
+
+	#panel-lightbeam {
+		background-image: url(http://mozorg.cdn.mozilla.net/media/img/home/panel/lightbeam/logo-lightbeam-sm.png);
+		background-image: url(http://mozorg.cdn.mozilla.net/media/img/home/panel/lightbeam/logo-lightbeam-sm.png), url(http://mozorg.cdn.mozilla.net/media/img/home/panel/lightbeam/bg-lightbeam.jpg);
+		background-position: -50px -50px;
+		background-position: -50px -50px, 0 0
+	}
+
+	#panel-lightbeam.expanded {
+		background-position: -50px 20px;
+		background-position: -50px 20px, 0 0
+	}
+
+	#panel-lightbeam.compressed {
+		background-position: -50px -65px;
+		background-position: -50px -65px, 0 0
+	}
+
+	#panel-fxos {
+		background-image: url(http://mozorg.cdn.mozilla.net/media/img/home/panel/firefoxos/firefoxos-fox-sm.png?04-11-13);
+		background-position: -85px -95px
+	}
+
+	#panel-fxos.expanded {
+		background-position: -85px -30px
+	}
+
+	#panel-fxos.compressed {
+		background-position: -85px -110px
+	}
+
+	#panel-mdn {
+		background-image: url(http://mozorg.cdn.mozilla.net/media/img/home/panel/mdn/logo-mdn-sm.png);
+		background-image: url(http://mozorg.cdn.mozilla.net/media/img/home/panel/mdn/logo-mdn.svg), url(http://mozorg.cdn.mozilla.net/media/img/home/panel/mdn/bg-grid.png?01-09-14);
+		background-position: -20px -10px;
+		background-position: -20px -10px, -350px 0;
+		background-size: 120px 105px, auto auto
+	}
+
+	#panel-mdn.expanded {
+		background-position: -20px 25px;
+		background-position: -20px 25px, -350px 0
+	}
+
+	#panel-mdn.compressed {
+		background-position: -20px -15px;
+		background-position: -20px -15px, -350px 0
+	}
+
+	#panel-mdn .panel-title i {
+		color: inherit
+	}
+
+	#panel-mozfest {
+		background-image: url(http://mozorg.cdn.mozilla.net/media/img/home/panel/mozfest/logo-mozfest-sm.png);
+		background-image: url(http://mozorg.cdn.mozilla.net/media/img/home/panel/mozfest/logo-mozfest-sm.png), url(http://mozorg.cdn.mozilla.net/media/img/home/panel/mozfest/bg-mosaic.jpg);
+		background-position: -60px -35px;
+		background-position: -60px -35px, 0 0
+	}
+
+	#panel-mozfest .panel-content {
+		background-position: 70px 0
+	}
+
+	#panel-mozfest .panel-title i {
+		color: inherit
+	}
+
+	#panel-mozfest.expanded {
+		background-position: -60px 20px;
+		background-position: -60px 20px, 0 0
+	}
+
+	#panel-mozfest.compressed {
+		background-position: -60px -40px;
+		background-position: -60px -40px, 0 0
+	}
+
+	#panel-webmaker {
+		background-image: url(http://mozorg.cdn.mozilla.net/media/img/home/panel/webmaker/logo-webmaker-sm.png);
+		background-position: -50px -40px
+	}
+
+	#panel-webmaker.expanded {
+		background-position: -50px 10px
+	}
+
+	#panel-webmaker.compressed {
+		background-position: -50px -60px
+	}
+}
+
+@media only screen and (min-width: 480px) and (max-width: 760px) {
+	#panel-mission {
+		background-position: -80px -45px;
+		background-position: -80px -45px, 0 0
+	}
+
+	#panel-mission.expanded {
+		background-position: -80px -20px;
+		background-position: -80px -20px, 0 0
+	}
+
+	#panel-lightbeam {
+		background-image: url(http://mozorg.cdn.mozilla.net/media/img/home/panel/lightbeam/logo-lightbeam-sm.png);
+		background-image: url(http://mozorg.cdn.mozilla.net/media/img/home/panel/lightbeam/logo-lightbeam-sm.png), url(http://mozorg.cdn.mozilla.net/media/img/home/panel/lightbeam/bg-lightbeam.jpg);
+		background-position: -10px -50px;
+		background-position: -10px -50px, 0 0
+	}
+
+	#panel-lightbeam.expanded {
+		background-position: -10px 20px;
+		background-position: -10px 20px, 0 0
+	}
+
+	#panel-lightbeam.compressed {
+		background-position: -10px -65px;
+		background-position: -10px -65px, 0 0
+	}
+
+	#panel-fxos {
+		background-position: -40px -95px
+	}
+
+	#panel-fxos.expanded {
+		background-position: -40px -30px
+	}
+
+	#panel-fxos.compressed {
+		background-position: -40px -110px
+	}
+
+	#panel-mdn {
+		background-position: 10px -20px;
+		background-position: 10px -20px, -250px 0;
+		background-size: 130px 115px, auto auto
+	}
+
+	#panel-mdn.expanded {
+		background-position: 10px 25px;
+		background-position: 10px 25px, -250px 0
+	}
+
+	#panel-mdn.compressed {
+		background-position: 10px -25px;
+		background-position: 10px -25px, -250px 0
+	}
+
+	#panel-mozfest {
+		background-position: -15px -35px;
+		background-position: -15px -35px, 0 0
+	}
+
+	#panel-mozfest .panel-content {
+		background-position: 110px 0
+	}
+
+	#panel-mozfest .panel-title i {
+		color: inherit
+	}
+
+	#panel-mozfest.expanded {
+		background-position: -15px 20px;
+		background-position: -15px 20px, 0 0
+	}
+
+	#panel-mozfest.compressed {
+		background-position: -15px -40px;
+		background-position: -15px -40px, 0 0
+	}
+
+	#panel-webmaker {
+		background-position: -15px -40px
+	}
+
+	#panel-webmaker.expanded {
+		background-position: -15px 10px
+	}
+
+	#panel-webmaker.compressed {
+		background-position: -15px -60px
+	}
+}
+
+@media only screen and (max-width: 760px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 760px) and (min-resolution: 1.5dppx), only screen and (max-width: 760px) and (min-resolution: 144dpi) {
+	#panel-lightbeam {
+		background-image: url(http://mozorg.cdn.mozilla.net/media/img/home/panel/lightbeam/logo-lightbeam-sm-hires.png);
+		background-image: url(http://mozorg.cdn.mozilla.net/media/img/home/panel/lightbeam/logo-lightbeam-sm-hires.png), url(http://mozorg.cdn.mozilla.net/media/img/home/panel/lightbeam/bg-lightbeam.jpg);
+		background-size: 158px 158px;
+		background-size: 158px 158px, auto auto
+	}
+
+	#panel-fxos {
+		background-image: url(http://mozorg.cdn.mozilla.net/media/img/home/panel/firefoxos/firefoxos-fox-sm-hires.png);
+		background-size: 190px 246px
+	}
+
+	#panel-mozfest {
+		background-image: url(http://mozorg.cdn.mozilla.net/media/img/home/panel/mozfest/logo-mozfest-sm-hires.png);
+		background-image: url(http://mozorg.cdn.mozilla.net/media/img/home/panel/mozfest/logo-mozfest-sm-hires.png), url(http://mozorg.cdn.mozilla.net/media/img/home/panel/mozfest/bg-mosaic.jpg);
+		background-size: 170px 170px;
+		background-size: 170px 170px, auto auto
+	}
+}
+*/

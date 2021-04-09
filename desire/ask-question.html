@@ -1,0 +1,307 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Степановна</title>
+	<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+	<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css"/>
+	<link rel="stylesheet" href="css/bootstrap-datetimepicker.css">
+	<link rel="stylesheet" href="css/_bootstrap.css"/>
+	<!-- <link rel="stylesheet/less" href="less/_bootstrap.less"> --><!--<script src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.5.0/less.min.js"></script>-->
+	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries --><!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+	<link rel="stylesheet" href="css/ie.css"/>
+	<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+	<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script><![endif]-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+	<script src="js/popup-control.js"></script>
+	<script src="js/jquery-css-transform.js"></script>
+	<script src="js/rotate3Di.js"></script>
+	<script src="node_modules/moment/moment.js"></script>
+	<script src="js/bootstrap-datetimepicker.js"></script>
+</head>
+<body>
+<div class="bg-layer bg-layer_size_in bg-layer_color_orange"></div>
+<header>
+	<div class="container">
+		<div class="col-xs-3 text-right">
+			<a href="http://xn--80aafk5bbffqk.xn--p1ai/" class="logo"> <img src="images/logo.png" class="img-responsive" alt="Степановна"/></a>
+		</div>
+		<div class="col-xs-9">
+			<div class="social">
+				<a href="https://vk.com/club87894296" target="_blank"><img src="images/ico-vk.png"></a>
+			</div>
+			<nav class="navbar navbar-default" role="navigation">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#nav__menu">
+						<span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span>
+					</button>
+					<!--<a class="navbar-brand" href="#">Brand</a>-->
+				</div>
+				<div class="navbar-collapse collapse" id="nav__menu">
+					<ul class="nav navbar-nav">
+						<li><a href="index.html">Главная</a></li>
+						<!--<li><a href="prizes.html">Призы</a></li>-->
+						<li><a href="winners.html">Победители</a></li>
+						<li><a href="rules.html">Правила</a></li>
+						<li class="active"><a href="ask-question.html">Вопрос-ответ</a></li>
+						<li><a href="index.html">Войти</a></li>
+						<li><a href="index.html" class="login">Андрей <span class="icon-arrow-login"></span></a></li>
+					</ul>
+				</div>
+			</nav>
+		</div>
+	</div>
+	</div>
+</header>
+<section class="header">
+	<div class="container text-center">
+		<div class="flipper-top flipper_size_big flipper-top_ask-question">
+			<div class="flipper-top__front">
+				<div class="display-inline">
+					<span>Вопрос-ответ</span>
+					<span class="initialism">по акции «Нащелкай на мечту!»</span>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="tables table__ask-question container text-center">
+	<div class="row">
+		<div class="col-sm-12">
+			<button type="button" class="btn btn-default" value="Задать вопрос" data-toggle="modal" data-target="#popup" data-popup-header="Задать вопрос" data-popup-url="htmls/ask-question.html">
+				<span>Задать вопрос</span>
+			</button>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm-12">
+			<div id="help" class="table table-striped text-left" role="tablist" aria-multiselectable="true">
+				<div class="panel">
+					<h4 class="ask" data-toggle="collapse" data-parent="#help" aria-expanded="true" role="tab" aria-controls="1" data-target="#1">
+						<span class="glyphicon glyphicon-chevron-down"></span>&nbsp;СКОЛЬКО ДЛИТСЯ АКЦИЯ?</h4>
+					<p class="collapse in" role="tabpanel" id="1">Общий срок проведения акции (регистрация кодов и награждение победителей): с 01 июня 2015 года по 31 октября 2015
+						года (включительно). Регистрация кодов производится в период с 00 часов 00 минут 00 секунд 01 июня 2015 года до 23 часов 59 минут 59 секунд (включительно) по
+						31 августа 2015 года по московскому времени</p>
+				</div>
+				<div class="panel">
+					<h4 class="ask" data-toggle="collapse" data-parent="#help" aria-expanded="false" role="tab" aria-controls="2" data-target="#2">
+						<span class="glyphicon glyphicon-chevron-right"></span>&nbsp;КТО МОЖЕТ ПРИНИМАТЬ УЧАСТИЕ В АКЦИИ?</h4>
+					<p class="collapse" role="tabpanel" id="2">
+						По правилам акции участником может быть физическое лицо от 14 лет, являющееся – гражданином Российской Федерации, за исключением работников и представителей
+						Организатора, аффилированным с ними лицам, членам семей таких работников и представителей. </p>
+				</div>
+				<div class="panel">
+					<h4 class="ask" data-toggle="collapse" data-parent="#help" aria-expanded="false" data-target="#3">
+						<span class="glyphicon glyphicon-chevron-right"></span>&nbsp;КАК ПРИНЯТЬ УЧАСТИЕ В АКЦИИ?</h4>
+					<p class="collapse" role="tabpanel" id="3">
+						Для участия в акции и получения призов Вам необходимо совершить следующие действия: в любой точке продаж семечек ТМ Степановна (далее по тексту «Товар»)
+						приобрести Товар в упаковке со специальным акционным дизайном, содержащем наименование акции и информацию об акции. Внутри упаковки Товара найти уникальный
+						код и в период с 01 июня по 31 августа 2015 года зарегистрировать найденный код на сайте www.степановна.рф или путем отправки с мобильного номера телефона
+						СМС-сообщения, содержащего код формата СТЕХХХХХХХ, на номер 2420. </p>
+				</div>
+				<div class="panel">
+					<h4 class="ask" data-toggle="collapse" data-parent="#help" aria-expanded="false" data-target="#4">
+						<span class="glyphicon glyphicon-chevron-right"></span>&nbsp;СКОЛЬКО СТОИТ СМС?</h4>
+					<p class="collapse" role="tabpanel" id="4">
+						Стоимость отправки одного СМС-сообщения на номер 2420 для абонента составляет не более 1,руб.77 коп без НДС. Точную стоимость уточняйте у своего сотового
+						оператора. </p>
+				</div>
+				<div class="panel">
+					<h4 class="ask" data-toggle="collapse" data-parent="#help" aria-expanded="false" data-target="#5">
+						<span class="glyphicon glyphicon-chevron-right"></span>&nbsp;КАК ЗАРЕГИСТРИРОВАТЬСЯ НА САЙТЕ АКЦИИ?</h4>
+					<p class="collapse" role="tabpanel" id="5">
+						Зарегистрироваться на сайте можно с помощью формы регистрации на главной странице или с помощью одной из трех социальных сетей: facebook.com, vk.com,
+						odnoklassniki.ru. При регистрации необходимо заполнить все поля регистрационной формы.После заполнения формы регистрации Вы получите информацию для доступа
+						(логин и пароль) на указанный при регистрации e - mail адрес. В случае, если Вы регистрируетесь с использованием аккаунта соцсети, авторизоваться на сайте в
+						дальнейшем Вы сможете только с использованием выбранного аккаунта соцсети – отдельного логина/пароля у вас не будет. Поэтому не удаляйте использованный для
+						регистрации аккаунт до окончания акции. При регистрации необходимо вводить корректные данные, в случае, если Вы введете некорректный e - mail или номер
+						телефона, Вы не сможете зарегистрироваться и продолжить участие в акции. Правильно введенные данные ( номер телефона, e - mail ) предоставляют возможность
+						уведомить Вас в случае выигрыша. </p>
+				</div>
+				<div class="panel">
+					<h4 class="ask" data-toggle="collapse" data-parent="#help" aria-expanded="false" data-target="#6">
+						<span class="glyphicon glyphicon-chevron-right"></span>&nbsp;КАК ВОЙТИ НА САЙТ, ЕСЛИ Я УЖЕ ПРИСЫЛАЛ КОД ЧЕРЕЗ SMS ?</h4>
+					<p class="collapse" role="tabpanel" id="6">
+						Если свой первый код Вы активировали через SMS , в ответном SMS –сообщении Вам был отправлен логин и пароль для доступа на сайт. Используйте их для входа в
+						личный кабинет. Также при первом входе на сайт система предложит Вам заполнить регистрационную форму, что необходимо будет сделать, для того, чтобы иметь
+						возможность в дальнейшем активировать коды не только через SMS , но и через сайт акции. Если Вы утратили данные с логином и паролем отправьте запрос CTEPASS
+						на номер 24 20 (стоимость не более 1 руб.77 коп без НДС), и Вам придет ответная SMS c Вашим логином и паролем. </p>
+				</div>
+				<div class="panel">
+					<h4 class="ask" data-toggle="collapse" data-parent="#help" aria-expanded="false" data-target="#7">
+						<span class="glyphicon glyphicon-chevron-right"></span>&nbsp;Я ПОТЕРЯЛ ЛОГИН/ПАРОЛЬ ДЛЯ ДОСТУПА К САЙТУ, ЧТО ДЕЛАТЬ?</h4>
+					<p class="collapse" role="tabpanel" id="7">
+						Если Вы регистрировались на сайте и Ваш первый код в Акции был зарегистрирован через сайт, воспользуйтесь ссылкой «Восстановить пароль» в форме входа на сайт
+						(ссылка «Войти» в главном меню сайта) и информация о логине/пароле будет отправлена Вам на e - mail , указанный при регистрации. Если Ваш первый код был
+						зарегистрирован через SMS , отправьте запрос CTEPASS на номер 24 20 (стоимость не более 1 руб.77 коп без НДС), и Вам придет ответная SMS c Вашим логином и
+						паролем. Если Вы регистрировались на сайте с использованием аккаунта соцсети, то логин/пароль Вам не нужен, Вы можете входить на сайт с использованием данного
+						аккаунта. </p>
+				</div>
+				<div class="panel">
+					<h4 class="ask" data-toggle="collapse" data-parent="#help" aria-expanded="false" data-target="#8">
+						<span class="glyphicon glyphicon-chevron-right"></span>&nbsp;Я ВВЕЛ НЕПРАВИЛЬНЫЙ E - MAIL / ТЕЛЕФОН ПРИ РЕГИСТРАЦИИ, ЧТО ДЕЛАТЬ?</h4>
+					<p class="collapse" role="tabpanel" id="8">
+						Пожалуйста, напишите в службу поддержки support @@степановна.рф Обязательно укажите в письме свои остальные регистрационные данные и напишите, что именно Вы
+						указали с ошибкой. </p>
+				</div>
+				<div class="panel">
+					<h4 class="ask" data-toggle="collapse" data-parent="#help" aria-expanded="false" data-target="#9">
+						<span class="glyphicon glyphicon-chevron-right"></span>&nbsp;КАК ЗАРЕГИСТРИРОВАТЬ КОД?</h4>
+					<p class="collapse" role="tabpanel" id="9">
+						Для регистрации кода на сайте Вам необходимо авторизоваться на сайте указав свой логин и пароль, либо зарегистрироваться посредством формы регистрации. Также
+						у Вас есть возможность регистрироваться или авторизоваться на сайте через одну из трех социальных сетей: facebook.com, vk.com, odnoklassniki.ru.
+						Зарегистрировать код на сайте можно только после прохождения регистрации. Также зарегистрировать код можно, отправив СМС на короткий номер 2420. Формат SMS
+						сообщения: СТЕХХХХХХХ </p>
+				</div>
+				<div class="panel">
+					<h4 class="ask" data-toggle="collapse" data-parent="#help" aria-expanded="false" data-target="#10">
+						<span class="glyphicon glyphicon-chevron-right"></span>&nbsp;НЕ ПОЛУЧАЕТСЯ ЗАРЕГИСТРИРОВАТЬ КОД</h4>
+					<p class="collapse" role="tabpanel" id="10">
+						Пожалуйста, напишите нам об этом на адрес support @@степановна.рф с пошаговым описанием Ваших действий и укажите название и версию браузера, которой Вы
+						пользуетесь. </p>
+				</div>
+				<div class="panel">
+					<h4 class="ask" data-toggle="collapse" data-parent="#help" aria-expanded="false" data-target="#11">
+						<span class="glyphicon glyphicon-chevron-right"></span>&nbsp;КАК МНЕ ПОСМОТРЕТЬ КОЛИЧЕСТВО КОДОВ , КОТОРЫЕ Я ЗАРЕГИСТРИРОВАЛ В АКЦИИ?</h4>
+					<p class="collapse" role="tabpanel" id="11">
+						Вы можете получить эту информацию в личном кабинете на сайте акция.степановна.рф Для того, чтобы получить доступ к личному кабинету, Вам необходимо
+						зарегистрироваться на сайте. Если Вы уже начали активировать коды через СМС, пожалуйста, указывайте при регистрации тот же номер телефона, с которого Вы
+						отправляли предыдущие коды – тогда они также будут засчитаны Вам как участнику </p>
+				</div>
+				<div class="panel">
+					<h4 class="ask" data-toggle="collapse" data-parent="#help" aria-expanded="false" data-target="#12">
+						<span class="glyphicon glyphicon-chevron-right"></span>&nbsp;НЕ МОГУ РАСПОЗНАТЬ КОД В УПАКОВКЕ. ЧТО ДЕЛАТЬ? </h4>
+					<p class="collapse" role="tabpanel" id="12">
+						Пришлите письмо на адрес support @@степановна.рф с указанием проблемы. Приложите фото промо кода с упаковки в хорошем качестве, и мы постараемся Вам
+						помочь. </p>
+				</div>
+				<div class="panel">
+					<h4 class="ask" data-toggle="collapse" data-parent="#help" aria-expanded="false" data-target="#13">
+						<span class="glyphicon glyphicon-chevron-right"></span>&nbsp;СКОЛЬКО КОДОВ МОЖНО ЗАРЕГИСТРИРОВАТЬ?</h4>
+					<p class="collapse" role="tabpanel" id="13">
+						В целях исключения злоупотреблений, Вы не можете зарегистрировать более 4 (Четырех) кодов в течение одного дня в период проведения акции, суммарно посредством
+						смс и на сайте www. степановна.рф. Других ограничений по количеству кодов, регистрируемых за весь период акции, нет. </p>
+				</div>
+				<div class="panel">
+					<h4 class="ask" data-toggle="collapse" data-parent="#help" aria-expanded="false" data-target="#14">
+						<span class="glyphicon glyphicon-chevron-right"></span>&nbsp;ПОЧЕМУ МЕНЯ ЗАБЛОКИРОВАЛИ? ЧТО МНЕ ДЕЛАТЬ?</h4>
+					<p class="collapse" role="tabpanel" id="14">
+						Если Вы ввели подряд 5 (Пять) неверных кодов в строке ввода кодов на Сайте или присылали 5 (Пять) сообщений SMS подряд, содержащих неправильный код, Вы
+						блокируетесь от участия в акции на 24 (двадцать четыре) часа. Вы сможете продолжить участвовать в Акции по окончании этого срока. </p>
+				</div>
+				<div class="panel">
+					<h4 class="ask" data-toggle="collapse" data-parent="#help" aria-expanded="false" data-target="#15">
+						<span class="glyphicon glyphicon-chevron-right"></span>&nbsp;СКОЛЬКО КОДОВ МНЕ НУЖНО ЗАРЕГИСТРИРОВАТЬ, ЧТОБЫ ВЫИГРАТЬ ПРИЗ?</h4>
+					<p class="collapse" role="tabpanel" id="15">
+						Для участия в розыгрыше приза любого уровня Вам достаточно зарегистрировать 1 код. Каждый зарегистрированный код участвует в розыгрыше приза Чем больше Вы
+						регистрируете кодов в течение Акции, тем у Вас больше шансов выиграть приз. Но не забывайте, что за один день Вы можете зарегистрировать не более 4 (Четырех)
+						кодов в течение одного дня в период проведения акции, суммарно посредством смс и на сайте www. степановна.рф. </p>
+				</div>
+				<div class="panel">
+					<h4 class="ask" data-toggle="collapse" data-parent="#help" aria-expanded="false" data-target="#16">
+						<span class="glyphicon glyphicon-chevron-right"></span>&nbsp;КАКИЕ ПРИЗЫ Я МОГУ ПОЛУЧИТЬ?</h4>
+					<p class="collapse" role="tabpanel" id="16">
+						В акции участвуют призы следующих уровней: Приз первого уровня: Денежный приз на покупку автомобиля 600 000 рублей один приз за весь период акции. Приз
+						второго уровня: Денежный приз на покупку планшета 20 000 рублей - 90 призов за весь период акции. Приз третьего уровня: 100 рублей на телефон – 9200 призов за
+						весь период акции. </p>
+				</div>
+				<div class="panel">
+					<h4 class="ask" data-toggle="collapse" data-parent="#help" aria-expanded="false" data-target="#17">
+						<span class="glyphicon glyphicon-chevron-right"></span>&nbsp;НАДО ЛИ ПЛАТИТЬ НАЛОГИ ЗА ПРИЗ?</h4>
+					<p class="collapse" role="tabpanel" id="17">
+						В случае если вы выиграли приз номиналом более 4000 (четырех тысяч) рублей, оператор акции исчисляет, удерживает и перечисляет в налоговый орган налог в
+						размере 35% (тридцать пять процентов) от стоимости приза , а также подает сведения о победителях в налоговый орган в соответствии с налоговым
+						законодательством РФ. </p>
+				</div>
+				<div class="panel">
+					<h4 class="ask" data-toggle="collapse" data-parent="#help" aria-expanded="false" data-target="#18">
+						<span class="glyphicon glyphicon-chevron-right"></span>&nbsp;КАК ОПРЕДЕЛЯЮТСЯ ПОБЕДИТЕЛИ?</h4>
+					<p class="collapse" role="tabpanel" id="18">
+						В соответствии с Правилами Акции: обладателем Главного приза становится участник, зарегистрировавший 100 000 код в рамках Акции обладателем призов второго
+						уровня становится участник, зарегистрировавший каждый 2 000 код в рамках Акции обладателем призов третьего уровня становится участник зарегистрировавший
+						каждый 10 код в рамках Акции Подробные правила определения победителей изложены в Полных правилах Акции, п 4 ( ссылка на страницу с Полными правилами
+						Акции) </p>
+				</div>
+				<div class="panel">
+					<h4 class="ask" data-toggle="collapse" data-parent="#help" aria-expanded="false" data-target="#19">
+						<span class="glyphicon glyphicon-chevron-right"></span>&nbsp;КАК Я УЗНАЮ, ЧТО Я ВЫИГРАЛ ПРИЗ?</h4>
+					<p class="collapse" role="tabpanel" id="19">
+						В случае выигрыша приза кодом, зарегистрированным Вами через СМС, Вы получите СМС уведомление на номер, с которого был зарегистрирован код. В случае, если
+						приз будет выигран кодом, зарегистрированным через сайт, Вы получите уведомление о выигрыше на e - mail , указанный при регистрации. </p>
+				</div>
+				<div class="panel">
+					<h4 class="ask" data-toggle="collapse" data-parent="#help" aria-expanded="false" data-target="#20">
+						<span class="glyphicon glyphicon-chevron-right"></span>&nbsp;МНЕ ПРИШЛО СМС, ЧТО Я СТАЛ ПОБЕДИТЕЛЕМ. ЧТО МНЕ ДАЛЬШЕ ДЕЛАТЬ?</h4>
+					<p class="collapse" role="tabpanel" id="20">
+						Для получения приза Вам необходимо зарегистрироваться на сайте акции: акция. степановна.рф, а также в срок до 14 дней предоставить Организатору необходимые
+						для оформления приза документы. Со списком документов и описанием способов их отправки Организатору Вы можете ознакомиться в Полных правилах Акции, п 5 (
+						ссылка на страницу с Правилами акции ) </p>
+				</div>
+				<div class="panel">
+					<h4 class="ask" data-toggle="collapse" data-parent="#help" aria-expanded="false" data-target="#21">
+						<span class="glyphicon glyphicon-chevron-right"></span>&nbsp;КАК Я МОГУ ПОЛУЧИТЬ ПРИЗ ?</h4>
+					<p class="collapse" role="tabpanel" id="21">
+						Денежные эквиваленты призов первого и второго уровня переводятся по реквизитам, которые Вы предоставите в случае выигрыша. Для получения призов Вам необходимо
+						зарегистрироваться на сайте акции: акция. степановна.рф (в случае, если Вы не сделали этого раньше и участвовали только через SMS ), а также в срок до 14 дней
+						предоставить Организатору необходимые для оформления приза документы. Со списком документов и описанием способов их отправки Организатору Вы можете
+						ознакомиться в Полных правилах Акции, п 5 ( ссылка на страницу с Правилами акции ) Срок выдачи призов (за исключением приза третьей категории - денежного
+						приза в размере 100 рублей на телефон) победителям – с 05.09.2015 года по 31.10.2015г. Приз третьей категории поступает на номер, который был указан при
+						регистрации или на номер с которого было отправлено смс с кодом в срок от 1 часа до 5 дней. </p>
+				</div>
+				<div class="panel">
+					<h4 class="ask" data-toggle="collapse" data-parent="#help" aria-expanded="false" data-target="#22">
+						<span class="glyphicon glyphicon-chevron-right"></span>&nbsp;НЕ НАХОЖУ СЕМЕЧЕК В АКЦИОННОЙ УПАКОВКЕ В СВОЕМ ГОРОДЕ. КАК Я МОГУ ПРИНЯТЬ УЧАСТИЕ В АКЦИИ И ГДЕ
+						МНЕ ИХ НАЙТИ?</h4>
+					<p class="collapse" id="22">В случае если Вы не можете найти акционный продукт ТМ Степановна в своем городе, пожалуйста, направьте нам запрос через кнопку
+						обратной связи «Задать вопрос».</p>
+				</div>
+				<div class="panel">
+					<h4 class="ask" data-toggle="collapse" data-parent="#help" aria-expanded="false" data-target="#23">
+						<span class="glyphicon glyphicon-chevron-right"></span>&nbsp;НУЖНО ЛИ ХРАНИТЬ УПАКОВКУ И ЧЕК ДЛЯ ПОЛУЧЕНИЯ ПРИЗА?</h4>
+					<p class="collapse" id="23">Упаковку  нужно сохранять для получения Главного приза или приза второго уровня,  чек для получения приза сохранять не нужно.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!--popup-->
+<div id="popup" class="modal fade popup popup-root" role="dialog" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h2 id="modal-title" class="text-center"></h2>
+			</div>
+			<div class="modal-body center-block" id="popup-content"></div>
+			<div style="display: none; position: relative; top: -32px;" id="yesNoPopupWrapper">
+				<div id="yesNoPopup">
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+						<button type="button" class="btn btn-primary">Save changes</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script>
+	$(function() {
+		$('#help .collapse').on('shown.bs.collapse', function() {
+			$(this).prev().find(".glyphicon").removeClass("glyphicon-chevron-right").addClass("glyphicon-chevron-down");
+		});
+		//The reverse of the above on hidden event:
+		$('#help .collapse').on('hidden.bs.collapse', function() {
+			$(this).prev().find(".glyphicon").removeClass("glyphicon-chevron-down").addClass("glyphicon-chevron-right");
+		});
+	});
+</script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<!--<script src="desing/modulargrid.js"></script>-->
+<script src="js/popup-control.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

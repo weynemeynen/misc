@@ -1,0 +1,11 @@
+@import "__top/switch__top.css";
+@import "__bottom/switch__bottom.css";
+@import "__switcher/switch__switcher.css";
+
+.switch {
+	position: relative;
+}
+
+.switch .switch__top, .switch .switch__bottom {
+	display: block;
+}

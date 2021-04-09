@@ -1,0 +1,8 @@
+.switch__switcher {
+	display: inline-block;
+	height: 50px;
+	width: 90px;
+	margin: 20px;
+	cursor: pointer;
+	background-image: url("../switch.png");
+}

@@ -1,0 +1,16 @@
+@font-face {
+	font-family: 'peugeot-bold';
+	src: url('../fonts/peugeot_bold_v2.woff2') format('woff2'),
+	url('../fonts/peugeot_bold_v2.woff') format('woff'),
+	url('../fonts/peugeot_bold_v2.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'peugeot';
+	src: url('../fonts/peugeot_normal_v2.woff2') format('woff2'),
+	url('../fonts/peugeot_normal_v2.woff') format('woff'),
+	url('../fonts/peugeot_normal_v2.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}

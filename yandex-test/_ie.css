@@ -1,0 +1,10 @@
+@charset "utf-8";
+/* CSS Document */
+
+img { border:none }
+.icons { zoom:1; overflow:hidden }
+.ui-icon { float:left; }
+
+/**/
+.task { zoom:1 }
+.btn, .ui-button { float:left; zoom: 1; }

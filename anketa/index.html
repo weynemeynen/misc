@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html class="ua_js_no">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Анкета</title>
+    <script>
+      ;(function (e, c) {
+        e[c] = e[c].replace(/(ua_js_)no/g, '$1yes')
+      })(document.documentElement, 'className')
+    </script>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic,cyrillic-ext"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Ubuntu+Condensed&amp;subset=cyrillic,cyrillic-ext"
+    />
+    <link
+      rel="stylesheet"
+      href="https://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css"
+    />
+    <link rel="stylesheet" href="assets/styles/jquery-ui.min.css" />
+    <link rel="stylesheet" href="assets/styles/helpers.css" />
+    <link rel="stylesheet" href="assets/styles/_index.css" />
+    <link rel="shortcut icon" href="favicon.ico" />
+  </head>
+
+  <body class="page">
+    <div class="main">
+      <div class="header">
+        <div class="logo">
+          <a
+            class="link link__control i-bem"
+            data-bem='{"link":{}}'
+            href="http://cpt.csssr.ru/"
+            target="_blank"
+            ><span class="pseudo-logo hidden-md visible-sm">csssr</span
+            ><img
+              class="image hidden-sm"
+              role="img"
+              src="assets/images/logo.png"
+              title="logo"
+            />
+            <div class="link__slogan logo__slogan">
+              Секретный архив учреждения
+            </div>
+          </a>
+        </div>
+      </div>
+      <h1 class="tit">дело</h1>
+      <div class="form">
+        <div class="row">
+          <label class="label vertical-align_bottom" for="fio"
+            >Полное ФИО</label
+          >
+          <span class="input input_size_l input_width_available i-bem"
+            ><span class="input__box">
+              <input
+                class="input__control"
+                id="fio"
+                placeholder="Шевцов Дмитрий Викторович"
+              /> </span
+          ></span>
+        </div>
+        <div class="row">
+          <label class="label vertical-align_bottom" for="birth"
+            >Год рождения</label
+          >
+          <span class="input input_size_l input_width_available i-bem"
+            ><span class="input__box">
+              <input
+                class="input__control"
+                id="birth"
+                placeholder="1900"
+              /> </span
+          ></span>
+        </div>
+        <div class="row">
+          <label class="label vertical-align_bottom" for="place-living"
+            >Место жительства</label
+          >
+          <span class="input input_size_l input_width_available i-bem"
+            ><span class="input__box">
+              <input
+                class="input__control"
+                id="place-living"
+                placeholder="г. Москва, Россия"
+              /> </span
+          ></span>
+        </div>
+        <div class="row">
+          <label class="label vertical-align_bottom" for="skype">Скайп</label>
+          <span class="input input_size_l input_width_available i-bem"
+            ><span class="input__box">
+              <input
+                class="input__control"
+                id="skype"
+                placeholder="weynemeynen"
+              /> </span
+          ></span>
+        </div>
+        <div class="row">
+          <label class="label vertical-align_bottom" for="mail">Почта</label>
+          <span class="input input_size_l input_width_available i-bem"
+            ><span class="input__box">
+              <input
+                class="input__control"
+                id="mail"
+                placeholder="brew@bk.ru"
+              /> </span
+          ></span>
+        </div>
+        <div class="graduate row">
+          <h2 class="h2">Выпускник</h2>
+          <a
+            class="link link__control graduate__link i-bem"
+            data-bem='{"link":{}}'
+            href="http://www.specialist.ru/dictionary/definition/html"
+            target="_blank"
+            >specialist.ru</a
+          ><span
+            class="radio-group radio-group_type_line control-group i-bem"
+            data-bem='{"radio-group":{}}'
+          >
+            <label
+              class="radio radio_type_line radio_checked i-bem"
+              data-bem='{"radio":{}}'
+              ><span class="radio__box">
+                <input
+                  class="radio__control"
+                  type="radio"
+                  autocomplete="off"
+                  name="radio-line"
+                  value="1"
+                  checked="checked"
+                /> </span
+              >Да</label
+            >
+            <label class="radio radio_type_line i-bem" data-bem='{"radio":{}}'
+              ><span class="radio__box">
+                <input
+                  class="radio__control"
+                  type="radio"
+                  autocomplete="off"
+                  name="radio-line"
+                  value="2"
+                /> </span
+              >Нет</label
+            >
+          </span>
+        </div>
+        <div class="skills row">
+          <h2 class="h2">Практические навыки</h2>
+          <div class="note">
+            Отемтьте только те технологии и типы задач, с которыми вы хорошо
+            знакомы. Отсутсвие опыта отнюдь не означает, что у вас меньше шансов
+            стать нашим сотрудником. Это означает, что вы будете получать те
+            задачи, с которыми гарантировано будете справляться.
+          </div>
+          <div class="table-div">
+            <div class="table-div__row">
+              <span
+                class="checkbox-group checkbox-group_type_line control-group i-bem"
+                data-bem='{"checkbox-group":{}}'
+              >
+                <label
+                  class="checkbox checkbox_type_line checkbox_checked i-bem"
+                  data-bem='{"checkbox":{}}'
+                  ><span class="checkbox__box">
+                    <input
+                      class="checkbox__control"
+                      type="checkbox"
+                      autocomplete="off"
+                      name="checkbox-first"
+                      value="1"
+                      checked="checked"
+                    /> </span
+                  >Методология БЭМ</label
+                >
+                <label
+                  class="checkbox checkbox_type_line checkbox_checked i-bem"
+                  data-bem='{"checkbox":{}}'
+                  ><span class="checkbox__box">
+                    <input
+                      class="checkbox__control"
+                      type="checkbox"
+                      autocomplete="off"
+                      name="checkbox-first"
+                      value="2"
+                      checked="checked"
+                    /> </span
+                  >jQuery</label
+                >
+                <label
+                  class="checkbox checkbox_type_line i-bem"
+                  data-bem='{"checkbox":{}}'
+                  ><span class="checkbox__box">
+                    <input
+                      class="checkbox__control"
+                      type="checkbox"
+                      autocomplete="off"
+                      name="checkbox-first"
+                      value="3"
+                    /> </span
+                  >Использую GRUNT</label
+                >
+                <label
+                  class="checkbox checkbox_type_line i-bem"
+                  data-bem='{"checkbox":{}}'
+                  ><span class="checkbox__box">
+                    <input
+                      class="checkbox__control"
+                      type="checkbox"
+                      autocomplete="off"
+                      name="checkbox-first"
+                      value="4"
+                    /> </span
+                  >HAML</label
+                >
+                <label
+                  class="checkbox checkbox_type_line i-bem"
+                  data-bem='{"checkbox":{}}'
+                  ><span class="checkbox__box">
+                    <input
+                      class="checkbox__control"
+                      type="checkbox"
+                      autocomplete="off"
+                      name="checkbox-first"
+                      value="5"
+                    /> </span
+                  >SASS</label
+                >
+                <label
+                  class="checkbox checkbox_type_line checkbox_checked i-bem"
+                  data-bem='{"checkbox":{}}'
+                  ><span class="checkbox__box">
+                    <input
+                      class="checkbox__control"
+                      type="checkbox"
+                      autocomplete="off"
+                      name="checkbox-first"
+                      value="6"
+                      checked="checked"
+                    /> </span
+                  >LESS</label
+                >
+                <label
+                  class="checkbox checkbox_type_line i-bem"
+                  data-bem='{"checkbox":{}}'
+                  ><span class="checkbox__box">
+                    <input
+                      class="checkbox__control"
+                      type="checkbox"
+                      autocomplete="off"
+                      name="checkbox-first"
+                      value="7"
+                    /> </span
+                  >CoffeeScript</label
+                > </span
+              ><span
+                class="checkbox-group checkbox-group_type_line control-group i-bem"
+                data-bem='{"checkbox-group":{}}'
+              >
+                <label
+                  class="checkbox checkbox_type_line checkbox_checked i-bem"
+                  data-bem='{"checkbox":{}}'
+                  ><span class="checkbox__box">
+                    <input
+                      class="checkbox__control"
+                      type="checkbox"
+                      autocomplete="off"
+                      name="checkbox-second"
+                      value="8"
+                      checked="checked"
+                    /> </span
+                  >Jade</label
+                >
+                <label
+                  class="checkbox checkbox_type_line checkbox_checked i-bem"
+                  data-bem='{"checkbox":{}}'
+                  ><span class="checkbox__box">
+                    <input
+                      class="checkbox__control"
+                      type="checkbox"
+                      autocomplete="off"
+                      name="checkbox-second"
+                      value="9"
+                      checked="checked"
+                    /> </span
+                  >Stylus</label
+                >
+                <label
+                  class="checkbox checkbox_type_line i-bem"
+                  data-bem='{"checkbox":{}}'
+                  ><span class="checkbox__box">
+                    <input
+                      class="checkbox__control"
+                      type="checkbox"
+                      autocomplete="off"
+                      name="checkbox-second"
+                      value="10"
+                    /> </span
+                  >Знаю (изучаю) Angular</label
+                >
+                <label
+                  class="checkbox checkbox_type_line checkbox_checked i-bem"
+                  data-bem='{"checkbox":{}}'
+                  ><span class="checkbox__box">
+                    <input
+                      class="checkbox__control"
+                      type="checkbox"
+                      autocomplete="off"
+                      name="checkbox-second"
+                      value="11"
+                      checked="checked"
+                    /> </span
+                  >Верстка под Android</label
+                >
+                <label
+                  class="checkbox checkbox_type_line checkbox_checked i-bem"
+                  data-bem='{"checkbox":{}}'
+                  ><span class="checkbox__box">
+                    <input
+                      class="checkbox__control"
+                      type="checkbox"
+                      autocomplete="off"
+                      name="checkbox-second"
+                      value="12"
+                      checked="checked"
+                    /> </span
+                  >Верстка под iOS</label
+                >
+                <label
+                  class="checkbox checkbox_type_line i-bem"
+                  data-bem='{"checkbox":{}}'
+                  ><span class="checkbox__box">
+                    <input
+                      class="checkbox__control"
+                      type="checkbox"
+                      autocomplete="off"
+                      name="checkbox-second"
+                      value="13"
+                    /> </span
+                  >Верстка под Windows Phone</label
+                > </span
+              ><span
+                class="checkbox-group checkbox-group_type_line control-group i-bem"
+                data-bem='{"checkbox-group":{}}'
+              >
+                <label
+                  class="checkbox checkbox_type_line checkbox_checked i-bem"
+                  data-bem='{"checkbox":{}}'
+                  ><span class="checkbox__box">
+                    <input
+                      class="checkbox__control"
+                      type="checkbox"
+                      autocomplete="off"
+                      name="checkbox-third"
+                      value="14"
+                      checked="checked"
+                    /> </span
+                  >Верстка рассылок</label
+                >
+                <label
+                  class="checkbox checkbox_type_line checkbox_checked i-bem"
+                  data-bem='{"checkbox":{}}'
+                  ><span class="checkbox__box">
+                    <input
+                      class="checkbox__control"
+                      type="checkbox"
+                      autocomplete="off"
+                      name="checkbox-third"
+                      value="15"
+                      checked="checked"
+                    /> </span
+                  >Адаптивная верстка</label
+                >
+                <label
+                  class="checkbox checkbox_type_line i-bem"
+                  data-bem='{"checkbox":{}}'
+                  ><span class="checkbox__box">
+                    <input
+                      class="checkbox__control"
+                      type="checkbox"
+                      autocomplete="off"
+                      name="checkbox-third"
+                      value="16"
+                    /> </span
+                  >Использую Dropbox</label
+                >
+                <label
+                  class="checkbox checkbox_type_line checkbox_checked i-bem"
+                  data-bem='{"checkbox":{}}'
+                  ><span class="checkbox__box">
+                    <input
+                      class="checkbox__control"
+                      type="checkbox"
+                      autocomplete="off"
+                      name="checkbox-third"
+                      value="17"
+                      checked="checked"
+                    /> </span
+                  >Использую Gmail</label
+                >
+                <label
+                  class="checkbox checkbox_type_line checkbox_checked i-bem"
+                  data-bem='{"checkbox":{}}'
+                  ><span class="checkbox__box">
+                    <input
+                      class="checkbox__control"
+                      type="checkbox"
+                      autocomplete="off"
+                      name="checkbox-third"
+                      value="18"
+                      checked="checked"
+                    /> </span
+                  >Использую GitHub</label
+                >
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="experience-js row">
+          <h2 class="h2">Уровень владения JavaScript</h2>
+          <ul class="slider list list_layout_justify" id="slider">
+            <li class="list-item slider__item">Не владею</li>
+            &nbsp
+            <li class="list-item slider__item slider__item_pipe">
+              Использую готовые решения
+            </li>
+            &nbsp
+            <li
+              class="list-item slider__item slider__item_pipe"
+              style="width: 22%"
+            >
+              Использую готовые решения и умею их переделывать
+            </li>
+            &nbsp
+            <li class="list-item slider__item">Пишу сложные скрипты</li>
+            <li class="list-item slider__thumb"></li>
+          </ul>
+        </div>
+        <div class="experience-css row">
+          <h2 class="h2">Уровень владения CSS (%)</h2>
+          <div
+            class="slider slider_pipe_center slider_character_percent list list_layout_justify"
+          >
+            <div class="list-item slider__item">0</div>
+            &nbsp
+            <div class="list-item slider__item slider__item_pipe">25</div>
+            &nbsp
+            <div class="list-item slider__item slider__item_pipe">50</div>
+            &nbsp
+            <div class="list-item slider__item slider__item_pipe">75</div>
+            &nbsp
+            <div class="list-item slider__item">100</div>
+          </div>
+        </div>
+      </div>
+      <a
+        class="stamp vertical-align_middle"
+        target="_blank"
+        href="https://github.com/weynemeynen/anketa"
+      >
+        <div class="stamp__text">
+          СЕКРЕТНО
+          <div class="stamp__small">заполнено собственноручно</div>
+        </div>
+      </a>
+      <a
+        class="avatar avatar_size_medium"
+        target="_blank"
+        href="http://wallstone.ru/css-js/"
+      >
+        <img
+          class="image avatar__image"
+          role="img"
+          src="assets/images/avatar__image.png"
+        />
+      </a>
+    </div>
+    <div class="footer">
+      <div class="row footer__row">
+        <label class="label vertical-align_bottom" for="date"
+          >Дата заполенения</label
+        >
+        <span class="input input_size_l input_width_available i-bem"
+          ><span class="input__box">
+            <input
+              class="input__control"
+              id="date"
+              placeholder="01.07.2015"
+            /> </span
+        ></span>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="assets/scripts/slider.js"></script>
+    <script src="assets/scripts/modulargrid.js"></script>
+    <script src="assets/scripts/_index.js"></script>
+  </body>
+</html>

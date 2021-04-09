@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Степановна</title>
+	<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+	<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css"/>
+	<link rel="stylesheet" href="css/bootstrap-datetimepicker.css">
+	<link rel="stylesheet" href="css/_bootstrap.css"/>
+	<!-- <link rel="stylesheet/less" href="less/_bootstrap.less"> --><!--<script src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.5.0/less.min.js"></script>-->
+	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries --><!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+	<link rel="stylesheet" href="css/ie.css"/>
+	<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+	<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script><![endif]-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+	<script src="js/popup-control.js"></script>
+	<script src="js/jquery-css-transform.js"></script>
+	<script src="js/rotate3Di.js"></script>
+	<script src="node_modules/moment/moment.js"></script>
+	<script src="js/bootstrap-datetimepicker.js"></script>
+</head>
+<body>
+<div class="bg-layer bg-layer_size_in bg-layer_color_orange"></div>
+<header>
+	<div class="container">
+		<div class="col-xs-3 text-right">
+			<a href="http://xn--80aafk5bbffqk.xn--p1ai/" class="logo"> <img src="images/logo.png" class="img-responsive" alt="Степановна"/></a>
+		</div>
+		<div class="col-xs-9">
+			<div class="social">
+				<a href="https://vk.com/club87894296" target="_blank"><img src="images/ico-vk.png"></a>
+			</div>
+			<nav class="navbar navbar-default" role="navigation">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#nav__menu">
+						<span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span>
+					</button>
+					<!--<a class="navbar-brand" href="#">Brand</a>-->
+				</div>
+				<div class="navbar-collapse collapse" id="nav__menu">
+					<ul class="nav navbar-nav">
+						<li><a href="index.html">Главная</a></li>
+						<li class="active"><a href="prizes.html">Призы</a></li>
+						<li><a href="winners.html">Победители</a></li>
+						<li><a href="rules.html">Правила</a></li>
+						<li><a href="ask-question.html">Вопрос-ответ</a></li>
+						<li><a href="index.html">Войти</a></li>
+						<li><a href="index.html" class="login">Андрей <span class="icon-arrow-login"></span></a></li>
+					</ul>
+				</div>
+			</nav>
+		</div>
+	</div>
+	</div>
+</header>
+<section class="header">
+	<div class="container text-center">
+		<div class="flipper-top flipper_size_big flipper-top_prizes">
+			<div class="flipper-top__front">
+				<div class="display-inline">
+					<span>ПРИЗЫ АКЦИИ</span> <span class="initialism">«Нащелкай на мечту»</span>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<div class="prizes">
+	<div class="container text-center">
+		<div class="row">
+			<div class="col-sm-4 col-sm-push-4">
+				<div class="prizes__item"><img src="images/prize1.png" class="img-responsive" alt="">
+					<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+						<div class="flipper flipper_size_small flipper_size_small_1">
+							<div class="front">
+								<span>90 <span>призов</span></span>
+							</div>
+							<div class="back">
+								<span>20 000 руб.<span>на покупку<br>планшета</span></span>
+							</div>
+						</div>
+						<div class="bg-layer bg-layer_size_out bg-radial_color_yellow"></div>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-4 col-sm-pull-4">
+				<div class="prizes__item prizes__auto">
+					<img src="images/prize2.png" class="img-responsive" alt="" style="margin-bottom: 2.35em;"/>
+					<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+						<div class="flipper flipper_size_small flipper_size_small_2">
+							<div class="front">
+								<span>Главный<br>приз</span>
+							</div>
+							<div class="back">
+								<span>600 000 руб.<span>на покупку<br>автомобиля</span></span>
+							</div>
+						</div>
+						<div class="bg-layer bg-layer_size_out bg-radial_color_yellow"></div>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-4">
+				<div class="prizes__item prize__tel">
+					<img src="images/prize3.png" class="img-responsive" alt=""/>
+					<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+						<div class="flipper flipper_size_small flipper_size_small_3">
+							<div class="front">
+								<span>100 <span>призов<br>каждый день</span></span>
+							</div>
+							<div class="back">
+								<span>100 руб. <span>на телефон</span></span>
+							</div>
+						</div>
+						<div class="bg-layer bg-layer_size_out bg-radial_color_yellow"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!--popup-->
+<div id="popup" class="modal fade popup popup-root" role="dialog" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h2 id="modal-title" class="text-center"></h2>
+			</div>
+			<div class="modal-body center-block" id="popup-content"></div>
+			<div style="display: none; position: relative; top: -32px;" id="yesNoPopupWrapper">
+				<div id="yesNoPopup">
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+						<button type="button" class="btn btn-primary">Save changes</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<!--<script src="desing/modulargrid.js"></script>-->
+<script src="js/popup-control.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

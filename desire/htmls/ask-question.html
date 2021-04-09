@@ -1,0 +1,46 @@
+<div class="modal-body__inner" id="ask-question">
+    <h2 class="modal-header text-center">Задать вопрос</h2>
+    <form class="form-horizontal" role="form">
+        <div class="form-group">
+            <label for="firstname" class="col-sm-4 control-label">Имя</label>
+            <div class="col-sm-8">
+                <input type="text" class="form-control" id="firstname" placeholder="Имя">
+                <span class="field-validation-error" data-valmsg-for="name" data-valmsg-replace="true">некорректный формат</span>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="email" class="col-sm-4 control-label">E-mail</label>
+            <div class="col-sm-8">
+                <input type="email" class="form-control" id="email" placeholder="E-mail">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="phone" class="col-sm-4 control-label">Тема сообщения</label>
+            <div class="col-sm-8">
+                <input type="text" class="form-control" id="phone" placeholder="Тема сообщения">
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-sm-12">
+                <textarea class="form-control" rows="3">сообщение</textarea>
+            </div>
+        </div>
+        <div class="form-group ">
+            <label class="col-xs-4 control-label" for="CaptchaText">Проверочный код</label>
+            <div class="col-xs-4">
+                <input class="form-control capchaCode text-center" id="code" name="CaptchaText" placeholder="код" type="text" value="">
+            </div>
+            <div class="col-xs-3">
+                <img class="captchaImage img-rounded" src="images/captchaImage.png" alt="Captcha">
+            </div>
+            <div class="col-sm-7">
+                <span class="field-validation-valid" data-valmsg-for="CaptchaText" data-valmsg-replace="true"></span>
+            </div>
+        </div>
+        <div class="form-group ">
+            <div class="col-xs-12 text-center">
+                <button type="submit" class="btn btn-default" title="Отправить"><span>Далее</span></button>
+            </div>
+        </div>
+    </form>
+</div>

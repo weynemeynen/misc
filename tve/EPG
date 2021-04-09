@@ -1,0 +1,25 @@
+{
+  "htmlFiles": [
+    {
+      "fileId": "0BwpgJqxcuprwaHZtVDdqck1ORzg",
+      "contentType": "text/html",
+      "name": "3-01_mytv.html",
+      "path": "0BwpgJqxcuprwOFpZRHZmUjFqMms"
+    },
+    {
+      "fileId": "0BwpgJqxcuprwYXl4VERnTTNVVVk",
+      "contentType": "text/html",
+      "name": "epg.html",
+      "path": "0BwpgJqxcuprwOFpZRHZmUjFqMms/"
+    }
+  ],
+  "cssFiles": [
+    {
+      "fileId": "0BwpgJqxcuprwTTlRVkpuVWoyMVE",
+      "contentType": "text/css",
+      "name": "style.css",
+      "path": "0BwpgJqxcuprwOFpZRHZmUjFqMms"
+    }
+  ],
+  "javascriptFiles": []
+}

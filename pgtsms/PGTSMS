@@ -1,0 +1,54 @@
+{
+  "htmlFiles": [
+    {
+      "fileId": "0B0hmB974sLtVTEFxVml1NWhuYjA",
+      "contentType": "text/html",
+      "name": "index.html",
+      "path": "0B0hmB974sLtVfjVJQzhuRlNFRWxlU2otR0UtQXFCOFlQZVNmWEtjOFE4eDRjbTE5cW1rekU/"
+    },
+    {
+      "fileId": "0B0hmB974sLtVOExEM0l4ZkFwZUU",
+      "contentType": "text/html",
+      "name": "sertificat.html",
+      "path": "0B0hmB974sLtVfjVJQzhuRlNFRWxlU2otR0UtQXFCOFlQZVNmWEtjOFE4eDRjbTE5cW1rekU/"
+    },
+    {
+      "fileId": "0B0hmB974sLtVc0FmYU96TWxpZFU",
+      "contentType": "text/html",
+      "name": "PrizeMobile.html",
+      "path": "0B0hmB974sLtVfjVJQzhuRlNFRWxlU2otR0UtQXFCOFlQZVNmWEtjOFE4eDRjbTE5cW1rekU/"
+    },
+    {
+      "fileId": "0B0hmB974sLtVSUhIeDZlYXlQVjQ",
+      "contentType": "text/html",
+      "name": "verification.html",
+      "path": "0B0hmB974sLtVfjVJQzhuRlNFRWxlU2otR0UtQXFCOFlQZVNmWEtjOFE4eDRjbTE5cW1rekU/verification"
+    },
+    {
+      "fileId": "0B0hmB974sLtVSkRlQ29vWHgyb0U",
+      "contentType": "text/html",
+      "name": "mobile.html",
+      "path": "0B0hmB974sLtVfjVJQzhuRlNFRWxlU2otR0UtQXFCOFlQZVNmWEtjOFE4eDRjbTE5cW1rekU/"
+    },
+    {
+      "fileId": "0B0hmB974sLtVUEFvdExUX0gtOG8",
+      "contentType": "text/html",
+      "name": "sertificates.html",
+      "path": "0B0hmB974sLtVfjVJQzhuRlNFRWxlU2otR0UtQXFCOFlQZVNmWEtjOFE4eDRjbTE5cW1rekU/"
+    },
+    {
+      "fileId": "0B0hmB974sLtVNzBzSU0ycGU1Mkk",
+      "contentType": "text/html",
+      "name": "certificates.html",
+      "path": "0B0hmB974sLtVfjVJQzhuRlNFRWxlU2otR0UtQXFCOFlQZVNmWEtjOFE4eDRjbTE5cW1rekU/emails"
+    },
+    {
+      "fileId": "0B0hmB974sLtVOEkzRG9YcGpKS3c",
+      "contentType": "text/html",
+      "name": "forum_letter.html",
+      "path": "0B0hmB974sLtVfjVJQzhuRlNFRWxlU2otR0UtQXFCOFlQZVNmWEtjOFE4eDRjbTE5cW1rekU/emails"
+    }
+  ],
+  "cssFiles": [],
+  "javascriptFiles": []
+}

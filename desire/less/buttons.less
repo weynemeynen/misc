@@ -1,0 +1,24 @@
+// Button sizes
+.button-size(@font-size;) {
+  font-size: @font-size;
+}
+
+// Button sizes
+.btn {
+  .button-size(@font-size-large);
+  &:focus,
+  &:active {
+    outline: none;
+  }
+
+  &:hover,
+  &:focus,
+  &.focus {
+    text-decoration: none;
+  }
+}
+/**/
+.btn-link {
+  color: @link-color;
+}
+

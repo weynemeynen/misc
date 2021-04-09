@@ -1,0 +1,173 @@
+/*common*/
+
+body { font: 62.5% Arial, "Sans Serif" }
+p { font-size:1.4em; }
+a { color:#000 }
+:link { color:blue }
+:visited { color:#669 }
+:link:hover, :visited:hover { color:red }
+/*layout page*/
+
+.cnt { position:relative; min-width:77.2em; max-width:100%; padding:3em 7em; border:.1em solid #e8e8e8; border-radius:.6em; margin:6em 0; }
+.b-user { position:absolute; width:100%; height:2em; top:0; left:0; line-height:2; background-color:#ebebeb; }
+.b-user::first-letter { color:red }
+.b-user a { font:1.2em arial, sans-serif; margin-left:1em; }
+.b-date { float:right; padding-right:1em }
+.userpic { width:5em; position:absolute; top:2em; left:0; padding:1em; }
+.userpic img { width:100% }
+.title { font-size:2em; margin-bottom:.5em }
+.title a { text-decoration:none }
+.title a:hover { text-decoration: underline }
+.tasks { margin-left:10em }
+/* список задач */
+
+dl { counter-reset:task }
+dt>p { position:relative }
+dt>p::before { content:''; position:absolute; top:-.4em; right:-.4em; bottom:-.4em; left:-.4em; background-color:#f7f7f7; z-index:-1 }
+dt.task, dd { position:relative; font-weight:bold; }
+dt.task::before { content:'Задание ' counter(task) '. '; counter-increment:task; counter-reset:butt; font-size: medium; line-height:1; font-weight:normal; position:absolute; top:0; left:-5.5em; }
+dd { margin:2em 7em; width:50%; clear:both }
+dd::before { content: 'Примечание: '; line-height:1; position:absolute; top:0; left:-7em; width:100%; border-top:1px dashed #eaeaea; }
+.butt::before { content: counter(task) '.' counter(butt) '.'; counter-increment:butt; }
+.footnote ul { counter-reset:foo; list-style-type: none; }
+.footnote li::before { content:counter(foo, lower-latin); counter-increment:foo; font-weight:bold; padding-right:1em; margin-left:-1.5em; }
+.lfloat { float:left }
+.rfloat { float:right }
+.clr { clear:both; display:block; height:0 }
+/**************
+
+ * Задания
+
+***************/
+
+/* 1. текст на тему, связанную с профессией */
+
+.summary { width:36em; padding:0 3.2em 1.5em; margin:5em 0; font: normal 1.2em/1.1 "Century Gothic", "Times New Roman"; text-shadow:.1em .1em .1em rgba(255,255,255,.9); position:relative; background: url(images/papyrus-bg.jpg) repeat-y center; }
+.summary::before { content:''; position:absolute; top:-44px; left:0; width:506px; height:44px; background:url(images/papyrus-top.jpg); }
+.summary::after { content:''; position:absolute; bottom:-44px; left:3px; width:506px; height:44px; background:url(images/papyrus-bottom.jpg); }
+.summary-head { text-align:center; padding-top:1em }
+.summary-head .title { font: bold 1.6em/.9 Arial, sans-serif; letter-spacing:-.05em }
+.autor { margin:0 }
+.lemma { font-size:70%; width:55%; margin:0 auto 1em; text-align:left; overflow: hidden }
+.lemma p { margin:0 }
+.lemma .rfloat { font-style:italic }
+.head-foot { text-align:left }
+.isbn { text-transform:uppercase; }
+.being { position:relative; margin-bottom:1em; }
+.being ol { padding-left:1.2em; margin-bottom:.5em; }
+.being li { list-style: upper-roman; }
+.being li li { list-style-type: decimal; }
+.ill { position:absolute; top:0; left:110%; padding-right:2em; }
+.isbn-weight_bold { font-weight:bold }
+.m-l_-2em { margin-left:-1em }
+.copyright { font-size:.8em; margin-bottom:.3em; text-shadow:none }
+.publishing { margin:.3em 0 }
+/* 2. Контрол */
+
+.vote-wrap { overflow:hidden; height:3em; }
+.vote-block { position: relative; }
+.vote-hover { float: left; cursor:  pointer; }
+.vote-stars { position: absolute; left: 0; top: 0; }
+.vote-active { position: absolute; left: 0; top: 0; }
+.vote-result { visibility:hidden; color: #ccc; font-size: 14px; padding-left: 190px; }
+.vote-success { clear: both; color: #ccc; font-size: 14px; }
+/* 3. Прогресс-бар */
+
+.progressbar { }
+.progressbar .ui-corner-all { box-shadow:inset 0 .2em #dadada; }
+.progressbar .ui-widget-content { border:1px solid #eee; border-radius:1em; }
+.progressbar .ui-progressbar { position:relative; text-align:center; height:1.2em; width:25% }
+.progressbar .ui-corner-left { border-radius:1em; }
+.progressbar .ui-widget-header { border:none; background: #9af351; background: -moz-linear-gradient(top, #9af351 0%, #44bc3c 50%, #9af351 100%); background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #9af351), color-stop(50%, #44bc3c), color-stop(100%, #9af351)); background: -webkit-linear-gradient(top, #9af351 0%, #44bc3c 50%, #9af351 100%); background: -o-linear-gradient(top, #9af351 0%, #44bc3c 50%, #9af351 100%); background: -ms-linear-gradient(top, #9af351 0%, #44bc3c 50%, #9af351 100%); background: linear-gradient(to bottom, #9af351 0%, #44bc3c 50%, #9af351 100%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9af351', endColorstr='#9af351', GradientType=0 );
+}
+.progressbar .ui-progressbar .ui-progressbar-value { margin:0 }
+.progressbar .ui-progressbar span { position:absolute; top:50%; margin-top:-.4em; font:bold .8em/1 Arial; }
+/* 4. Кнопка */
+
+/* кнопка #1*/
+
+.button { padding:1em }
+.button .ui-button { margin: 0 .1em .1em 0; padding:0 1em; }
+.button .ui-button .ui-button-text { display:inline-block; position:relative }
+.ui-state-active .ui-button-text, .btn:active .ui-button-text { top:.1em; }
+.button .ui-button:focus { border-color:#a5b1f0; outline:none }
+.button .ui-button .ui-button-text { font: bold 1em/1 Tahoma, Geneva, sans-serif; padding:.3em 1.8em .4em; text-shadow:0 .2em .2em #fff; }
+.button .ui-widget { font-size:1.1em }
+.button .ui-corner-all { border-radius: .7em }
+.button .ui-state-default { border-width:1px; border-color:#e5e5e5 #ccc #a8a8a8; font-weight:bold; background: #f2f2f2; background: -moz-linear-gradient(top, #f2f2f2 0%, #e2e2e2 100%); background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f2f2f2), color-stop(100%, #e2e2e2)); background: -webkit-linear-gradient(top, #f2f2f2 0%, #e2e2e2 100%); background: -o-linear-gradient(top, #f2f2f2 0%, #e2e2e2 100%); background: -ms-linear-gradient(top, #f2f2f2 0%, #e2e2e2 100%); background: linear-gradient(to bottom, #f2f2f2 0%, #e2e2e2 100%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2f2f2', endColorstr='#e2e2e2', GradientType=0 );
+}
+.button .ui-state-hover { background: #feffeb; background: -moz-linear-gradient(top, #feffeb 0%, #fdffcc 100%); background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #feffeb), color-stop(100%, #fdffcc)); background: -webkit-linear-gradient(top, #feffeb 0%, #fdffcc 100%); background: -o-linear-gradient(top, #feffeb 0%, #fdffcc 100%); background: -ms-linear-gradient(top, #feffeb 0%, #fdffcc 100%); background: linear-gradient(to bottom, #feffeb 0%, #fdffcc 100%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#feffeb', endColorstr='#fdffcc', GradientType=0 );
+}
+.button .ui-state-active { background: #f2f2f2; background: -moz-linear-gradient(top, #f2f2f2 0%, #e2e2e2 100%); background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f2f2f2), color-stop(100%, #e2e2e2)); background: -webkit-linear-gradient(top, #f2f2f2 0%, #e2e2e2 100%); background: -o-linear-gradient(top, #f2f2f2 0%, #e2e2e2 100%); background: -ms-linear-gradient(top, #f2f2f2 0%, #e2e2e2 100%); background: linear-gradient(to bottom, #f2f2f2 0%, #e2e2e2 100%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2f2f2', endColorstr='#e2e2e2', GradientType=0 );
+}
+.button .ui-state-active { border-width:1px; border-color:#a6a6a6 #ccc #e2e2e2; box-shadow:inset 0 3px 5px #a6a6a6; }
+/* кнопка #2*/
+
+.btn { display:inline-block; padding:0 1.4em; margin:0 .6em; position:relative; height:2em; line-height:2em; text-decoration:none; text-align:center; color: #212121; background: url(images/btn.png) repeat-x; background-size:auto 400%; }
+.btn .ui-button-text { font: bold 1.1em/1 Arial, Helvetica, sans-serif; text-shadow: 0 .2em .2em #fff }
+.btn-l { position:absolute; height:2em; width:.6em; left:-.6em; top:0; overflow:hidden; }
+.btn-l i { position:absolute; left:0; top:-2em; width:.6em; height:16em; background: url(images/btn2.png); background-size:auto 100%; }
+.btn-r { position:absolute; height:2em; width:.6em; right:-.6em; top:0; overflow:hidden; }
+.btn-r i { position:absolute; left:0; top:0; width:.6em; height:16em; background: url(images/btn2.png); background-size:auto 100%; }
+.btn:hover { background:url(images/btn.png) 0 -2em; color:#212121; background-size: auto 400%; }
+.btn:hover .btn-r i { top:-6em; }
+.btn:hover .btn-l i { top:-4em; }
+.btn:active { background:url(images/btn.png) 0 -4em; background-size:auto 400%; }
+.btn:active .ui-button-text { position:relative; top:.1em }
+.btn:active .btn-l i { top:-8em }
+.btn:active .btn-r i { top:-10em }
+.btn:focus { background:url(images/btn.png) 0 -6em; background-size:auto 400%; outline:none }
+.btn:focus .btn-l i { top:-14em }
+.btn:focus .btn-r i { top:-12em }
+/* 5. Список из иконок */
+
+/*переопределение стилей ui*/
+
+.icons .ui-button { width:13.2em; height:13.2em; margin:0; }
+.icons .ui-icon { width:13.2em; height:13.2em; }
+.icons .ui-state-default { background:none; border:none }
+.icons .ui-button-text-icon-primary .ui-button-icon-primary { left:0 }
+.icons .ui-button-text-icon-primary .ui-icon { position:relative; z-index:1 }
+.icons .ui-state-default .ui-icon { background-image: url(images/browsers.png) }
+.icons .ui-widget { font-size: 1em }
+.icons .ui-button-text-icon-primary .ui-button-text, .icons .ui-button-text-icons .ui-button-text { padding:0 }
+.icons .ui-button-icon-primary { background-size: auto 13.2em; }
+.icons .ui-button-text { position:absolute; top:50%; width:100%; margin-top:-1em; z-index:0; font-size:1.4em; font-weight:bold; }
+.icons .ui-button-text span { text-shadow:0 0 .1em; }
+.icons .ui-icon-heart { background-position:0 0 } /*Chrome*/
+.icons .ui-icon-star { background-position:-13.2em 0 } /*FF*/
+.icons .ui-icon-gear { background-position:-26.4em 0 } /*opera*/
+.icons .ui-icon-help { background-position:-39.6em 0 } /*Safari*/
+.icons .ui-icon-trash { background-position:-53em 0 } /*IE*/
+/*colors*/
+
+/*Chrome*/
+
+.green { color:green }
+.crimson { color:crimson }
+.gold { color:gold }
+/*FF*/
+
+.orange { color:orange }
+/*opera*/
+
+.firebrick { color:firebrick }
+/*Safari*/
+
+.gray { color:gray }
+/*IE*/
+
+.steelblue { color:steelblue }
+/* 6. Текст */
+
+.text { font-size:1.1em; line-height:1.5 }
+.text .text-header { margin-right:50%; padding-right:20%; font-size:2em; font-weight:normal; line-height:1 }
+.text-block { float:left; width:40%; margin-right:10% }
+.text ul { font-size:1.3em; list-style:none; padding:0; }
+.text li::before { content:'—'; margin:0 .5em 0 -1.5em; font-weight:normal; }
+.text ul a { color:#0067E7 }
+.text-block p { text-indent:1em; font-weight:bold; }
+/**/
+
+.footnote { clear:both }
+.footnote ul li { font-size:1.2em; font-style:italic }

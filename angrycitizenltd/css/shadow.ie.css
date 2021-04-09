@@ -1,0 +1,9 @@
+.shadow_closed_yes *
+{
+    display: none;
+}
+
+.shadow_closed_yes .shadow__switcher
+{
+    display: inline-block;
+}

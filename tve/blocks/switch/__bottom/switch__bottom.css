@@ -1,0 +1,15 @@
+.switch__bottom {
+	position: absolute;
+	bottom: 0;
+	height: 240px;
+	width: 100%;
+	z-index: 1;
+	display: none;
+}
+
+.switch__bottom .switch__switcher {
+	background-position: bottom right;
+}
+.switch__bottom .switch__switcher:focus, .switch__bottom .switch__switcher:hover {
+	background-position: top right;
+}

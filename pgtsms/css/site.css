@@ -1,0 +1,240 @@
+@import "fonts.css";
+@import "helpers.css";
+@import "sertificat.css";
+@import "sertificates.css";
+.main {
+	background: url(../Images/main-bg.jpg) no-repeat center;
+	background-size: cover;
+}
+.main.desktop {
+	min-width: 1024px;
+	min-height: 640px;
+}
+/* header */
+.header > .table-div__cell {
+	height: 12%;
+}
+.header .container, /*.header .row,*/
+.footer .container, .footer .row,
+.footer__inner > [class|="col"] {
+	height: 100%;
+	position: relative;
+}
+.logo {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 13%;
+	height: 100%;
+	background-color: #fff;
+	z-index: 1;
+	font-size: 0;
+}
+.logo__img {
+	display: inline-block;
+	padding: 10%;
+}
+.body {
+	font-family: peugeot-bold, Tahoma, sans-serif;
+	text-align: center;
+}
+.body > .table-div__cell {
+	height: 79%;
+}
+.body .table-div { position: relative; }
+.spa-classic {
+	color: #fff;
+	background: #231000 url("../Images/spa-classic-bg-0.jpg") no-repeat center;
+	background-size: contain;
+}
+.extreme-classic {
+	background: #33a8f5 url("../Images/extreme-classic-bg.jpg") no-repeat center;
+	color: #fff;
+	background-size: contain;
+}
+.hobby-classic {
+	background: #7a7b76 url("../Images/hobby-classic-bg.jpg") no-repeat 90%;
+	background-size: contain;
+}
+.original {
+	background: #d06513 url("../Images/original-bg.jpg") no-repeat 95% center;
+	background-size: contain;
+}
+@media (max-width: 1200px) {
+	.spa-classic,
+	.extreme-classic,
+	.hobby-classic,
+	.original {
+		background-size: cover;
+	}
+}
+/* footer */
+.footer {
+	background-color: rgba(0, 0, 0, .8);
+	color: #fff;
+}
+.footer > .table-div__cell {
+	height: 10%;
+}
+.footer__inner > [class|="col"] {
+	font-size: 55%;
+	font-family: 'Verdana';
+}
+.footer__inner .vertical-align_middle {
+	height: 100%;
+}
+.footer__inner .footer__helper {
+	font-family: 'peugeot';
+	text-align: center;
+	background-color: #132133;
+	overflow: hidden;
+	height: 100%;
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+.footer__helper:after {
+	content: '';
+	top: -6rem;
+	opacity: .7;
+}
+.social {
+	list-style-type: none;
+	padding-left: 0;
+	margin: 0;
+	text-align: justify;
+	font-size: 0;
+	line-height: 0;
+}
+.social__item {
+	display: inline-block;
+	width: 1em;
+	height: 1.5em;
+	font-size: 1.876rem;
+	vertical-align: middle;
+	background-image: url("../Images/social.png");
+	background-size: cover;
+}
+.fb { background-position: 0 0; }
+.vk { background-position: -1.1em 0; }
+.ok { background-position: -2.3em 0; }
+.yt { background-position: -3.6em 0; width: 3.5em; }
+.social__item a {
+	display: block;
+	width: 100%;
+	height: 100%;
+	font-size: 0;
+	line-height: 0;
+}
+.form-group {
+	margin-bottom: 2.5rem;
+	position: relative;
+}
+.form-control {
+	border-radius: 0;
+	font-family: tahoma;
+	height: 3rem;
+}
+h1, h2 { font-family: 'peugeot-bold'; }
+h1 { font-size: 280%; margin: 0.67em 0; }
+h2 { font-size: 98%; margin: 0 0 0.67em; }
+@media (max-width: 900px) {
+	h1 { font-size: 180%; }
+}
+/* steps */
+.body .steps .table-div__cell {
+	vertical-align: top;
+	height: 15%;
+}
+.step {
+	font-family: 'peugeot-bold';
+	counter-reset: steps;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 1.5rem;
+}
+.step [class|="col"]:before {
+	counter-increment: steps;
+	content: counter(steps);
+	display: block;
+	font-size: 4.5rem;
+}
+.step [class|="col"]:after {
+	content: '';
+	display: block;
+	padding-bottom: 2rem;
+}
+/* Popup */
+.popup-root {
+	position: absolute;
+	margin-left: 50%;
+	/*top: auto;*/
+	z-index: 1;
+}
+/*
+.popup-container {
+	display: inline-block;
+	position: relative;
+	vertical-align: middle;
+	text-align: center;
+}
+*/
+/*
+.popup-container::before {
+	content: "";
+	display: inline-block;
+	height: 100%;
+	vertical-align: middle;
+	width: 0;
+}
+*/
+.popup-header {
+	font-size: 180%;
+	margin: 5% 0;
+	position: relative;
+	color: #fff;
+}
+.popup-content {
+	position: relative;
+	background-color: rgba(0, 0, 0, .8);
+}
+.popup-content {
+	left: -50%;
+	padding: 1% 0 15%;
+	/*margin: 16px 36px;*/
+	text-align: center;
+}
+.popup-content form {
+	padding: 0 10%;
+}
+/*Validation*/
+.field-validation-error {
+	position: absolute;
+	bottom: 0;
+	font-family: verdana;
+	color: orangered;
+	font-size: 60%;
+	padding: 0;
+	margin: 0 0 -7%;
+	left: 0;
+	width: 100%;
+}
+/*Message*/
+.message {
+	color: whitesmoke;
+}
+.terms-stocks, .terms-stocks__link {
+	font-family: peugeot;
+	color: #fff;
+	position: relative;
+}
+.small {
+	font-size: 70%;
+	color: inherit !important;
+}
+/* отменил bootstrap */
+@media (max-width: 1023px) and (min-width: 768px) {
+	.container {
+		width: 100%;
+	}
+}

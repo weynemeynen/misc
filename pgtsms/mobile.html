@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head lang="ru">
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>mobile</title>
+	<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css"/>
+	<link rel="stylesheet" href="css/site.css"/>
+	<link rel="stylesheet" href="css/mobile.css"/>
+	<!--[if lt IE 9]>
+	<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+	<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>  <![endif]-->
+</head>
+<body>
+<div class="table-div main mobile">
+	<div class="table-div__row header">
+		<div class="table-div__cell">
+			<div class="container">
+				<div class="row">
+					<a class="col-xs-12 logo vertical-align_middle" target="_blank">
+						<img src="Images/logo.png" class="img-responsive logo__img" alt=""/> </a>
+				</div>
+				<div class="row">
+					<div class="col-xs-12">
+						<h1 class="text-center">Вперед за впечатлениями!</h1>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="table-div__row body">
+		<div class="table-div__cell">
+			<div class="table-div">
+				<div class="table-div__row steps">
+					<div class="table-div__cell">
+						<div class="container">
+							<div class="row step">
+								<div class="col-xs-4 col-sm-3 col-sm-offset-2">Зарегистрируйтесь<br>на сайте</div>
+								<div class="col-xs-3 col-sm-2">станьте<br>50-м</div>
+								<div class="col-xs-5 col-sm-3">Получите сертификат на яркие впечатления!</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="table-div__row spa-classic">
+					<div class="table-div__cell">
+						<div class="container">
+							<div class="col-xs-6"></div>
+							<div class="col-xs-6">
+								<h2>СПА-КЛАССИК</h2>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="table-div__row extreme-classic">
+					<div class="table-div__cell">
+						<div class="container">
+							<div class="col-xs-4"></div>
+							<div class="col-xs-6">
+								<h2>ЭКСТРИМ КЛАССИК</h2>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="table-div__row hobby-classic">
+					<div class="table-div__cell">
+						<div class="container">
+							<div class="col-xs-6"></div>
+							<div class="col-xs-6">
+								<h2>ХОББИ<br>КЛАССИК</h2>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="table-div__row registration">
+					<div class="table-div__cell">
+						<div class="popup-root">
+							<div class="popup-content">
+								<div class="popup-header">Регистрация</div>
+								<form action="/" class="form-horizontal" method="post" role="form">
+									<input name="__RequestVerificationToken" type="hidden" value="EGtIQZwlj_lae-JmVNkxHuWW6RMwrxsBKO53ni8auAAd4FWdezxXNE5YMWBEEouiabAA_dd3wlcp4gKp31NKOXkY8na6Qob7QKqTU8bQYl01">
+									<div class="form-group ">
+										<label class="col-sm-5 control-label sr-only" for="LastName">Фамилия</label>
+										<div class="col-sm-12 col-xs-12">
+											<input class="form-control text-center" id="LastName" maxlength="50" name="LastName" placeholder="фамилия" type="text" value="">
+											<span class="field-validation-error" data-valmsg-for="LastName" data-valmsg-replace="true">какая-нибудь фигня</span>
+										</div>
+									</div>
+									<div class="form-group ">
+										<label class="col-sm-5 control-label sr-only" for="FirstName">Имя</label>
+										<div class="col-sm-12 col-xs-12">
+											<input class="form-control text-center" id="FirstName" maxlength="50" name="FirstName" placeholder="имя" type="text" value="">
+											<span class="field-validation-valid" data-valmsg-for="FirstName" data-valmsg-replace="true"></span>
+										</div>
+									</div>
+									<div class="form-group ">
+										<label class="col-sm-5 control-label sr-only" for="Email">Email</label>
+										<div class="col-sm-12 col-xs-12">
+											<input class="form-control text-center" id="Email" name="Email" placeholder="email" type="text" value="">
+											<span class="field-validation-valid" data-valmsg-for="Email" data-valmsg-replace="true"></span>
+										</div>
+									</div>
+									<div class="form-group ">
+										<label class="col-sm-5 control-label sr-only" for="Email">Автомобиль</label>
+										<div class="col-sm-12 col-xs-12">
+											<select class="form-control text-center" id="PeugeotTypeKey" name="PeugeotTypeKey" placeholder="автомобиль">
+												<option></option>
+											</select>
+											<span class="field-validation-valid" data-valmsg-for="PeugeotTypeKey" data-valmsg-replace="true"></span>
+										</div>
+									</div>
+									<div class="form-group ">
+										<div class="col-sm-12 col-xs-12 terms-stocks small text-left">
+											<label class="checkbox-inline">
+												<input id="RulesAgree" name="RulesAgree" type="checkbox" value="true">
+												<input name="RulesAgree" type="hidden" value="false"> Я согласен на коммуникацию </label>
+											<span class="field-validation-valid" data-valmsg-for="RulesAgree" data-valmsg-replace="true"></span>
+										</div>
+									</div>
+									<div class="form-group ">
+										<div class="col-xs-12 text-center">
+											<button type="submit" class="btn btn-default" title="Далее"><span>Принять участие</span>
+											</button>
+										</div>
+									</div>
+									<div class="col-sm-12 col-xs-12 terms-stocks small text-right">
+										<a href="/Content/Rules.pdf" class="terms-stocks__link" target="_blank">Правила</a>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="table-div__row original bg-gradient_diagonal_orange">
+					<div class="table-div__cell">
+						<div class="container">
+							<div class="col-xs-4"></div>
+							<div class="col-xs-6">
+								<h2>ДЛЯ ДВОИХ ОРИДЖИНАЛ</h2>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="table-div__row footer">
+		<div class="table-div__cell">
+			<div class="container">
+				<div class="row footer__inner">
+					<div class="inline-block">
+						<a href="https://mypeugeot-ru.peugeot.com/" class="col-xs-4 footer__helper bg-gradient_radial_white vertical-align_middle">
+							<div class="inline-block">Регистрируйтесь в МойPeugeot - Ваш личный помощник в мире комфортных путешествий
+							</div>
+						</a>
+						<div class="col-xs-8">
+							<div class="row">
+								<ul class="col-xs-4 social vertical-align_middle text-align_justify">
+									<li class="social__item fb"><a href="#"></a></li>
+									<li class="social__item vk"><a href="#"></a></li>
+									<li class="social__item ok"><a href="#"></a></li>
+									<li class="social__item yt"><a href="#"></a></li>
+								</ul>
+								<div class="col-xs-8 text-right vertical-align_middle">
+									<div class="inline-block">
+										<div class="footer__contact">Горячая линия Peugeot: 8 800 555 53 35</div>
+										<div class="footer__copyright">© 2015 ООО "Пежо Ситроен Рус". Все права защищены.</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>-->
+<!--<script src="//netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>-->
+</body>

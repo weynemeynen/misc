@@ -1,0 +1,15 @@
+@import "_color/text_color_black.css";
+@import "_color/text_color_gray.css";
+@import "_color/text_color_white.css";
+
+@import "_size/text_size_normal.css";
+@import "_size/text_size_medium.css";
+@import "_size/text_size_larger.css";
+@import "_size/text_size_x-large.css";
+
+@import "_align/text_align_right.css";
+@import "_align/text_align_center.css";
+
+@import "_vertical/text_vertical_top.css";
+@import "_vertical/text_vertical_middle.css";
+@import "_vertical/text_vertical_bottom.css";

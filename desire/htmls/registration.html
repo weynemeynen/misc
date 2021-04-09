@@ -1,0 +1,78 @@
+<div class="modal-body__inner" id="registration">
+    <h2 class="modal-header text-center">Регистрация</h2>
+    <form class="form-horizontal" role="form">
+        <ul class="col-xs-12 text-center social-group">
+            <li><a href="#" class="icon-vk"></a></li>
+            <li><a href="#" class="icon-fb"></a></li>
+            <li><a href="#" class="icon-ok"></a></li>
+        </ul>
+        <div class="form-group">
+            <label for="surname" class="col-sm-5 control-label">Фамилия</label>
+            <div class="col-sm-7">
+                <input type="text" class="form-control" id="surname" placeholder="Фамилия">
+                <span class="field-validation-error" data-valmsg-for="surname" data-valmsg-replace="true">некорректный формат</span>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="firstname" class="col-sm-5 control-label">Имя</label>
+            <div class="col-sm-7">
+                <input type="text" class="form-control" id="firstname" placeholder="Имя">
+            </div>
+        </div>
+        <div class="form-group" style="margin-bottom: 0;">
+            <label for="datebirth" class="col-sm-5 control-label">Дата рождения</label>
+            <div class="col-sm-7">
+                <input type="text" class="form-control" id="datebirth" placeholder="Дата рождения">
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label col-sm-5">Пол</label>
+            <div class="col-sm-7">
+                <label class="radio-inline"> <input type="radio" name="gender" id="male" value="option1"> муж. </label>
+                <label class="radio-inline"> <input type="radio" name="gender" id="female" value="option1"> жен. </label>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="email" class="col-sm-5 control-label">E-mail</label>
+            <div class="col-sm-7">
+                <input type="email" class="form-control" id="email" placeholder="E-mail">
+                <span class="field-validation-error" data-valmsg-for="surname" data-valmsg-replace="true">некорректный формат</span>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="phone" class="col-sm-5 control-label">Телефон</label>
+            <div class="col-sm-7">
+                <input type="text" class="form-control" id="phone" placeholder="Телефон">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="locality" class="col-sm-5 control-label">Город/населенный пункт</label>
+            <div class="col-sm-7">
+                <input type="text" class="form-control" id="locality" placeholder="Город/населенный пункт">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="code" class="col-xs-5 control-label">Проверочный код</label>
+            <div class="col-xs-3">
+                <input type="text" class="form-control captchaCode" id="code" placeholder="код">
+            </div>
+            <div class="col-xs-4">
+                <img src="images/captchaImage.png" class="img-rounded captchaImage">
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-lg-12 terms-stocks small">
+                <p><a href="../rules.html" class="terms-stocks__link" target="_blank">Правила акции</a></p>
+                <p class="small">
+                <label class="checkbox-inline"> <input type="checkbox" name="confirm" id="confirm"/>Я подтверждаю свое согласие с правилами Акции и даю согласие Организатору и уполномоченным им лицам право осуществлять сбор хранение, обработку и использование моих персональных данных, указанных в анкете, а также контактировать со мной в отношении рекламных акций Организатора, в том числе по сетям электросвязи, включая направление SMS-сообщений и электронной почты</label>
+                </p>
+            </div>
+            <div class="col-sm-12 text-center">
+                <button type="submit" class="btn btn-default"><span>Далее</span></button>
+            </div>
+        </div>
+    </form>
+</div>
+<script>
+    $('#datebirth').datetimepicker();
+</script>

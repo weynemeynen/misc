@@ -1,0 +1,88 @@
+html {
+	font-size: 62.5%;
+	height: 100%;
+}
+
+body {
+	height: 100%;
+	font-size: 1.876rem;
+	color: #030303;
+}
+
+[class*="vertical-align_"] {
+	font-size: 0;
+}
+
+.vertical-align_bottom:before,
+.vertical-align_middle:before,
+.vertical-align_top:before {
+	content: '';
+	display: inline-block;
+	height: 100%;
+}
+
+.vertical-align_top:before {
+	vertical-align: top
+}
+
+.vertical-align_middle:before {
+	vertical-align: middle
+}
+
+.vertical-align_bottom:before {
+	vertical-align: bottom
+}
+
+.inline-block {
+	display: inline-block;
+	vertical-align: middle;
+}
+/* horizontal align */
+
+.text-align_justify:after {
+	content: '';
+	display: inline-block;
+	width: 100%;
+}
+
+@media (min-width: 768px) {
+	.hidden-md {
+		display: none!important
+	}
+}
+
+@media (max-width: 767px) {
+	.visible-sm {
+		display: block!important
+	}
+	.hidden-sm {
+		display: none!important
+	}
+	.logo:after {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 20%;
+		height: 100%;
+		background: url("../images/stamp-overlay.png");
+		z-index: 1
+	}
+}
+/* font-size */
+
+@media (max-width: 479px) {
+	html {
+		/*font-size 10px*/
+
+		font-size: 44.64%;
+	}
+}
+
+@media (max-width: 1024px) and (min-width: 480px) {
+	html {
+		/*font-size 12px*/
+
+		font-size: 53.57%;
+	}
+}

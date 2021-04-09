@@ -1,0 +1,231 @@
+/*
+ * mobile
+ */
+/* header */
+.mobile .header > .table-div__cell {
+	height: 15%;
+}
+.mobile .header .row {
+	height: auto;
+}
+.mobile .logo {
+	position: relative;
+	width: 100%;
+	text-align: center;
+}
+.mobile .logo__img {
+	height: 8rem;
+	padding: 1.2rem;
+}
+.mobile h1 {
+	padding: 0.67em 0;
+	margin: 0;
+	text-transform: uppercase;
+}
+/**/
+/* footer*/
+/**/
+.mobile .footer > .table-div__cell {
+	height: auto;
+}
+.mobile .footer__inner {
+	font-size: 80%;
+}
+.mobile .footer [class|="col"] {
+	width: 100%;
+	text-align: center !important;
+}
+.mobile .footer .inline-block {
+	padding: 0;
+}
+.mobile .footer__inner .footer__helper {
+	padding: 3rem 1rem;
+}
+.mobile .social {
+	padding: 3% 0;
+}
+.mobile .social__item {
+	margin: 0 2rem 0;
+	font-size: 2.3rem;
+}
+/*message*/
+.mobile.message .popup-root {
+	min-width: 99%;
+	height: 94%;
+}
+.mobile.message .popup-content {
+	margin: -8% 2%;
+	left: auto;
+}
+/* registration */
+.mobile.registration .body .table-div__row:not([class~="steps"]) {
+	float: left;
+	width: 27%;
+	height: 76%;
+	overflow: hidden;
+}
+.mobile.registration .body .table-div__row:not([class~="steps"]) .container {
+	float: left;
+}
+.mobile.registration .spa-classic, .mobile.registration .extreme-classic {
+	height: 24% !important;
+	width: 50% !important;
+}
+.mobile.registration .body .table-div__row:not([class~="steps"]) .table-div__cell {
+	display: block;
+	height: 100%;
+}
+.mobile.registration .body .table-div__row:not([class~="steps"]) .container {
+	width: 100%;
+	padding: 2rem 0;
+	position: relative;
+}
+.mobile.registration .body [class|="col"] {
+	position: static;
+}
+.mobile.registration .body .container, .mobile .body [class|="col"] {
+	height: 100%;
+}
+.mobile.registration h2 {
+	position: absolute;
+}
+.mobile.registration .hobby-classic h2 {
+	bottom: 15%;
+	left: 0;
+	width: 15rem;
+}
+.mobile.registration .spa-classic h2 {
+	top: 50%;
+	margin-top: -1rem;
+	left: 50%;
+}
+.mobile.registration .extreme-classic h2 {
+	top: 50%;
+	margin-top: -1.5rem;
+	left: 10%;
+	width: 15rem;
+	color: initial;
+}
+.mobile.registration .original h2 {
+	top: 15%;
+	right: 0;
+	width: 15rem;
+}
+.mobile.registration .spa-classic {
+	background: url("./Images/spa-classic-bg-mobile.png") no-repeat left/contain, url("./Images/spa-classic-bg-0.png") no-repeat center/cover;
+}
+.mobile.registration .extreme-classic {
+	background-position: right;
+}
+.mobile.registration .hobby-classic {
+	background-position: 90% top;
+	/*background-size: 200% auto;*/
+	background-image: url("./Images/hobby-classic-bg-mobile.png");
+	background-size: auto 75%;
+	background-position: 0 0;
+}
+.mobile.registration .original {
+	background: url("./Images/original-bg-mobile.png") no-repeat right bottom / auto 75%,
+		/*background: rgb(222,125,36);*/ /*
+		background: -moz-linear-gradient(-45deg,  rgba(222,125,36,1) 0%, rgba(247,205,75,1) 100%);
+		background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,rgba(222,125,36,1)), color-stop(100%,rgba(247,205,75,1)));
+		background: -webkit-linear-gradient(-45deg,  rgba(222,125,36,1) 0%,rgba(247,205,75,1) 100%);
+		background: -o-linear-gradient(-45deg,  rgba(222,125,36,1) 0%,rgba(247,205,75,1) 100%);
+		background: -ms-linear-gradient(-45deg,  rgba(222,125,36,1) 0%,rgba(247,205,75,1) 100%);
+		*/ linear-gradient(135deg, rgba(222, 125, 36, 1) 0%, rgba(247, 205, 75, 1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#de7d24', endColorstr='#f7cd4b', GradientType=1);
+}
+/**/
+/* popup */
+/**/
+.mobile .popup-root {
+	margin: auto;
+}
+.mobile .popup-root .control-label {
+	display: none;
+}
+.mobile .popup-content:before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	/*height: 100%;*/
+	background-color: rgba(0, 0, 0, .4);
+	z-index: 0;
+}
+.mobile .small {
+	font-size: 59%;
+}
+/**/
+/* REGISTRATION */
+/**/
+.mobile.registration .popup-root {
+	width: 46% !important;
+	position: relative;
+	margin: 0;
+}
+.mobile.registration .popup-header {
+	font-size: 165%;
+	margin: 0;
+	padding: 3% 0;
+}
+.mobile.registration .popup-content {
+	left: auto;
+	height: 100%;
+	/*background-image: url("./Images/main-bg.jpg");*/
+	background-color: rgba(0, 0, 0, .6);
+	padding: 0;
+}
+/**/
+/*Prize*/
+/**/
+.mobile.certificate .body > .table-div__cell {
+	height: auto;
+}
+.certificate .body .table-div__row:not([class~="steps"]) {
+	height: auto;
+}
+.mobile.certificate .steps {
+	font-size: 95%;
+}
+.mobile.certificate .container:hover .confirm,
+.mobile.certificate .desc__text {
+	display: none;
+}
+.mobile.certificate .body .table-div__row:not([class~="steps"]) [class|="col"] {
+	/*width: 100%;*/
+	text-align: center;
+	/*margin: 0;*/
+}
+.mobile.certificate .body .img-responsive {
+	display: inline-block;
+	/*padding: 0 10%;*/
+	min-width: 100% !important;
+	max-width: 100% !important;
+}
+/* form */
+.mobile .btn {
+	padding: 3% 0;
+	font-size: 100%;
+	border: none;
+	width: 100%;
+}
+.mobile .form-group {
+	margin-bottom: 2rem;
+}
+.mobile .form-control {
+	padding: 0;
+	font-size: 100%;
+}
+.mobile .checkbox-inline {
+	padding-top: 0;
+}
+.mobile .checkbox-inline input {
+	margin-top: 0;
+}
+@media (max-width: 480px) and (min-width: 320px) {
+	.mobile h1 {
+		font-size: 170%;
+	}
+}

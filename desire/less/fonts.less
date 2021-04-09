@@ -1,0 +1,54 @@
+@font-face {
+  font-family: 'Fritz';
+  src: url('../fonts/FritzQuadrataCyrillic.eot');
+  src: url('../fonts/FritzQuadrataCyrillic.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/FritzQuadrataCyrillic.woff') format('woff'),
+  url('../fonts/FritzQuadrataCyrillic.ttf') format('truetype'),
+  url('../fonts/FritzQuadrataCyrillic.svg#FritzQuadrataCyrillic') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Fritz-Bold';
+  src: url('../fonts/FrizQuadrataC-Bold.eot');
+  src: url('../fonts/FrizQuadrataC-Bold.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/FrizQuadrataC-Bold.woff') format('woff'),
+  url('../fonts/FrizQuadrataC-Bold.ttf') format('truetype'),
+  url('../fonts/FrizQuadrataC-Bold.svg#FrizQuadrataC-Bold') format('svg');
+  font-style: normal;
+}
+@font-face {
+  font-family: 'icons';
+  src: url('../fonts/icons.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+[class*="icon-"] {
+  display: inline-block;
+  position: relative;
+  font-family: 'icons';
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: inherit;
+  width: auto;
+  height: auto;
+  line-height: normal;
+  vertical-align: baseline;
+}
+[class*="icon-"]:before {
+  content: '';
+  font-family: 'icons';
+  display: inline-block;
+  text-decoration: inherit;
+  speak: none;
+  vertical-align: middle;
+  line-height: 0;
+  width: 25px;
+  height: 25px;
+}
+.icon-arrow-right {
+  &:before { content: "\2021"; }
+}
+.icon-arrow-bottom {
+  &:before { content: "\2022"; }
+}

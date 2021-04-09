@@ -1,0 +1,57 @@
+:focus {
+  outline: none!important;
+}
+
+body {
+  min-width: 300px;
+}
+
+.table {
+  border-spacing: .5em;
+  font-size: 2em;
+  font-family: monospace;
+}
+
+.table_border_collapse {
+  border-collapse: separate;
+}
+
+.table-layout_fixed {
+  table-layout: fixed;
+}
+
+caption {
+  text-align: center !important;
+}
+
+tbody td {
+  border: node!important;
+  border-top: none!important;
+  padding: 0!important;
+  vertical-align: middle!important;
+}
+
+tbody button {
+  width: 100%;
+  border-width: 1px!important;
+  border-radius: .3em;
+  text-shadow: 1px 1px white;
+}
+
+.equally {
+  position: relative;
+}
+
+.equally button {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.input {
+  font-size: 1.5em;
+  line-height: .8;
+  height: auto !important;
+}

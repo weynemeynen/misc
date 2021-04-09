@@ -1,0 +1,253 @@
+/* модификатор средний */
+.league_size_medium .logotype {
+	font-size: 2em;
+	font-weight: bold;
+	padding-left: 105px;
+	margin: 1.2em 0;
+}
+.league_size_medium .icon-league:before {
+	position: absolute;
+	top: 50%;
+	left: 0;
+	width: 94px;
+	height: 90px;
+	margin-top: -70px;
+	background-position: -646px -20px;
+}
+
+.league_size_medium .logotype:after {
+	content: 'www.ЛигаКачества.рф';
+	font-size: .4em;
+	display: block;
+	margin-top: 1em;
+	color: #00accd;
+}
+.league_size_big .icon-league:before {
+	background-position: -165px -559px;
+	width: 188px;
+	height: 178px;
+	margin-top: -120px;
+}
+.league_size_big .logotype:after {
+	content: 'www.ЛигаКачества.рф';
+	font-size: .4em;
+	display: block;
+	margin-top: 1em;
+	color: #00accd;
+}
+
+.league_size_big .league__list-item:before {
+	color: #00accd;
+}
+
+.league__img {
+}
+
+/* league-tools */
+.row_width_950 .league-tools__list.vertical_align_middle.justify {
+	margin-left: -20px;
+}
+
+.league-tools .tit, .stat-calls .tit {
+	font-size: 1.5em;
+	margin: 2em 8em 2em;
+}
+
+.league-tools__item {
+	display: inline-block;
+	width: 19em;
+	text-align: left;
+	vertical-align: top;
+	position: relative;
+}
+.league-tools__item img {
+	vertical-align: top;
+}
+
+/* mobile-app */
+.mobile-app {
+	position: absolute;
+	top: 130%;
+	left: 5%;
+}
+.mobile .icon-arrow-down:before {
+	right: -70px;
+	top: -25%;
+	-moz-transform: rotate(40deg); /* Для Firefox */
+	-ms-transform: rotate(40deg); /* Для IE */
+	-webkit-transform: rotate(40deg); /* Для Safari, Chrome, iOS */
+	-o-transform: rotate(40deg); /* Для Opera */
+	transform: rotate(40deg);
+}
+
+/* monitor */
+.monitor {
+	border-style: solid;
+	border-color: transparent;
+	position: absolute;
+	background: url(../images/screen.png);
+	background-origin: border-box;
+	background-size: contain;
+	margin-bottom: 3em;
+}
+.monitor.small {
+	width: 313px;
+	height: 196px;
+	border-width: 14px 11px 14px 11px;
+}
+.monitor.middle {
+	width: 432px;
+	height: 270px;
+	border-width: 20px 17px 20px 15px;
+}
+.monitor.big {
+	width: 525px;
+	height: 329px;
+	border-width: 24px 21px 24px 19px;
+}
+.monitor:after { /* подставка */
+	content: '';
+	position: absolute;
+	width: 694px;
+	height: 43px;
+	bottom: -66px;
+	left: 50%;
+	margin-left: -347px;
+	background: url(../images/monitor-stand.png);
+	background-size: cover;
+}
+.monitor.small:after {
+	width: 411px;
+	height: 25px;
+	bottom: -39px;
+	margin-left: -205px;
+}
+.monitor.middle:after {
+	width: 575px;
+	height: 34px;
+	bottom: -53px;
+	margin-left: -287px;
+}
+.monitor.big:after {
+	width: 694px;
+	height: 43px;
+	bottom: -66px;
+	margin-left: -347px;
+}
+
+.screen {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+}
+.screen img {
+	position: absolute;
+}
+
+/*  */
+.site .monitor {
+	top: 150%;
+	left: 50%;
+	margin-left: -236px;
+}
+
+/* call */
+.call .icon-arrow-down:before {
+	top: -50%;
+	right: 70%;
+	-moz-transform: rotate(-40deg);
+	-ms-transform: rotate(-40deg);
+	-webkit-transform: rotate(-40deg);
+	-o-transform: rotate(-40deg);
+	transform: rotate(-40deg);
+}
+.call-center {
+	position: absolute;
+	top: 150%;
+	right: 0;
+}
+.call-center img {
+	border: .3em solid #00accd;
+	border-radius: 50%;
+}
+
+/* stat-calls */
+.stat-calls .monitor {
+	position: relative;
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: -10em;
+}
+.stat-calls .monitor:first-child {
+	margin-left: 0;
+}
+.stat-calls .small {
+	z-index: 0;
+	margin-left: -11em;
+}
+.stat-calls .middle {
+	z-index: 1;
+	margin-left: -16em;
+}
+.stat-calls .big {
+	z-index: 3;
+}
+
+/* league-info */
+.league-info {
+	font-family: "Open Sans";
+}
+.league-info__list {
+	list-style-type: none;
+	padding-left: 0;
+	margin: 0;
+}
+.league-info__list-item {
+	display: inline-block;
+	width: 220px;
+	vertical-align: bottom;
+	text-align: center;
+}
+
+.league-info .font-icon-two-dialogue:before,
+.league-info .font-icon-folk:before,
+.league-info .font-icon-monitor:before,
+.league-info .font-icon-s:before {
+	width: 1.5em;
+	height: 1.5em;
+	color: #fff;
+	line-height: 1.6;
+	vertical-align: -webkit-baseline-middle;
+	font-size: 4em;
+	border-radius: 50%;
+	background-color: #00accd;
+	box-shadow: 0 .08em .05em rgba(0,0,0,.15);
+	-moz-box-shadow: 0 .08em .05em rgba(0,0,0,.15);
+	-webkit-box-shadow: 0 .08em .05em rgba(0,0,0,.15);
+}
+
+.league-info__tit {
+	text-transform: uppercase;
+	color: #000;
+	margin: 2em 0;
+}
+.league-info__graph {
+	padding: 5px 15px;
+	color: #fff;
+	background-color: #28d6f7;
+}
+.league-info .league_size_medium {
+	position: absolute;
+	top: -5%;
+	right: 50%;
+	margin-right: -30%;
+}
+
+/* register-company */
+.register-company {
+	font-family: "Open Sans";
+}
+.register-company h2 {
+	text-transform: uppercase;
+}

@@ -1,0 +1,41 @@
+@import "includes/settings";
+@import "../sprites/sprite";
+@import "includes/grid";
+@import "includes/index.min";
+@import "includes/media-queries";
+
+/**
+ * Спрайт
+ */
+
+.icon-eye-open {
+    @include sprite($eye-open);
+}
+
+.icon-comments {
+    @include sprite($comments);
+}
+
+.icon-download-alt {
+    @include sprite($download-alt);
+}
+
+.icon-twitter {
+    @include sprite($twitter);
+}
+
+.icon-facebook {
+    @include sprite($facebook);
+}
+
+.icon-pinterest {
+    @include sprite($pinterest);
+}
+
+.icon-google-plus {
+    @include sprite($google-plus);
+}
+
+* {
+    transition: all .2s;
+}

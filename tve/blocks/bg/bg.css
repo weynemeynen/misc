@@ -1,0 +1,7 @@
+@import "_color/bg_color_green.css";
+@import "_color/bg_color_white.css";
+
+@import "_translucent/bg_translucent_50.css";
+
+@import "_gradient/bg_gradient_translucent-top.css";
+@import "_gradient/bg_gradient_translucent-bottom.css";

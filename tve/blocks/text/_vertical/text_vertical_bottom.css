@@ -1,0 +1,15 @@
+.text_vertical_bottom {
+	font-size: 0;
+}
+
+.text_vertical_bottom:before {
+	content: '';
+	display: inline-block;
+	height: 100%;
+	vertical-align: bottom;
+}
+
+.text_vertical_bottom > * {
+	font-size: initial;
+	/*font-size: 12px;*/
+}

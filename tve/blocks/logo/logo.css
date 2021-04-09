@@ -1,0 +1,10 @@
+@import "__image/logo__image.css";
+
+.logo {
+	float: left;
+	text-align: center;
+}
+
+.logo:before {
+	content: '';
+}

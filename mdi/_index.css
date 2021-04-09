@@ -1,0 +1,164 @@
+.page {
+	font: 62.5% Arial, Helvetica, sans-serif;
+	min-width: 1300px;
+}
+/*********** table ***********/
+.gold { background-color: gold }
+.lightblue { background-color: lightblue }
+.lime { background-color: lime }
+.lightcyan { background-color: lightcyan }
+.whitesmoke { background-color: whitesmoke }
+.white { background-color: white }
+.palegreen { background-color: palegreen }
+.yellow { background-color: yellow }
+.darkgreen { background-color: darkgreen }
+table {
+	table-layout: fixed;
+	width: 100%;
+	border-collapse: collapse;
+	border-spacing: 0;
+	text-align: center;
+}
+.table-outer {
+	margin: auto;
+	max-width: 1300px;
+	border-left: 1px solid black;
+	border-right: 1px solid black;
+	background: url(gutter.gif) repeat-y right 0;
+	position: relative;
+}
+*:first-child + html .table-outer { background: url(gutter-ie.gif) repeat-y right 0; }
+.table-outer:before, .table-outer:after,
+.table-outer .before, .table-outer .after {
+	content: '';
+	position: absolute;
+	right: 0;
+	width: 100%;
+	height: 1px;
+	background: url(line-bg.gif) repeat-x right;
+}
+*:first-child + html .table-outer .before,
+*:first-child + html .table-outer .after { background: url(line-bg-ie.gif) repeat-y right 0; }
+
+.table-outer:before, .table-outer .before { top: 0 }
+.table-outer:after, .table-outer .after { bottom: 0 }
+
+.table-inner {
+	padding: 10px;
+}
+/*Колонки*/
+.first-cols col { width: 20px }
+.first-cols .col-5 { width: 190px }
+.second-cols col { width: 92px }
+.three-cols col { width: 130px }
+.gutter { width: 20px }
+th, td {
+	padding: 3px;
+	border: 1px solid black;
+	empty-cells: hide;
+}
+th { text-align: left }
+thead th, thead td {
+	text-align: center;
+	font-weight: bold;
+	background-color: gold
+}
+.level-4 th { color: blue; text-decoration: underline; }
+.empty-cell {
+	border: none !important;
+	background: none !important;
+	padding: 0 !important;
+	text-align: left;
+}
+/**/
+.i { font-style: italic }
+/*icon*/
+.icon {
+	width: 16px;
+	height: 13px;
+	margin-right: 4px;
+	background-image: url(icons.gif);
+	background-repeat: no-repeat;
+	float: left;
+	position: relative;
+}
+.icon_minimized { background-position: 0 -13px; cursor: pointer }
+.icon_deployed { background-position: 0 0; cursor: pointer }
+.icon_peril { background-position: -16px 0 }
+.icon_peril:after { content: attr(data-data); position: absolute; right: -2em }
+.icon_ok { background-position: -32px 0 }
+.icon_ok:after { content: attr(data-data); position: absolute; right: -2em }
+.icon_alert { background-position: -49px 0 }
+.icon_alert:after { content: attr(data-data); position: absolute; right: -2em }
+
+/*UI*/
+.ui-widget-content {
+	border-color: black !important;
+	background: #109F10 !important;
+}
+
+.ui-widget-header {
+	border-color: black !important;
+	background: #0060FF !important;
+}
+
+.ui-corner-all, .ui-corner-bottom, .ui-corner-right, .ui-corner-br {
+	border-radius: 0 !important;
+}
+
+/*progressbar*/
+.progressbar, .ui-progressbar {
+	position: relative;
+	overflow: visible !important;
+}
+.progress-label {
+	position: absolute;
+	left: 50%;
+	top: 4px;
+}
+.progress-label:before {
+	content: attr(data-value);
+}
+
+.progressbar:before, .progressbar:after, .milestone:before, .milestone:after {
+	position: absolute;
+	top: -5px;
+	font-size: 9px !important;
+}
+.progressbar:before, .milestone:before {
+	content: attr(data-date-begin);
+	right: 100%;
+	margin-right: 5px;
+}
+.progressbar:after, .milestone:after {
+	content: attr(data-date-finish);
+	left: 100%;
+	margin-left: 5px;
+}
+/**/
+.progressbar_m_1 {
+	height: .7em !important;
+}
+.progressbar_m_1 .ui-widget-header {
+	background-color: #ffff00 !important;
+}
+
+.milestone {
+	display: inline-block; width: 10px; height: 10px;
+	border: 1px solid black;
+	position: relative;
+	-moz-transform: rotate(45deg); /* Для Firefox */
+	-ms-transform: rotate(45deg); /* Для IE */
+	-webkit-transform: rotate(45deg); /* Для Safari, Chrome, iOS */
+	-o-transform: rotate(45deg); /* Для Opera */
+	transform: rotate(45deg);
+}
+.milestone:before, .milestone:after {
+	-moz-transform: rotate(-45deg); /* Для Firefox */
+	-ms-transform: rotate(-45deg); /* Для IE */
+	-webkit-transform: rotate(-45deg); /* Для Safari, Chrome, iOS */
+	-o-transform: rotate(-45deg); /* Для Opera */
+	transform: rotate(-45deg);
+}
+
+.relative { position: relative }

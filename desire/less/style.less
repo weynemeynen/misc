@@ -1,0 +1,402 @@
+/*jumbotron*/
+.jumbotron h1 {
+  font-family: @font-family-base-fritz-bold;
+  font-size: (@font-size-base * 3);
+}
+/*sequencing*/
+.sequencing {
+  position: relative;
+  z-index: 1;
+}
+.sequencing h3 {
+  line-height: 29px;
+}
+.sequencing small {
+  display: block;
+  color: inherit;
+  line-height: inherit;
+}
+.sequencing .icons {
+  float: right;
+  margin-top: 15px;
+}
+.sequencing .icons {
+  &:before { font-size: 2em; }
+}
+@media (max-width: 991px) {
+  .sequencing .icons {
+    &:before { content: "\2022"; }
+  }
+}
+@media (min-width: 992px) {
+  .sequencing .icons {
+    &:before { content: "\2021"; }
+  }
+}
+.sequencing .form-inline {
+  margin: 20px 0;
+  position: relative;
+  text-align: center;
+}
+.sequencing .form-inline * {
+  position: relative;
+  z-index: 1;
+}
+.sequencing .form-inline:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -60px;
+  margin-left: -199px;
+  width: 398px;
+  height: 145px;
+  background: url(../images/sequencing-stars.png) no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+.sequencing .btn-link {
+  color: @link-color;
+}
+.sequencing .btn-link:hover {
+  text-decoration: none;
+}
+.sequencing .btn-link span {
+  display: inline-block;
+  line-height: 1.3;
+  border-bottom: 2px solid;
+}
+/* logo */
+.logo {
+  position: relative;
+  z-index: 2;
+}
+.logo:hover {
+  text-decoration: none;
+}
+.logo__img {
+  max-width: 145px;
+  min-width: 100px;
+}
+.logo__link {
+  line-height: 3.9;
+  text-decoration: underline;
+  font-weight: bold;
+  font-size: @font-size-large;
+  color: #a9335e;
+}
+.logo__link-text {
+  border-bottom: 2px solid;
+  display: inline-block;
+  line-height: 1.3;
+  letter-spacing: 1px;
+}
+/* prizes */
+.prizes {
+  font-family: @font-family-base-fritz-bold;
+  position: relative;
+  z-index: 0;
+}
+/*плашки*/
+.flipper-top {
+  display: inline-block;
+  width: 669px;
+  height: 120px;
+  position: relative;
+  z-index: 1;
+}
+.flipper_size_big .flipper-top__front {
+  background-image: url(../images/jumbotron__die-front.png);
+}
+.flipper_size_big span {
+  font-size: 250%;
+  position: relative;
+  line-height: 1;
+  color: #fe0;
+  white-space: nowrap;
+  z-index: 4;
+}
+.flipper-top span, .flipper span {
+  text-shadow: 0 0 .1em rgba(0, 0, 0, .5);
+}
+/**/
+.flipper {
+  display: inline-block;
+  cursor: pointer;
+  width: 307px;
+  height: 120px;
+  line-height: 1;
+  font-style: italic;
+  color: #fe0;
+  white-space: nowrap;
+  text-shadow: 0.1em 0.1em .1em rgba(0, 0, 0, 0.2);
+  position: relative;
+  z-index: 1;
+}
+/* stars */
+.flipper:before, .flipper:after, .flipper-top:before, .flipper-top:after {
+  content: '';
+  position: absolute;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: 3;
+}
+// big
+.flipper_size_big:before, .flipper_size_big:after {
+  width: 243px;
+  height: 134px;
+}
+.flipper_size_big:before {
+  top: -26px;
+  left: -109px;
+  background-image: url(../images/flipper-stars-big-1.png);
+}
+.flipper_size_big:after {
+  top: -7px;
+  right: -75px;
+  background-image: url(../images/flipper-stars-big-2.png);
+}
+// small
+.flipper_size_small:before {
+  top: 50%;
+  left: 50%;
+  width: 441px;
+  height: 226px;
+  margin-top: -118px;
+  margin-left: -220px;
+}
+.flipper_size_small_1:before {
+  background-image: url(../images/flipper-stars-small-1.png);
+  background-position: 0 40px;
+}
+.flipper_size_small_2:before {
+  background-image: url(../images/flipper-stars-small-2.png);
+  background-position: 0 0;
+}
+.flipper_size_small_3:before {
+  background-image: url(../images/flipper-stars-small-3.png);
+  background-position: center;
+}
+/**/
+.front {
+  z-index: 2;
+  transform: rotateY(0deg);
+}
+.front, .back, .flipper-top__front {
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.front:before, .back:before, .flipper-top__front:before {
+  content: '';
+  height: 100%;
+  display: inline-block;
+  vertical-align: middle;
+  vertical-align: -webkit-baseline-middle;
+}
+.flipper_size_small span {
+  display: inline-block;
+  vertical-align: -webkit-baseline-middle;
+  line-height: ceil((@line-height-base * 0.4));
+  font-size: 250%;
+}
+.front {
+  background-image: url("../images/prize__die-front.png");
+}
+.back {
+  background-image: url("../images/prize__die-front_mirror.png");
+}
+.flipper_size_small span span {
+  font-size: 60%;
+}
+.back span {
+  font-size: @font-size-xx-large;
+  font-style: normal;
+  font-family: 'Fritz', Georgia, sans-serif;
+}
+.back span span {
+  display: block;
+  color: #fff;
+}
+/*большая плашка*/
+.flipper_size_big {
+  font-family: @font-family-base-fritz-bold;
+  text-transform: uppercase;
+  font-style: normal !important;
+}
+.flipper_size_big ._front {
+  background-image: url("../images/jumbotron__die-front.png");
+  background-size: contain;
+}
+/* flipper effect */
+.flip-container {
+  -webkit-perspective: 1000;
+  -moz-perspective: 1000;
+  -ms-perspective: 1000;
+  perspective: 1000;
+  -ms-transform: perspective(1000px);
+  -moz-transform: perspective(1000px);
+  -moz-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+}
+.flip-container:hover .front, .flip-container.hover .front {
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
+.flip-container:hover .back, .flip-container.hover .back {
+  -webkit-transform: rotateY(0deg);
+  -moz-transform: rotateY(0deg);
+  -o-transform: rotateY(0deg);
+  -ms-transform: rotateY(0deg);
+  transform: rotateY(0deg);
+}
+.flipper {
+  -webkit-transition: 0.6s;
+  -webkit-transform-style: preserve-3d;
+  -ms-transition: 0.6s;
+  -moz-transition: 0.6s;
+  -moz-transform: perspective(1000px);
+  -moz-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  transition: 0.6s;
+  transform-style: preserve-3d;
+  position: relative;
+}
+.front {
+  -webkit-transform: rotateY(0deg);
+  -ms-transform: rotateY(0deg);
+  z-index: 2;
+}
+.front, .back {
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transition: 0.6s;
+  -webkit-transform-style: preserve-3d;
+  -webkit-transform: rotateY(0deg);
+  -moz-transition: 0.6s;
+  -moz-transform-style: preserve-3d;
+  -moz-transform: rotateY(0deg);
+  -o-transition: 0.6s;
+  -o-transform-style: preserve-3d;
+  -o-transform: rotateY(0deg);
+  -ms-transition: 0.6s;
+  -ms-transform-style: preserve-3d;
+  -ms-transform: rotateY(0deg);
+  transition: 0.6s;
+  transform-style: preserve-3d;
+  transform: rotateY(0deg);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.back {
+  -webkit-transform: rotateY(-180deg);
+  -moz-transform: rotateY(-180deg);
+  -o-transform: rotateY(-180deg);
+  -ms-transform: rotateY(-180deg);
+  transform: rotateY(-180deg);
+}
+/*social*/
+.social {
+  position: absolute;
+  top: 0;
+  right: 2em;
+}
+/*media-queries*/
+@media (max-width: 1103px) {
+  .flipper_size_small:before {
+    width: 100%;
+    left: 0;
+    margin-left: 0;
+  }
+}
+@media (max-width: 991px) {
+  .prizes img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: auto;
+  }
+  .flipper {
+    max-width: 100%;
+  }
+  .front:before, .back:before {
+    vertical-align: middle;
+    vertical-align: -webkit-baseline-middle;
+  }
+  .prizes__item {
+    margin-bottom: 80px;
+  }
+  .flipper_size_big:before {
+    left: 0;
+  }
+  .flipper_size_big:after {
+    right: 0;
+  }
+}
+@media (max-width: 767px) {
+  .flipper-top {
+    max-width: 100%;
+  }
+}
+@media (max-width: 480px) {
+  .flipper_size_big span {
+    font-size: @font-size-x-large;
+  }
+  .logo__link {
+    display: block;
+  }
+  // звезды
+  .flipper_size_big:before, .flipper_size_big:after,
+  .sequencing .form-inline:after,
+  .flipper_size_small:before {
+    width: 100%;
+    left: 0;
+    margin-left: 0;
+  }
+}
+@media (max-height: 768px) {
+  .sequencing .form-control {
+    font-size: @font-size-small;
+  }
+  .prizes img {
+    max-width: 100%;
+  }
+  .prizes__auto img {
+    width: 80%;
+  }
+  .prize__tel img {
+    width: 70%;
+  }
+  .flipper-top {
+    height: 80px;
+    font-size: 80%;
+  }
+  .flipper_size_big span {
+    font-size: 150%;
+  }
+  .flipper {
+    width: 100%;
+    height: 80px;
+  }
+  .flipper_size_small span {
+    font-size: 160%;
+  }
+  .sequencing h3 {
+    font-size: @font-size-large;
+    line-height: 1.3;
+  }
+  .logo img {
+    width: 110px;
+  }
+  .logo__link {
+    font-size: @font-size-base;
+  }
+}
