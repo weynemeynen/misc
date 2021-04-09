@@ -1,7 +1,0 @@
-/*for IE*/
-*:first-child+html .table-outer {
-//z-index:expression( runtimeStyle.zIndex=1, insertAdjacentHTML('afterBegin', '<div class="before"></div>'));
-	}
-*:first-child+html .table-inner {
-//z-index:expression( runtimeStyle.zIndex=1, insertAdjacentHTML('beforeEnd', '<div class="after"></div>'));
-	}
