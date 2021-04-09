@@ -1,155 +1,214 @@
 ﻿<!DOCTYPE html>
 <html>
-<head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Степановна</title>
-	<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
-	<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css"/>
-	<link rel="stylesheet" href="css/bootstrap-datetimepicker.css">
-	<link rel="stylesheet" href="css/_bootstrap.css"/>
-	<!-- <link rel="stylesheet/less" href="less/_bootstrap.less"> --><!--<script src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.5.0/less.min.js"></script>-->
-	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries --><!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-	<!--[if lt IE 9]>
-	<link rel="stylesheet" href="css/ie.css"/>
-	<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-	<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script><![endif]-->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-	<script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
-	<script src="js/popup-control.js"></script>
-	<script src="js/jquery-css-transform.js"></script>
-	<script src="js/rotate3Di.js"></script>
-	<script src="node_modules/moment/moment.js"></script>
-	<script src="js/bootstrap-datetimepicker.js"></script>
-	<script>
-		$(function() {
-			$('.searcher div.back.clear').hide();
-			$('.searcher div.front.clear').click(
-				function() {
-					$(this).parent().find('div').stop().rotate3Di('flip', 350, {degrees: "toggle", direction: 'clockwise', sideChange: onSideChange});
-				}
-			);
-			function onSideChange(front) {
-				if (front) {
-					$(this).parent().find('div.front.clear').show();
-					$(this).parent().find('div.back.clear').hide();
-				} else {
-					$(this).parent().find('div.front.clear').hide();
-					$(this).parent().find('div.back.clear').show();
-				}
-			}
-		});
-	</script>
-</head>
-<body>
-<div class="bg-layer bg-layer_size_in bg-layer_color_orange"></div>
-<header>
-	<div class="container">
-		<div class="row">
-			<div class="col-xs-3 text-right">
-				<a href="http://xn--80aafk5bbffqk.xn--p1ai/" class="logo"> <img src="images/logo.png" class="img-responsive" alt="Степановна"/></a>
-			</div>
-			<div class="col-xs-9">
-				<div class="social">
-					<a href="https://vk.com/club87894296" target="_blank"><img src="images/ico-vk.png"></a>
-				</div>
-				<nav class="navbar navbar-default" role="navigation">
-					<div class="navbar-header">
-						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#nav__menu">
-							<span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span>
-						</button>
-						<!--<a class="navbar-brand" href="#">Brand</a>-->
-					</div>
-					<div class="navbar-collapse collapse" id="nav__menu">
-						<ul class="nav navbar-nav">
-							<li><a href="index.html">Главная</a></li>
-							<!--<li><a href="prizes.html">Призы</a></li>-->
-							<li class="active"><a href="winners.html">Победители</a></li>
-							<li><a href="rules.html">Правила</a></li>
-							<li><a href="ask-question.html">Вопрос-ответ</a></li>
-							<li><a href="index.html">Войти</a></li>
-							<li><a href="index.html" class="login">Андрей <span class="icon-arrow-login"></span></a></li>
-						</ul>
-					</div>
-				</nav>
-			</div>
-		</div>
-	</div>
-</header>
-<section class="header">
-	<div class="container text-center">
-		<div class="flipper-top flipper_size_big flipper-top_winners">
-			<div class="flipper-top__front">
-				<div class="display-inline"><span>ПОБЕДИТЕЛИ</span>
-					<span class="initialism">акции «Нащелкай на мечту!»</span>
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
-<section class="tables container text-center">
-	<div class="row" id="filter">
-		<div class="col-md-4 text-right">
-			<button class="btn btn-default grid-auto-respond" type="button" data-url="@Url.Action('winners', new{ sortfield='date' , mode=ServerModeEnum.Partial})"><span>Сортировать по дате</span></button>
-		</div>
-		<div class="col-md-4">
-			<button class="btn btn-default grid-auto-respond" type="button" data-url="@Url.Action('winners', new{ sortfield='prize' , mode=ServerModeEnum.Partial })"><span>Сортировать по призу</span></button>
-		</div>
-		<div class="col-md-4 text-left searcher form-inline">
-			<div class="front clear">
-				<button class="btn btn-default" type="button" @*data-toggle="collapse" href="#searcher" aria-expanded="false" aria-controls="searcher" *@><span>Поиск по номеру</span></button>
-			</div>
-			<div class="back clear">
-				<input type="text" id="filterPhone" data-type="phone" class="form-control"/>
-				<button class="btn btn-default grid-manual-respond" data-url="@Url.Action('winners', new { phone='prize' ,mode=ServerModeEnum.Partial })">Искать</button>
-			</div>
-		</div>
-	</div>
-	<div class="row">
-		<div class="col-sm-12 table-responsive">
-			<table class="table table__winners table-striped">
-				<col>
-				<col class="second">
-				<col>
-				<tfoot>
-				<tr>
-					<td colspan="3"></td>
-				</tr>
-				</tfoot>
-				<tbody>
-				<tr>
-					<td><b>25</b> Июня</td>
-					<td>(+7 925 186 67 86)</td>
-					<td>планшет</td>
-				</tr>
-				<tr>
-					<td><b>20</b> Июня</td>
-					<td>(+7 905 205 67 86)</td>
-					<td>100 рублей на телефон</td>
-				</tr>
-				<tr>
-					<td><b>15</b> Июня</td>
-					<td>(+7 925 186 67 86)</td>
-					<td>планшет</td>
-				</tr>
-				<tr>
-					<td><b>20</b> Июня</td>
-					<td>(+7 905 205 67 86)</td>
-					<td>100 рублей на телефон</td>
-				</tr>
-				</tbody>
-			</table>
-			<ul class="pagination">
-				<li><a href="#">&laquo;</a></li>
-				<li><a href="#">1</a></li>
-				<li><a href="#">2</a></li>
-				<li><a href="#">3</a></li>
-				<li><a href="#">4</a></li>
-				<li><a href="#">&raquo;</a></li>
-			</ul>
-		</div>
-	</div>
-</section>
-</body>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Степановна</title>
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="css/bootstrap-datetimepicker.css" />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <!-- <link rel="stylesheet/less" href="less/_bootstrap.less"> -->
+    <!--<script src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.5.0/less.min.js"></script>-->
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <link rel="stylesheet" href="css/ie.css" />
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script
+    ><![endif]-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script src="js/popup-control.js"></script>
+    <script src="js/jquery-css-transform.js"></script>
+    <script src="js/rotate3Di.js"></script>
+    <script src="js/moment.js"></script>
+    <script src="js/bootstrap-datetimepicker.js"></script>
+    <script>
+      $(function () {
+        $('.searcher div.back.clear').hide()
+        $('.searcher div.front.clear').click(function () {
+          $(this).parent().find('div').stop().rotate3Di('flip', 350, {
+            degrees: 'toggle',
+            direction: 'clockwise',
+            sideChange: onSideChange
+          })
+        })
+        function onSideChange(front) {
+          if (front) {
+            $(this).parent().find('div.front.clear').show()
+            $(this).parent().find('div.back.clear').hide()
+          } else {
+            $(this).parent().find('div.front.clear').hide()
+            $(this).parent().find('div.back.clear').show()
+          }
+        }
+      })
+    </script>
+  </head>
+  <body>
+    <div class="bg-layer bg-layer_size_in bg-layer_color_orange"></div>
+    <header>
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-3 text-right">
+            <a href="http://xn--80aafk5bbffqk.xn--p1ai/" class="logo">
+              <img
+                src="images/logo.png"
+                class="img-responsive"
+                alt="Степановна"
+            /></a>
+          </div>
+          <div class="col-xs-9">
+            <div class="social">
+              <a href="https://vk.com/club87894296" target="_blank"
+                ><img src="images/ico-vk.png"
+              /></a>
+            </div>
+            <nav class="navbar navbar-default" role="navigation">
+              <div class="navbar-header">
+                <button
+                  type="button"
+                  class="navbar-toggle"
+                  data-toggle="collapse"
+                  data-target="#nav__menu"
+                >
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span> <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                <!--<a class="navbar-brand" href="#">Brand</a>-->
+              </div>
+              <div class="navbar-collapse collapse" id="nav__menu">
+                <ul class="nav navbar-nav">
+                  <li><a href="index.html">Главная</a></li>
+                  <!--<li><a href="prizes.html">Призы</a></li>-->
+                  <li class="active"><a href="winners.html">Победители</a></li>
+                  <li><a href="rules.html">Правила</a></li>
+                  <li><a href="ask-question.html">Вопрос-ответ</a></li>
+                  <li><a href="index.html">Войти</a></li>
+                  <li>
+                    <a href="index.html" class="login"
+                      >Андрей <span class="icon-arrow-login"></span
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="header">
+      <div class="container text-center">
+        <div class="flipper-top flipper_size_big flipper-top_winners">
+          <div class="flipper-top__front">
+            <div class="display-inline">
+              <span>ПОБЕДИТЕЛИ</span>
+              <span class="initialism">акции «Нащелкай на мечту!»</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="tables container text-center">
+      <div class="row" id="filter">
+        <div class="col-md-4 text-right">
+          <button
+            class="btn btn-default grid-auto-respond"
+            type="button"
+            data-url="@Url.Action('winners', new{ sortfield='date' , mode=ServerModeEnum.Partial})"
+          >
+            <span>Сортировать по дате</span>
+          </button>
+        </div>
+        <div class="col-md-4">
+          <button
+            class="btn btn-default grid-auto-respond"
+            type="button"
+            data-url="@Url.Action('winners', new{ sortfield='prize' , mode=ServerModeEnum.Partial })"
+          >
+            <span>Сортировать по призу</span>
+          </button>
+        </div>
+        <div class="col-md-4 text-left searcher form-inline">
+          <div class="front clear">
+            <button
+              class="btn btn-default"
+              type="button"
+              @*data-toggle="collapse"
+              href="#searcher"
+              aria-expanded="false"
+              aria-controls="searcher"
+              *@
+            >
+              <span>Поиск по номеру</span>
+            </button>
+          </div>
+          <div class="back clear">
+            <input
+              type="text"
+              id="filterPhone"
+              data-type="phone"
+              class="form-control"
+            />
+            <button
+              class="btn btn-default grid-manual-respond"
+              data-url="@Url.Action('winners', new { phone='prize' ,mode=ServerModeEnum.Partial })"
+            >
+              Искать
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12 table-responsive">
+          <table class="table table__winners table-striped">
+            <col />
+            <col class="second" />
+            <col />
+            <tfoot>
+              <tr>
+                <td colspan="3"></td>
+              </tr>
+            </tfoot>
+            <tbody>
+              <tr>
+                <td><b>25</b> Июня</td>
+                <td>(+7 925 186 67 86)</td>
+                <td>планшет</td>
+              </tr>
+              <tr>
+                <td><b>20</b> Июня</td>
+                <td>(+7 905 205 67 86)</td>
+                <td>100 рублей на телефон</td>
+              </tr>
+              <tr>
+                <td><b>15</b> Июня</td>
+                <td>(+7 925 186 67 86)</td>
+                <td>планшет</td>
+              </tr>
+              <tr>
+                <td><b>20</b> Июня</td>
+                <td>(+7 905 205 67 86)</td>
+                <td>100 рублей на телефон</td>
+              </tr>
+            </tbody>
+          </table>
+          <ul class="pagination">
+            <li><a href="#">&laquo;</a></li>
+            <li><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">&raquo;</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </body>
 </html>
